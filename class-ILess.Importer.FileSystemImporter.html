@@ -1,0 +1,630 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+
+	<title>Class ILess\Importer\FileSystemImporter | ILess API docs</title>
+
+	<link rel="stylesheet" href="resources/bootstrap.min.css?973e37a8502921d56bc02bb55321f45b072b6f71">
+	<link rel="stylesheet" href="resources/style.css?49f43d3208c5d7e33fa16d36107a345bf11cc00d">
+
+	<script>
+		var _gaq = _gaq || [];
+		_gaq.push(['_setAccount', "UA-67370642-2"]);
+		_gaq.push(['_trackPageview']);
+
+		(function() {
+			var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+			ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+			var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+		})();
+	</script>
+</head>
+
+<body>
+	<nav id="navigation" class="navbar navbar-default navbar-fixed-top">
+		<div class="container-fluid">
+			<div class="navbar-header">
+				<a href="index.html" class="navbar-brand">ILess API docs</a>
+			</div>
+			<div class="collapse navbar-collapse">
+
+                <form id="search" class="navbar-form navbar-left" role="search">
+                    <input type="hidden" name="cx" value="">
+                    <input type="hidden" name="ie" value="UTF-8">
+                    <div class="form-group">
+                        <input type="text" name="q" class="search-query form-control" placeholder="Search">
+					</div>
+				</form>
+
+				<ul class="nav navbar-nav">
+					<li>
+						<a href="namespace-ILess.Importer.html" title="Summary of ILess\Importer"><span>Namespace</span></a>
+					</li>
+					<li class="active">
+<span>Class</span>					</li>
+
+					<li class="divider-vertical"></li>
+
+					<li>
+						<a href="tree.html" title="Tree view of classes, interfaces, traits and exceptions"><span>Tree</span></a>
+					</li>
+
+						<li>
+							<a href="annotation-group-deprecated.html" title="List of elements with deprecated annotation">
+								<span>Deprecated</span>
+							</a>
+						</li>
+						<li>
+							<a href="annotation-group-todo.html" title="List of elements with todo annotation">
+								<span>Todo</span>
+							</a>
+						</li>
+
+
+				</ul>
+			</div>
+		</div>
+	</nav>
+
+	<div id="left">
+	<div id="menu">
+
+		<div id="groups">
+				<h3>Namespaces</h3>
+			<ul>
+					<li class="active">
+						<a href="namespace-ILess.html">
+							ILess<span></span>
+						</a>
+							<ul>
+					<li>
+						<a href="namespace-ILess.Cache.html">
+							Cache						</a>
+							</li>
+					<li>
+						<a href="namespace-ILess.CLI.html">
+							CLI						</a>
+							</li>
+					<li>
+						<a href="namespace-ILess.Exception.html">
+							Exception						</a>
+							</li>
+					<li class="active">
+						<a href="namespace-ILess.Importer.html">
+							Importer						</a>
+							</li>
+					<li>
+						<a href="namespace-ILess.Node.html">
+							Node						</a>
+							</li>
+					<li>
+						<a href="namespace-ILess.Output.html">
+							Output						</a>
+							</li>
+					<li>
+						<a href="namespace-ILess.OutputFilter.html">
+							OutputFilter						</a>
+							</li>
+					<li>
+						<a href="namespace-ILess.Parser.html">
+							Parser						</a>
+							</li>
+					<li>
+						<a href="namespace-ILess.Plugin.html">
+							Plugin						</a>
+							</li>
+					<li>
+						<a href="namespace-ILess.SourceMap.html">
+							SourceMap						</a>
+							</li>
+					<li>
+						<a href="namespace-ILess.Util.html">
+							Util						</a>
+							</li>
+					<li>
+						<a href="namespace-ILess.Visitor.html">
+							Visitor						</a>
+							</li>
+								</ul></li>
+					<li>
+						<a href="namespace-PHP.html">
+							PHP						</a>
+							</li>
+			</ul>
+		</div>
+
+
+		<div id="elements">
+			<h3>Classes</h3>
+			<ul>
+				<li><a href="class-ILess.Importer.ArrayImporter.html">ArrayImporter</a></li>
+				<li><a href="class-ILess.Importer.CallbackImporter.html">CallbackImporter</a></li>
+				<li><a href="class-ILess.Importer.DatabaseImporter.html">DatabaseImporter</a></li>
+				<li class="active"><a href="class-ILess.Importer.FileSystemImporter.html">FileSystemImporter</a></li>
+			</ul>
+
+			<h3>Interfaces</h3>
+			<ul>
+				<li><a href="class-ILess.Importer.ImporterInterface.html">ImporterInterface</a></li>
+			</ul>
+
+
+
+
+		</div>
+	</div>
+</div>
+
+<div id="splitter"></div>
+
+<div id="right">
+	<div id="rightInner">
+<div id="content" class="class">
+	<h1>Class FileSystemImporter</h1>
+
+
+	<div class="description">
+	<p>File system importer.</p>
+
+<h1>Possible options</h1>
+
+<p><code>clear_stat_cache</code> (boolean) - clear stat cache?</p>
+	</div>
+
+	<dl class="tree well">
+		<dd style="padding-left:0px">
+			<a href="class-ILess.Configurable.html"><span>ILess\Configurable</span></a>
+			
+			
+			
+		</dd>
+		<dd style="padding-left:30px">
+			<img src="resources/inherit.png" alt="Extended by">
+<b><span>ILess\Importer\FileSystemImporter</span></b>			
+			 implements 
+				<a href="class-ILess.Importer.ImporterInterface.html"><span>ILess\Importer\ImporterInterface</span></a>
+			
+			
+		</dd>
+	</dl>
+
+
+
+
+
+
+
+
+	<div class="alert alert-info">
+		
+		
+		<b>Namespace:</b> <a href="namespace-ILess.html">ILess</a>\<a href="namespace-ILess.Importer.html">Importer</a><br>
+		<b>Package:</b> ILess\Importer<br>
+
+			<b>Located at</b> <a href="source-class-ILess.Importer.FileSystemImporter.html#16-155" title="Go to source code">ILess/Importer/FileSystemImporter.php</a>
+		<br>
+	</div>
+
+
+
+		<div class="panel panel-default">
+			<div class="panel-heading"><h2>Methods summary</h2></div>
+			<table class="summary table table-bordered table-striped methods" id="methods">
+		<tr data-order="__construct" id="___construct">
+
+			<td class="attributes"><code>
+				 public 
+				
+				
+				</code>
+			</td>
+
+			<td class="name"><div>
+			<a class="anchor" href="#___construct">#</a>
+			<code><a href="source-class-ILess.Importer.FileSystemImporter.html#43-53" title="Go to source code">__construct</a>( <span>array <var>$importDirs</var> = <span class="php-keyword1">array</span>()</span>, <span>array <var>$options</var> = <span class="php-keyword1">array</span>()</span> )</code>
+
+			<div class="description short">
+				<p>Constructor</p>
+			</div>
+
+			<div class="description detailed hidden">
+				<p>Constructor</p>
+
+
+					<h4>Parameters</h4>
+					<div class="list"><dl>
+						<dt><var>$importDirs</var></dt>
+						<dd>Array of import paths to search</dd>
+						<dt><var>$options</var></dt>
+						<dd>Array of options</dd>
+					</dl></div>
+
+
+
+
+					<h4>Overrides</h4>
+					<div class="list"><code><a href="class-ILess.Configurable.html#___construct">ILess\Configurable::__construct</a></code></div>
+
+			</div>
+			</div></td>
+		</tr>
+		<tr data-order="setup" id="_setup">
+
+			<td class="attributes"><code>
+				 protected 
+				
+				
+				</code>
+			</td>
+
+			<td class="name"><div>
+			<a class="anchor" href="#_setup">#</a>
+			<code><a href="source-class-ILess.Importer.FileSystemImporter.html#55-63" title="Go to source code">setup</a>( )</code>
+
+			<div class="description short">
+				<p>Setups the importer</p>
+			</div>
+
+			<div class="description detailed hidden">
+				<p>Setups the importer</p>
+
+
+
+
+
+
+					<h4>Overrides</h4>
+					<div class="list"><code><a href="class-ILess.Configurable.html#_setup">ILess\Configurable::setup</a></code></div>
+
+			</div>
+			</div></td>
+		</tr>
+		<tr data-order="import" id="_import">
+
+			<td class="attributes"><code>
+				 public 
+				<code><a href="class-ILess.ImportedFile.html">ILess\ImportedFile</a></code>
+				
+				</code>
+			</td>
+
+			<td class="name"><div>
+			<a class="anchor" href="#_import">#</a>
+			<code><a href="source-class-ILess.Importer.FileSystemImporter.html#65-75" title="Go to source code">import</a>( <span>string <var>$path</var></span>, <span><code><a href="class-ILess.FileInfo.html">ILess\FileInfo</a></code> <var>$currentFileInfo</var></span> )</code>
+
+			<div class="description short">
+				
+			</div>
+
+			<div class="description detailed hidden">
+				
+
+
+					<h4>Parameters</h4>
+					<div class="list"><dl>
+						<dt><var>$path</var></dt>
+						<dd>The path to a file</dd>
+						<dt><var>$currentFileInfo</var></dt>
+						<dd>The current file information</dd>
+					</dl></div>
+
+					<h4>Returns</h4>
+					<div class="list">
+						<code><a href="class-ILess.ImportedFile.html">ILess\ImportedFile</a></code>
+					</div>
+
+
+					<h4>See</h4>
+					<div class="list">
+							<code><a href="class-ILess.Importer.ImporterInterface.html#_import">ILess\Importer\ImporterInterface::import()</a></code><br>
+					</div>
+
+
+					<h4>Implementation of</h4>
+					<div class="list"><code><a href="class-ILess.Importer.ImporterInterface.html#_import">ILess\Importer\ImporterInterface::import()</a></code></div>
+			</div>
+			</div></td>
+		</tr>
+		<tr data-order="getLastModified" id="_getLastModified">
+
+			<td class="attributes"><code>
+				 public 
+				integer
+				
+				</code>
+			</td>
+
+			<td class="name"><div>
+			<a class="anchor" href="#_getLastModified">#</a>
+			<code><a href="source-class-ILess.Importer.FileSystemImporter.html#77-87" title="Go to source code">getLastModified</a>( <span>string <var>$path</var></span>, <span><code><a href="class-ILess.FileInfo.html">ILess\FileInfo</a></code> <var>$currentFileInfo</var></span> )</code>
+
+			<div class="description short">
+				
+			</div>
+
+			<div class="description detailed hidden">
+				
+
+
+					<h4>Parameters</h4>
+					<div class="list"><dl>
+						<dt><var>$path</var></dt>
+						<dd>The path to a file</dd>
+						<dt><var>$currentFileInfo</var></dt>
+						<dd>The current file information</dd>
+					</dl></div>
+
+					<h4>Returns</h4>
+					<div class="list">
+						integer<br>The unix timestamp of last modification
+					</div>
+
+
+					<h4>See</h4>
+					<div class="list">
+							Importer::getLastModified<br>
+					</div>
+
+
+					<h4>Implementation of</h4>
+					<div class="list"><code><a href="class-ILess.Importer.ImporterInterface.html#_getLastModified">ILess\Importer\ImporterInterface::getLastModified()</a></code></div>
+			</div>
+			</div></td>
+		</tr>
+		<tr data-order="find" id="_find">
+
+			<td class="attributes"><code>
+				 protected 
+				string|false
+				
+				</code>
+			</td>
+
+			<td class="name"><div>
+			<a class="anchor" href="#_find">#</a>
+			<code><a href="source-class-ILess.Importer.FileSystemImporter.html#89-112" title="Go to source code">find</a>( <span>string <var>$path</var></span>, <span><code><a href="class-ILess.FileInfo.html">ILess\FileInfo</a></code> <var>$currentFileInfo</var></span> )</code>
+
+			<div class="description short">
+				<p>Tries to find a file</p>
+			</div>
+
+			<div class="description detailed hidden">
+				<p>Tries to find a file</p>
+
+
+					<h4>Parameters</h4>
+					<div class="list"><dl>
+						<dt><var>$path</var></dt>
+						<dd>The path to a file</dd>
+						<dt><var>$currentFileInfo</var></dt>
+						<dd></dd>
+					</dl></div>
+
+					<h4>Returns</h4>
+					<div class="list">
+						string|false
+					</div>
+
+
+
+
+			</div>
+			</div></td>
+		</tr>
+		<tr data-order="getImportPaths" id="_getImportPaths">
+
+			<td class="attributes"><code>
+				 public 
+				array
+				
+				</code>
+			</td>
+
+			<td class="name"><div>
+			<a class="anchor" href="#_getImportPaths">#</a>
+			<code><a href="source-class-ILess.Importer.FileSystemImporter.html#114-122" title="Go to source code">getImportPaths</a>( )</code>
+
+			<div class="description short">
+				<p>Returns an array of import paths</p>
+			</div>
+
+			<div class="description detailed hidden">
+				<p>Returns an array of import paths</p>
+
+
+
+					<h4>Returns</h4>
+					<div class="list">
+						array
+					</div>
+
+
+
+
+			</div>
+			</div></td>
+		</tr>
+		<tr data-order="addImportDir" id="_addImportDir">
+
+			<td class="attributes"><code>
+				 public 
+				<code><a href="class-ILess.Importer.FileSystemImporter.html">ILess\Importer\FileSystemImporter</a></code>
+				
+				</code>
+			</td>
+
+			<td class="name"><div>
+			<a class="anchor" href="#_addImportDir">#</a>
+			<code><a href="source-class-ILess.Importer.FileSystemImporter.html#124-140" title="Go to source code">addImportDir</a>( <span>string <var>$dir</var></span>, <span>boolean <var>$prepend</var> = <span class="php-keyword1">false</span></span> )</code>
+
+			<div class="description short">
+				<p>Adds import directory</p>
+			</div>
+
+			<div class="description detailed hidden">
+				<p>Adds import directory</p>
+
+
+					<h4>Parameters</h4>
+					<div class="list"><dl>
+						<dt><var>$dir</var></dt>
+						<dd>The directory</dd>
+						<dt><var>$prepend</var></dt>
+						<dd>Prepend?</dd>
+					</dl></div>
+
+					<h4>Returns</h4>
+					<div class="list">
+						<code><a href="class-ILess.Importer.FileSystemImporter.html">ILess\Importer\FileSystemImporter</a></code>
+					</div>
+
+
+
+
+			</div>
+			</div></td>
+		</tr>
+		<tr data-order="setImportDirs" id="_setImportDirs">
+
+			<td class="attributes"><code>
+				 public 
+				<code><a href="class-ILess.Importer.FileSystemImporter.html">ILess\Importer\FileSystemImporter</a></code>
+				
+				</code>
+			</td>
+
+			<td class="name"><div>
+			<a class="anchor" href="#_setImportDirs">#</a>
+			<code><a href="source-class-ILess.Importer.FileSystemImporter.html#142-153" title="Go to source code">setImportDirs</a>( <span>array <var>$dirs</var></span> )</code>
+
+			<div class="description short">
+				<p>Set import directories</p>
+			</div>
+
+			<div class="description detailed hidden">
+				<p>Set import directories</p>
+
+
+					<h4>Parameters</h4>
+					<div class="list"><dl>
+						<dt><var>$dirs</var></dt>
+						<dd></dd>
+					</dl></div>
+
+					<h4>Returns</h4>
+					<div class="list">
+						<code><a href="class-ILess.Importer.FileSystemImporter.html">ILess\Importer\FileSystemImporter</a></code>
+					</div>
+
+
+
+
+			</div>
+			</div></td>
+		</tr>
+			</table>
+		</div>
+
+		<div class="panel panel-default">
+	        <div class="panel-heading"><h3>Methods inherited from <a href="class-ILess.Configurable.html#methods">ILess\Configurable</a></h3></div>
+			<p class="elementList">
+				<code><a href="class-ILess.Configurable.html#_addOptions">addOptions()</a></code>, 
+				<code><a href="class-ILess.Configurable.html#_getDefaultOptions">getDefaultOptions()</a></code>, 
+				<code><a href="class-ILess.Configurable.html#_getOption">getOption()</a></code>, 
+				<code><a href="class-ILess.Configurable.html#_getOptions">getOptions()</a></code>, 
+				<code><a href="class-ILess.Configurable.html#_hasOption">hasOption()</a></code>, 
+				<code><a href="class-ILess.Configurable.html#_setOption">setOption()</a></code>, 
+				<code><a href="class-ILess.Configurable.html#_setOptions">setOptions()</a></code>
+			</p>
+		</div>
+
+
+
+
+
+
+
+
+
+
+		<div class="panel panel-default">
+            <div class="panel-heading"><h2>Properties summary</h2></div>
+			<table class="summary table table-bordered table-striped properties" id="properties">
+		<tr data-order="importDirs" id="$importDirs">
+			<td class="attributes"><code>
+				protected  
+				array
+			</code></td>
+
+			<td class="name">
+					<a href="source-class-ILess.Importer.FileSystemImporter.html#27-32" title="Go to source code"><var>$importDirs</var></a>
+
+				<div class="description short">
+					<p>Array of import paths</p>
+				</div>
+
+				<div class="description detailed hidden">
+					<p>Array of import paths</p>
+
+				</div>
+			</td>
+			<td class="value">
+				<div>
+					<a href="#$importDirs" class="anchor">#</a>
+					<code><span class="php-keyword1">array</span>()</code>
+				</div>
+			</td>
+		</tr>
+		<tr data-order="defaultOptions" id="$defaultOptions">
+			<td class="attributes"><code>
+				protected  
+				array
+			</code></td>
+
+			<td class="name">
+					<a href="source-class-ILess.Importer.FileSystemImporter.html#34-41" title="Go to source code"><var>$defaultOptions</var></a>
+
+				<div class="description short">
+					<p>Array of default options</p>
+				</div>
+
+				<div class="description detailed hidden">
+					<p>Array of default options</p>
+
+				</div>
+			</td>
+			<td class="value">
+				<div>
+					<a href="#$defaultOptions" class="anchor">#</a>
+					<code><span class="php-keyword1">array</span>(
+    <span class="php-quote">'clear_stat_cache'</span> =&gt; <span class="php-keyword1">true</span>, <span class="php-comment">// clear the stat cache?</span>
+)</code>
+				</div>
+			</td>
+		</tr>
+			</table>
+		</div>
+
+		<div class="panel panel-default">
+            <div class="panel-heading"><h3>Properties inherited from <a href="class-ILess.Configurable.html#properties">ILess\Configurable</a></h3></div>
+			<p class="elementList">
+				<code><a href="class-ILess.Configurable.html#$options"><var>$options</var></a></code>
+			</p>
+		</div>
+
+
+
+
+
+</div>
+	</div>
+
+	<div id="footer">
+		ILess API docs API documentation generated by <a href="http://apigen.org">ApiGen</a>
+	</div>
+</div>
+<script src="resources/combined.js"></script>
+<script src="elementlist.js"></script>
+</body>
+</html>

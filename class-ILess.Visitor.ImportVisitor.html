@@ -1,0 +1,920 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+
+	<title>Class ILess\Visitor\ImportVisitor | ILess API docs</title>
+
+	<link rel="stylesheet" href="resources/bootstrap.min.css?973e37a8502921d56bc02bb55321f45b072b6f71">
+	<link rel="stylesheet" href="resources/style.css?49f43d3208c5d7e33fa16d36107a345bf11cc00d">
+
+	<script>
+		var _gaq = _gaq || [];
+		_gaq.push(['_setAccount', "UA-67370642-2"]);
+		_gaq.push(['_trackPageview']);
+
+		(function() {
+			var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+			ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+			var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+		})();
+	</script>
+</head>
+
+<body>
+	<nav id="navigation" class="navbar navbar-default navbar-fixed-top">
+		<div class="container-fluid">
+			<div class="navbar-header">
+				<a href="index.html" class="navbar-brand">ILess API docs</a>
+			</div>
+			<div class="collapse navbar-collapse">
+
+                <form id="search" class="navbar-form navbar-left" role="search">
+                    <input type="hidden" name="cx" value="">
+                    <input type="hidden" name="ie" value="UTF-8">
+                    <div class="form-group">
+                        <input type="text" name="q" class="search-query form-control" placeholder="Search">
+					</div>
+				</form>
+
+				<ul class="nav navbar-nav">
+					<li>
+						<a href="namespace-ILess.Visitor.html" title="Summary of ILess\Visitor"><span>Namespace</span></a>
+					</li>
+					<li class="active">
+<span>Class</span>					</li>
+
+					<li class="divider-vertical"></li>
+
+					<li>
+						<a href="tree.html" title="Tree view of classes, interfaces, traits and exceptions"><span>Tree</span></a>
+					</li>
+
+						<li>
+							<a href="annotation-group-deprecated.html" title="List of elements with deprecated annotation">
+								<span>Deprecated</span>
+							</a>
+						</li>
+						<li>
+							<a href="annotation-group-todo.html" title="List of elements with todo annotation">
+								<span>Todo</span>
+							</a>
+						</li>
+
+
+				</ul>
+			</div>
+		</div>
+	</nav>
+
+	<div id="left">
+	<div id="menu">
+
+		<div id="groups">
+				<h3>Namespaces</h3>
+			<ul>
+					<li class="active">
+						<a href="namespace-ILess.html">
+							ILess<span></span>
+						</a>
+							<ul>
+					<li>
+						<a href="namespace-ILess.Cache.html">
+							Cache						</a>
+							</li>
+					<li>
+						<a href="namespace-ILess.CLI.html">
+							CLI						</a>
+							</li>
+					<li>
+						<a href="namespace-ILess.Exception.html">
+							Exception						</a>
+							</li>
+					<li>
+						<a href="namespace-ILess.Importer.html">
+							Importer						</a>
+							</li>
+					<li>
+						<a href="namespace-ILess.Node.html">
+							Node						</a>
+							</li>
+					<li>
+						<a href="namespace-ILess.Output.html">
+							Output						</a>
+							</li>
+					<li>
+						<a href="namespace-ILess.OutputFilter.html">
+							OutputFilter						</a>
+							</li>
+					<li>
+						<a href="namespace-ILess.Parser.html">
+							Parser						</a>
+							</li>
+					<li>
+						<a href="namespace-ILess.Plugin.html">
+							Plugin						</a>
+							</li>
+					<li>
+						<a href="namespace-ILess.SourceMap.html">
+							SourceMap						</a>
+							</li>
+					<li>
+						<a href="namespace-ILess.Util.html">
+							Util						</a>
+							</li>
+					<li class="active">
+						<a href="namespace-ILess.Visitor.html">
+							Visitor						</a>
+							</li>
+								</ul></li>
+					<li>
+						<a href="namespace-PHP.html">
+							PHP						</a>
+							</li>
+			</ul>
+		</div>
+
+
+		<div id="elements">
+			<h3>Classes</h3>
+			<ul>
+				<li><a href="class-ILess.Visitor.ExtendFinderVisitor.html">ExtendFinderVisitor</a></li>
+				<li class="active"><a href="class-ILess.Visitor.ImportVisitor.html">ImportVisitor</a></li>
+				<li><a href="class-ILess.Visitor.JoinSelectorVisitor.html">JoinSelectorVisitor</a></li>
+				<li><a href="class-ILess.Visitor.ProcessExtendsVisitor.html">ProcessExtendsVisitor</a></li>
+				<li><a href="class-ILess.Visitor.ToCSSVisitor.html">ToCSSVisitor</a></li>
+				<li><a href="class-ILess.Visitor.Visitor.html">Visitor</a></li>
+				<li><a href="class-ILess.Visitor.VisitorArguments.html">VisitorArguments</a></li>
+			</ul>
+
+			<h3>Interfaces</h3>
+			<ul>
+				<li><a href="class-ILess.Visitor.VisitorInterface.html">VisitorInterface</a></li>
+			</ul>
+
+
+
+
+		</div>
+	</div>
+</div>
+
+<div id="splitter"></div>
+
+<div id="right">
+	<div id="rightInner">
+<div id="content" class="class">
+	<h1>Class ImportVisitor</h1>
+
+
+	<div class="description">
+	<p>Import visitor</p>
+	</div>
+
+	<dl class="tree well">
+		<dd style="padding-left:0px">
+			<a href="class-ILess.Visitor.Visitor.html"><span>ILess\Visitor\Visitor</span></a>
+			
+			 implements 
+				<a href="class-ILess.Visitor.VisitorInterface.html"><span>ILess\Visitor\VisitorInterface</span></a>
+			
+			
+		</dd>
+		<dd style="padding-left:30px">
+			<img src="resources/inherit.png" alt="Extended by">
+<b><span>ILess\Visitor\ImportVisitor</span></b>			
+			
+			
+		</dd>
+	</dl>
+
+
+
+
+
+
+
+
+	<div class="alert alert-info">
+		
+		
+		<b>Namespace:</b> <a href="namespace-ILess.html">ILess</a>\<a href="namespace-ILess.Visitor.html">Visitor</a><br>
+		<b>Package:</b> ILess\Visitor<br>
+
+			<b>Located at</b> <a href="source-class-ILess.Visitor.ImportVisitor.html#26-372" title="Go to source code">ILess/Visitor/ImportVisitor.php</a>
+		<br>
+	</div>
+
+
+
+		<div class="panel panel-default">
+			<div class="panel-heading"><h2>Methods summary</h2></div>
+			<table class="summary table table-bordered table-striped methods" id="methods">
+		<tr data-order="__construct" id="___construct">
+
+			<td class="attributes"><code>
+				 public 
+				
+				
+				</code>
+			</td>
+
+			<td class="name"><div>
+			<a class="anchor" href="#___construct">#</a>
+			<code><a href="source-class-ILess.Visitor.ImportVisitor.html#69-91" title="Go to source code">__construct</a>( <span><code><a href="class-ILess.Context.html">ILess\Context</a></code> <var>$context</var></span>, <span><code><a href="class-ILess.Importer.html">ILess\Importer</a></code> <var>$importer</var></span> )</code>
+
+			<div class="description short">
+				<p>Constructor</p>
+			</div>
+
+			<div class="description detailed hidden">
+				<p>Constructor</p>
+
+
+					<h4>Parameters</h4>
+					<div class="list"><dl>
+						<dt><var>$context</var></dt>
+						<dd>The context</dd>
+						<dt><var>$importer</var></dt>
+						<dd>The importer</dd>
+					</dl></div>
+
+
+
+
+					<h4>Overrides</h4>
+					<div class="list"><code><a href="class-ILess.Visitor.Visitor.html#___construct">ILess\Visitor\Visitor::__construct</a></code></div>
+
+			</div>
+			</div></td>
+		</tr>
+		<tr data-order="run" id="_run">
+
+			<td class="attributes"><code>
+				 public 
+				mixed
+				
+				</code>
+			</td>
+
+			<td class="name"><div>
+			<a class="anchor" href="#_run">#</a>
+			<code><a href="source-class-ILess.Visitor.ImportVisitor.html#93-102" title="Go to source code">run</a>( <span><code><a href="class-ILess.Node.html">ILess\Node</a></code>|array <var>$root</var></span> )</code>
+
+			<div class="description short">
+				
+			</div>
+
+			<div class="description detailed hidden">
+				
+
+
+					<h4>Parameters</h4>
+					<div class="list"><dl>
+						<dt><var>$root</var></dt>
+						<dd></dd>
+					</dl></div>
+
+					<h4>Returns</h4>
+					<div class="list">
+						mixed
+					</div>
+
+
+					<h4>Inheritdoc</h4>
+					<div class="list">
+					</div>
+
+					<h4>Overrides</h4>
+					<div class="list"><code><a href="class-ILess.Visitor.Visitor.html#_run">ILess\Visitor\Visitor::run</a></code></div>
+
+			</div>
+			</div></td>
+		</tr>
+		<tr data-order="visitImport" id="_visitImport">
+
+			<td class="attributes"><code>
+				 public 
+				<code><a href="class-ILess.Node.ImportNode.html">ILess\Node\ImportNode</a></code>
+				
+				</code>
+			</td>
+
+			<td class="name"><div>
+			<a class="anchor" href="#_visitImport">#</a>
+			<code><a href="source-class-ILess.Visitor.ImportVisitor.html#104-136" title="Go to source code">visitImport</a>( <span><code><a href="class-ILess.Node.ImportNode.html">ILess\Node\ImportNode</a></code> <var>$node</var></span>, <span><code><a href="class-ILess.Visitor.VisitorArguments.html">ILess\Visitor\VisitorArguments</a></code> <var>$arguments</var></span> )</code>
+
+			<div class="description short">
+				<p>Visits a import node</p>
+			</div>
+
+			<div class="description detailed hidden">
+				<p>Visits a import node</p>
+
+
+					<h4>Parameters</h4>
+					<div class="list"><dl>
+						<dt><var>$node</var></dt>
+						<dd>The node</dd>
+						<dt><var>$arguments</var></dt>
+						<dd>The arguments</dd>
+					</dl></div>
+
+					<h4>Returns</h4>
+					<div class="list">
+						<code><a href="class-ILess.Node.ImportNode.html">ILess\Node\ImportNode</a></code>
+					</div>
+
+
+
+
+			</div>
+			</div></td>
+		</tr>
+		<tr data-order="visitRule" id="_visitRule">
+
+			<td class="attributes"><code>
+				 public 
+				<code><a href="class-ILess.Node.RuleNode.html">ILess\Node\RuleNode</a></code>
+				
+				</code>
+			</td>
+
+			<td class="name"><div>
+			<a class="anchor" href="#_visitRule">#</a>
+			<code><a href="source-class-ILess.Visitor.ImportVisitor.html#226-242" title="Go to source code">visitRule</a>( <span><code><a href="class-ILess.Node.RuleNode.html">ILess\Node\RuleNode</a></code> <var>$node</var></span>, <span><code><a href="class-ILess.Visitor.VisitorArguments.html">ILess\Visitor\VisitorArguments</a></code> <var>$arguments</var></span> )</code>
+
+			<div class="description short">
+				<p>Visits a rule node</p>
+			</div>
+
+			<div class="description detailed hidden">
+				<p>Visits a rule node</p>
+
+
+					<h4>Parameters</h4>
+					<div class="list"><dl>
+						<dt><var>$node</var></dt>
+						<dd>The node</dd>
+						<dt><var>$arguments</var></dt>
+						<dd>The arguments</dd>
+					</dl></div>
+
+					<h4>Returns</h4>
+					<div class="list">
+						<code><a href="class-ILess.Node.RuleNode.html">ILess\Node\RuleNode</a></code>
+					</div>
+
+
+
+
+			</div>
+			</div></td>
+		</tr>
+		<tr data-order="visitRuleOut" id="_visitRuleOut">
+
+			<td class="attributes"><code>
+				 public 
+				<code><a href="class-ILess.Node.RuleNode.html">ILess\Node\RuleNode</a></code>
+				
+				</code>
+			</td>
+
+			<td class="name"><div>
+			<a class="anchor" href="#_visitRuleOut">#</a>
+			<code><a href="source-class-ILess.Visitor.ImportVisitor.html#244-258" title="Go to source code">visitRuleOut</a>( <span><code><a href="class-ILess.Node.RuleNode.html">ILess\Node\RuleNode</a></code> <var>$node</var></span>, <span><code><a href="class-ILess.Visitor.VisitorArguments.html">ILess\Visitor\VisitorArguments</a></code> <var>$arguments</var></span> )</code>
+
+			<div class="description short">
+				<p>Visits a rule node (!again)</p>
+			</div>
+
+			<div class="description detailed hidden">
+				<p>Visits a rule node (!again)</p>
+
+
+					<h4>Parameters</h4>
+					<div class="list"><dl>
+						<dt><var>$node</var></dt>
+						<dd>The node</dd>
+						<dt><var>$arguments</var></dt>
+						<dd>The arguments</dd>
+					</dl></div>
+
+					<h4>Returns</h4>
+					<div class="list">
+						<code><a href="class-ILess.Node.RuleNode.html">ILess\Node\RuleNode</a></code>
+					</div>
+
+
+
+
+			</div>
+			</div></td>
+		</tr>
+		<tr data-order="visitDirective" id="_visitDirective">
+
+			<td class="attributes"><code>
+				 public 
+				<code><a href="class-ILess.Node.DirectiveNode.html">ILess\Node\DirectiveNode</a></code>
+				
+				</code>
+			</td>
+
+			<td class="name"><div>
+			<a class="anchor" href="#_visitDirective">#</a>
+			<code><a href="source-class-ILess.Visitor.ImportVisitor.html#260-272" title="Go to source code">visitDirective</a>( <span><code><a href="class-ILess.Node.DirectiveNode.html">ILess\Node\DirectiveNode</a></code> <var>$node</var></span>, <span><code><a href="class-ILess.Visitor.VisitorArguments.html">ILess\Visitor\VisitorArguments</a></code> <var>$arguments</var></span> )</code>
+
+			<div class="description short">
+				<p>Visits a directive node</p>
+			</div>
+
+			<div class="description detailed hidden">
+				<p>Visits a directive node</p>
+
+
+					<h4>Parameters</h4>
+					<div class="list"><dl>
+						<dt><var>$node</var></dt>
+						<dd>The node</dd>
+						<dt><var>$arguments</var></dt>
+						<dd>The arguments</dd>
+					</dl></div>
+
+					<h4>Returns</h4>
+					<div class="list">
+						<code><a href="class-ILess.Node.DirectiveNode.html">ILess\Node\DirectiveNode</a></code>
+					</div>
+
+
+
+
+			</div>
+			</div></td>
+		</tr>
+		<tr data-order="visitDirectiveOut" id="_visitDirectiveOut">
+
+			<td class="attributes"><code>
+				 public 
+				<code><a href="class-ILess.Node.DirectiveNode.html">ILess\Node\DirectiveNode</a></code>
+				
+				</code>
+			</td>
+
+			<td class="name"><div>
+			<a class="anchor" href="#_visitDirectiveOut">#</a>
+			<code><a href="source-class-ILess.Visitor.ImportVisitor.html#274-286" title="Go to source code">visitDirectiveOut</a>( <span><code><a href="class-ILess.Node.DirectiveNode.html">ILess\Node\DirectiveNode</a></code> <var>$node</var></span>, <span><code><a href="class-ILess.Visitor.VisitorArguments.html">ILess\Visitor\VisitorArguments</a></code> <var>$arguments</var></span> )</code>
+
+			<div class="description short">
+				<p>Visits a directive node (!again)</p>
+			</div>
+
+			<div class="description detailed hidden">
+				<p>Visits a directive node (!again)</p>
+
+
+					<h4>Parameters</h4>
+					<div class="list"><dl>
+						<dt><var>$node</var></dt>
+						<dd>The node</dd>
+						<dt><var>$arguments</var></dt>
+						<dd>The arguments</dd>
+					</dl></div>
+
+					<h4>Returns</h4>
+					<div class="list">
+						<code><a href="class-ILess.Node.DirectiveNode.html">ILess\Node\DirectiveNode</a></code>
+					</div>
+
+
+
+
+			</div>
+			</div></td>
+		</tr>
+		<tr data-order="visitMixinDefinition" id="_visitMixinDefinition">
+
+			<td class="attributes"><code>
+				 public 
+				<code><a href="class-ILess.Node.MixinDefinitionNode.html">ILess\Node\MixinDefinitionNode</a></code>
+				
+				</code>
+			</td>
+
+			<td class="name"><div>
+			<a class="anchor" href="#_visitMixinDefinition">#</a>
+			<code><a href="source-class-ILess.Visitor.ImportVisitor.html#288-300" title="Go to source code">visitMixinDefinition</a>( <span><code><a href="class-ILess.Node.MixinDefinitionNode.html">ILess\Node\MixinDefinitionNode</a></code> <var>$node</var></span>, <span><code><a href="class-ILess.Visitor.VisitorArguments.html">ILess\Visitor\VisitorArguments</a></code> <var>$arguments</var></span> )</code>
+
+			<div class="description short">
+				<p>Visits a mixin definition node</p>
+			</div>
+
+			<div class="description detailed hidden">
+				<p>Visits a mixin definition node</p>
+
+
+					<h4>Parameters</h4>
+					<div class="list"><dl>
+						<dt><var>$node</var></dt>
+						<dd>The node</dd>
+						<dt><var>$arguments</var></dt>
+						<dd>The arguments</dd>
+					</dl></div>
+
+					<h4>Returns</h4>
+					<div class="list">
+						<code><a href="class-ILess.Node.MixinDefinitionNode.html">ILess\Node\MixinDefinitionNode</a></code>
+					</div>
+
+
+
+
+			</div>
+			</div></td>
+		</tr>
+		<tr data-order="visitMixinDefinitionOut" id="_visitMixinDefinitionOut">
+
+			<td class="attributes"><code>
+				 public 
+				<code><a href="class-ILess.Node.MixinDefinitionNode.html">ILess\Node\MixinDefinitionNode</a></code>
+				
+				</code>
+			</td>
+
+			<td class="name"><div>
+			<a class="anchor" href="#_visitMixinDefinitionOut">#</a>
+			<code><a href="source-class-ILess.Visitor.ImportVisitor.html#302-314" title="Go to source code">visitMixinDefinitionOut</a>( <span><code><a href="class-ILess.Node.MixinDefinitionNode.html">ILess\Node\MixinDefinitionNode</a></code> <var>$node</var></span>, <span><code><a href="class-ILess.Visitor.VisitorArguments.html">ILess\Visitor\VisitorArguments</a></code> <var>$arguments</var></span> )</code>
+
+			<div class="description short">
+				<p>Visits a mixin definition node (!again)</p>
+			</div>
+
+			<div class="description detailed hidden">
+				<p>Visits a mixin definition node (!again)</p>
+
+
+					<h4>Parameters</h4>
+					<div class="list"><dl>
+						<dt><var>$node</var></dt>
+						<dd>The node</dd>
+						<dt><var>$arguments</var></dt>
+						<dd>The arguments</dd>
+					</dl></div>
+
+					<h4>Returns</h4>
+					<div class="list">
+						<code><a href="class-ILess.Node.MixinDefinitionNode.html">ILess\Node\MixinDefinitionNode</a></code>
+					</div>
+
+
+
+
+			</div>
+			</div></td>
+		</tr>
+		<tr data-order="visitRuleset" id="_visitRuleset">
+
+			<td class="attributes"><code>
+				 public 
+				<code><a href="class-ILess.Node.RulesetNode.html">ILess\Node\RulesetNode</a></code>
+				
+				</code>
+			</td>
+
+			<td class="name"><div>
+			<a class="anchor" href="#_visitRuleset">#</a>
+			<code><a href="source-class-ILess.Visitor.ImportVisitor.html#316-328" title="Go to source code">visitRuleset</a>( <span><code><a href="class-ILess.Node.RulesetNode.html">ILess\Node\RulesetNode</a></code> <var>$node</var></span>, <span><code><a href="class-ILess.Visitor.VisitorArguments.html">ILess\Visitor\VisitorArguments</a></code> <var>$arguments</var></span> )</code>
+
+			<div class="description short">
+				<p>Visits a ruleset node</p>
+			</div>
+
+			<div class="description detailed hidden">
+				<p>Visits a ruleset node</p>
+
+
+					<h4>Parameters</h4>
+					<div class="list"><dl>
+						<dt><var>$node</var></dt>
+						<dd>The node</dd>
+						<dt><var>$arguments</var></dt>
+						<dd>The arguments</dd>
+					</dl></div>
+
+					<h4>Returns</h4>
+					<div class="list">
+						<code><a href="class-ILess.Node.RulesetNode.html">ILess\Node\RulesetNode</a></code>
+					</div>
+
+
+
+
+			</div>
+			</div></td>
+		</tr>
+		<tr data-order="visitRulesetOut" id="_visitRulesetOut">
+
+			<td class="attributes"><code>
+				 public 
+				<code><a href="class-ILess.Node.RulesetNode.html">ILess\Node\RulesetNode</a></code>
+				
+				</code>
+			</td>
+
+			<td class="name"><div>
+			<a class="anchor" href="#_visitRulesetOut">#</a>
+			<code><a href="source-class-ILess.Visitor.ImportVisitor.html#330-342" title="Go to source code">visitRulesetOut</a>( <span><code><a href="class-ILess.Node.RulesetNode.html">ILess\Node\RulesetNode</a></code> <var>$node</var></span>, <span><code><a href="class-ILess.Visitor.VisitorArguments.html">ILess\Visitor\VisitorArguments</a></code> <var>$arguments</var></span> )</code>
+
+			<div class="description short">
+				<p>Visits a ruleset node (!again)</p>
+			</div>
+
+			<div class="description detailed hidden">
+				<p>Visits a ruleset node (!again)</p>
+
+
+					<h4>Parameters</h4>
+					<div class="list"><dl>
+						<dt><var>$node</var></dt>
+						<dd>The node</dd>
+						<dt><var>$arguments</var></dt>
+						<dd>The arguments</dd>
+					</dl></div>
+
+					<h4>Returns</h4>
+					<div class="list">
+						<code><a href="class-ILess.Node.RulesetNode.html">ILess\Node\RulesetNode</a></code>
+					</div>
+
+
+
+
+			</div>
+			</div></td>
+		</tr>
+		<tr data-order="visitMedia" id="_visitMedia">
+
+			<td class="attributes"><code>
+				 public 
+				<code><a href="class-ILess.Node.MediaNode.html">ILess\Node\MediaNode</a></code>
+				
+				</code>
+			</td>
+
+			<td class="name"><div>
+			<a class="anchor" href="#_visitMedia">#</a>
+			<code><a href="source-class-ILess.Visitor.ImportVisitor.html#344-356" title="Go to source code">visitMedia</a>( <span><code><a href="class-ILess.Node.MediaNode.html">ILess\Node\MediaNode</a></code> <var>$node</var></span>, <span><code><a href="class-ILess.Visitor.VisitorArguments.html">ILess\Visitor\VisitorArguments</a></code> <var>$arguments</var></span> )</code>
+
+			<div class="description short">
+				<p>Visits a media node</p>
+			</div>
+
+			<div class="description detailed hidden">
+				<p>Visits a media node</p>
+
+
+					<h4>Parameters</h4>
+					<div class="list"><dl>
+						<dt><var>$node</var></dt>
+						<dd>The node</dd>
+						<dt><var>$arguments</var></dt>
+						<dd>The arguments</dd>
+					</dl></div>
+
+					<h4>Returns</h4>
+					<div class="list">
+						<code><a href="class-ILess.Node.MediaNode.html">ILess\Node\MediaNode</a></code>
+					</div>
+
+
+
+
+			</div>
+			</div></td>
+		</tr>
+		<tr data-order="visitMediaOut" id="_visitMediaOut">
+
+			<td class="attributes"><code>
+				 public 
+				<code><a href="class-ILess.Node.MediaNode.html">ILess\Node\MediaNode</a></code>
+				
+				</code>
+			</td>
+
+			<td class="name"><div>
+			<a class="anchor" href="#_visitMediaOut">#</a>
+			<code><a href="source-class-ILess.Visitor.ImportVisitor.html#358-370" title="Go to source code">visitMediaOut</a>( <span><code><a href="class-ILess.Node.MediaNode.html">ILess\Node\MediaNode</a></code> <var>$node</var></span>, <span><code><a href="class-ILess.Visitor.VisitorArguments.html">ILess\Visitor\VisitorArguments</a></code> <var>$arguments</var></span> )</code>
+
+			<div class="description short">
+				<p>Visits a media node (!again)</p>
+			</div>
+
+			<div class="description detailed hidden">
+				<p>Visits a media node (!again)</p>
+
+
+					<h4>Parameters</h4>
+					<div class="list"><dl>
+						<dt><var>$node</var></dt>
+						<dd>The node</dd>
+						<dt><var>$arguments</var></dt>
+						<dd>The arguments</dd>
+					</dl></div>
+
+					<h4>Returns</h4>
+					<div class="list">
+						<code><a href="class-ILess.Node.MediaNode.html">ILess\Node\MediaNode</a></code>
+					</div>
+
+
+
+
+			</div>
+			</div></td>
+		</tr>
+			</table>
+		</div>
+
+		<div class="panel panel-default">
+	        <div class="panel-heading"><h3>Methods inherited from <a href="class-ILess.Visitor.Visitor.html#methods">ILess\Visitor\Visitor</a></h3></div>
+			<p class="elementList">
+				<code><a href="class-ILess.Visitor.Visitor.html#_flatten">flatten()</a></code>, 
+				<code><a href="class-ILess.Visitor.Visitor.html#_getType">getType()</a></code>, 
+				<code><a href="class-ILess.Visitor.Visitor.html#_isReplacing">isReplacing()</a></code>, 
+				<code><a href="class-ILess.Visitor.Visitor.html#_visit">visit()</a></code>, 
+				<code><a href="class-ILess.Visitor.Visitor.html#_visitArray">visitArray()</a></code>
+			</p>
+		</div>
+
+
+
+
+
+
+
+		<div class="panel panel-default">
+            <div class="panel-heading"><h2>Constants summary</h2></div>
+		</div>
+
+		<div class="panel panel-default">
+            <div class="panel-heading"><h3>Constants inherited from <a href="class-ILess.Visitor.VisitorInterface.html#constants">ILess\Visitor\VisitorInterface</a></h3></div>
+			<p class="elementList">
+				<code><a href="class-ILess.Visitor.VisitorInterface.html#TYPE_POST_COMPILE"><b>TYPE_POST_COMPILE</b></a></code>, 
+				<code><a href="class-ILess.Visitor.VisitorInterface.html#TYPE_PRE_COMPILE"><b>TYPE_PRE_COMPILE</b></a></code>
+			</p>
+		</div>
+
+
+
+		<div class="panel panel-default">
+            <div class="panel-heading"><h2>Properties summary</h2></div>
+			<table class="summary table table-bordered table-striped properties" id="properties">
+		<tr data-order="importer" id="$importer">
+			<td class="attributes"><code>
+				protected  
+				<code><a href="class-ILess.Importer.html">ILess\Importer</a></code>
+			</code></td>
+
+			<td class="name">
+					<a href="source-class-ILess.Visitor.ImportVisitor.html#33-38" title="Go to source code"><var>$importer</var></a>
+
+				<div class="description short">
+					<p>The importer</p>
+				</div>
+
+				<div class="description detailed hidden">
+					<p>The importer</p>
+
+				</div>
+			</td>
+			<td class="value">
+				<div>
+					<a href="#$importer" class="anchor">#</a>
+					<code></code>
+				</div>
+			</td>
+		</tr>
+		<tr data-order="isFinished" id="$isFinished">
+			<td class="attributes"><code>
+				protected  
+				boolean
+			</code></td>
+
+			<td class="name">
+					<a href="source-class-ILess.Visitor.ImportVisitor.html#40-45" title="Go to source code"><var>$isFinished</var></a>
+
+				<div class="description short">
+					<p>Finished flag</p>
+				</div>
+
+				<div class="description detailed hidden">
+					<p>Finished flag</p>
+
+				</div>
+			</td>
+			<td class="value">
+				<div>
+					<a href="#$isFinished" class="anchor">#</a>
+					<code><span class="php-keyword1">false</span></code>
+				</div>
+			</td>
+		</tr>
+		<tr data-order="context" id="$context">
+			<td class="attributes"><code>
+				protected  
+				<code><a href="class-ILess.Context.html">ILess\Context</a></code>
+			</code></td>
+
+			<td class="name">
+					<a href="source-class-ILess.Visitor.ImportVisitor.html#47-52" title="Go to source code"><var>$context</var></a>
+
+				<div class="description short">
+					<p>The context</p>
+				</div>
+
+				<div class="description detailed hidden">
+					<p>The context</p>
+
+				</div>
+			</td>
+			<td class="value">
+				<div>
+					<a href="#$context" class="anchor">#</a>
+					<code></code>
+				</div>
+			</td>
+		</tr>
+		<tr data-order="error" id="$error">
+			<td class="attributes"><code>
+				protected  
+				<code><a href="class-Exception.html">Exception</a></code>
+			</code></td>
+
+			<td class="name">
+					<a href="source-class-ILess.Visitor.ImportVisitor.html#54-57" title="Go to source code"><var>$error</var></a>
+
+				<div class="description short">
+					
+				</div>
+
+				<div class="description detailed hidden">
+					
+
+				</div>
+			</td>
+			<td class="value">
+				<div>
+					<a href="#$error" class="anchor">#</a>
+					<code></code>
+				</div>
+			</td>
+		</tr>
+		<tr data-order="type" id="$type">
+			<td class="attributes"><code>
+				protected  
+				string
+			</code></td>
+
+			<td class="name">
+					<a href="source-class-ILess.Visitor.ImportVisitor.html#64-67" title="Go to source code"><var>$type</var></a>
+
+				<div class="description short">
+					
+				</div>
+
+				<div class="description detailed hidden">
+					
+
+				</div>
+			</td>
+			<td class="value">
+				<div>
+					<a href="#$type" class="anchor">#</a>
+					<code><code><a href="class-ILess.Visitor.VisitorInterface.html#TYPE_PRE_COMPILE">ILess\Visitor\VisitorInterface::<b>TYPE_PRE_COMPILE</b></a></code></code>
+				</div>
+			</td>
+		</tr>
+			</table>
+		</div>
+
+		<div class="panel panel-default">
+            <div class="panel-heading"><h3>Properties inherited from <a href="class-ILess.Visitor.Visitor.html#properties">ILess\Visitor\Visitor</a></h3></div>
+			<p class="elementList">
+				<code><a href="class-ILess.Visitor.Visitor.html#$isReplacing"><var>$isReplacing</var></a></code>
+			</p>
+		</div>
+
+
+
+
+
+</div>
+	</div>
+
+	<div id="footer">
+		ILess API docs API documentation generated by <a href="http://apigen.org">ApiGen</a>
+	</div>
+</div>
+<script src="resources/combined.js"></script>
+<script src="elementlist.js"></script>
+</body>
+</html>

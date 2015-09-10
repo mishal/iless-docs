@@ -1,0 +1,3319 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+
+	<title>Class ILess\Parser\Core | ILess API docs</title>
+
+	<link rel="stylesheet" href="resources/bootstrap.min.css?973e37a8502921d56bc02bb55321f45b072b6f71">
+	<link rel="stylesheet" href="resources/style.css?49f43d3208c5d7e33fa16d36107a345bf11cc00d">
+
+	<script>
+		var _gaq = _gaq || [];
+		_gaq.push(['_setAccount', "UA-67370642-2"]);
+		_gaq.push(['_trackPageview']);
+
+		(function() {
+			var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+			ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+			var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+		})();
+	</script>
+</head>
+
+<body>
+	<nav id="navigation" class="navbar navbar-default navbar-fixed-top">
+		<div class="container-fluid">
+			<div class="navbar-header">
+				<a href="index.html" class="navbar-brand">ILess API docs</a>
+			</div>
+			<div class="collapse navbar-collapse">
+
+                <form id="search" class="navbar-form navbar-left" role="search">
+                    <input type="hidden" name="cx" value="">
+                    <input type="hidden" name="ie" value="UTF-8">
+                    <div class="form-group">
+                        <input type="text" name="q" class="search-query form-control" placeholder="Search">
+					</div>
+				</form>
+
+				<ul class="nav navbar-nav">
+					<li>
+						<a href="namespace-ILess.Parser.html" title="Summary of ILess\Parser"><span>Namespace</span></a>
+					</li>
+					<li class="active">
+<span>Class</span>					</li>
+
+					<li class="divider-vertical"></li>
+
+					<li>
+						<a href="tree.html" title="Tree view of classes, interfaces, traits and exceptions"><span>Tree</span></a>
+					</li>
+
+						<li>
+							<a href="annotation-group-deprecated.html" title="List of elements with deprecated annotation">
+								<span>Deprecated</span>
+							</a>
+						</li>
+						<li>
+							<a href="annotation-group-todo.html" title="List of elements with todo annotation">
+								<span>Todo</span>
+							</a>
+						</li>
+
+
+				</ul>
+			</div>
+		</div>
+	</nav>
+
+	<div id="left">
+	<div id="menu">
+
+		<div id="groups">
+				<h3>Namespaces</h3>
+			<ul>
+					<li class="active">
+						<a href="namespace-ILess.html">
+							ILess<span></span>
+						</a>
+							<ul>
+					<li>
+						<a href="namespace-ILess.Cache.html">
+							Cache						</a>
+							</li>
+					<li>
+						<a href="namespace-ILess.CLI.html">
+							CLI						</a>
+							</li>
+					<li>
+						<a href="namespace-ILess.Exception.html">
+							Exception						</a>
+							</li>
+					<li>
+						<a href="namespace-ILess.Importer.html">
+							Importer						</a>
+							</li>
+					<li>
+						<a href="namespace-ILess.Node.html">
+							Node						</a>
+							</li>
+					<li>
+						<a href="namespace-ILess.Output.html">
+							Output						</a>
+							</li>
+					<li>
+						<a href="namespace-ILess.OutputFilter.html">
+							OutputFilter						</a>
+							</li>
+					<li class="active">
+						<a href="namespace-ILess.Parser.html">
+							Parser						</a>
+							</li>
+					<li>
+						<a href="namespace-ILess.Plugin.html">
+							Plugin						</a>
+							</li>
+					<li>
+						<a href="namespace-ILess.SourceMap.html">
+							SourceMap						</a>
+							</li>
+					<li>
+						<a href="namespace-ILess.Util.html">
+							Util						</a>
+							</li>
+					<li>
+						<a href="namespace-ILess.Visitor.html">
+							Visitor						</a>
+							</li>
+								</ul></li>
+					<li>
+						<a href="namespace-PHP.html">
+							PHP						</a>
+							</li>
+			</ul>
+		</div>
+
+
+		<div id="elements">
+			<h3>Classes</h3>
+			<ul>
+				<li class="active"><a href="class-ILess.Parser.Core.html">Core</a></li>
+				<li><a href="class-ILess.Parser.ParserInput.html">ParserInput</a></li>
+			</ul>
+
+
+
+
+
+		</div>
+	</div>
+</div>
+
+<div id="splitter"></div>
+
+<div id="right">
+	<div id="rightInner">
+<div id="content" class="class">
+	<h1>Class Core</h1>
+
+
+	<div class="description">
+	<p>Parser core</p>
+	</div>
+
+
+
+	<div>
+		<h3>Direct known subclasses</h3>
+		<p class="elementList">
+			<code><a href="class-ILess.Parser.html">ILess\Parser</a></code>
+		</p>
+	</div>
+
+
+
+
+
+
+	<div class="alert alert-info">
+		
+		
+		<b>Namespace:</b> <a href="namespace-ILess.html">ILess</a>\<a href="namespace-ILess.Parser.html">Parser</a><br>
+		<b>Package:</b> ILess\Parser<br>
+
+			<b>Located at</b> <a href="source-class-ILess.Parser.Core.html#67-2663" title="Go to source code">ILess/Parser/Core.php</a>
+		<br>
+	</div>
+
+
+
+		<div class="panel panel-default">
+			<div class="panel-heading"><h2>Methods summary</h2></div>
+			<table class="summary table table-bordered table-striped methods" id="methods">
+		<tr data-order="__construct" id="___construct">
+
+			<td class="attributes"><code>
+				 public 
+				
+				
+				</code>
+			</td>
+
+			<td class="name"><div>
+			<a class="anchor" href="#___construct">#</a>
+			<code><a href="source-class-ILess.Parser.Core.html#122-135" title="Go to source code">__construct</a>( <span><code><a href="class-ILess.Context.html">ILess\Context</a></code> <var>$context</var></span>, <span><code><a href="class-ILess.Importer.html">ILess\Importer</a></code> <var>$importer</var></span>, <span><code><a href="class-ILess.PluginManager.html">ILess\PluginManager</a></code> <var>$pluginManager</var> = <span class="php-keyword1">null</span></span> )</code>
+
+			<div class="description short">
+				<p>Constructor</p>
+			</div>
+
+			<div class="description detailed hidden">
+				<p>Constructor</p>
+
+
+					<h4>Parameters</h4>
+					<div class="list"><dl>
+						<dt><var>$context</var></dt>
+						<dd>The context</dd>
+						<dt><var>$importer</var></dt>
+						<dd>The importer</dd>
+						<dt><var>$pluginManager</var></dt>
+						<dd>The plugin manager</dd>
+					</dl></div>
+
+
+
+
+
+			</div>
+			</div></td>
+		</tr>
+		<tr data-order="parseFile" id="_parseFile">
+
+			<td class="attributes"><code>
+				 public 
+				mixed
+				
+				</code>
+			</td>
+
+			<td class="name"><div>
+			<a class="anchor" href="#_parseFile">#</a>
+			<code><a href="source-class-ILess.Parser.Core.html#137-196" title="Go to source code">parseFile</a>( <span>string|<code><a href="class-ILess.ImportedFile.html">ILess\ImportedFile</a></code> <var>$file</var></span>, <span>boolean <var>$returnRuleset</var> = <span class="php-keyword1">false</span></span> )</code>
+
+			<div class="description short">
+				<p>Parse a Less string from a given file</p>
+			</div>
+
+			<div class="description detailed hidden">
+				<p>Parse a Less string from a given file</p>
+
+
+					<h4>Parameters</h4>
+					<div class="list"><dl>
+						<dt><var>$file</var></dt>
+						<dd>The file to parse (Will be loaded via the importer)</dd>
+						<dt><var>$returnRuleset</var></dt>
+						<dd>Indicates whether the parsed rules should be wrapped in a ruleset.</dd>
+					</dl></div>
+
+					<h4>Returns</h4>
+					<div class="list">
+						mixed<br>If $returnRuleset is true, ILess\Parser\Core, ILess\ILess\Node\RulesetNode otherwise
+					</div>
+
+					<h4>Throws</h4>
+					<div class="list">
+						<code><a href="class-ILess.Exception.ParserException.html">ILess\Exception\ParserException</a></code>
+					</div>
+
+
+
+			</div>
+			</div></td>
+		</tr>
+		<tr data-order="parseString" id="_parseString">
+
+			<td class="attributes"><code>
+				 public 
+				
+				
+				</code>
+			</td>
+
+			<td class="name"><div>
+			<a class="anchor" href="#_parseString">#</a>
+			<code><a href="source-class-ILess.Parser.Core.html#198-239" title="Go to source code">parseString</a>( <span>string <var>$string</var></span>, <span>string <var>$filename</var> = <span class="php-quote">'__string_to_parse__'</span></span>, <span>boolean <var>$returnRuleset</var> = <span class="php-keyword1">false</span></span> )</code>
+
+			<div class="description short">
+				<p>Parses a string</p>
+			</div>
+
+			<div class="description detailed hidden">
+				<p>Parses a string</p>
+
+
+					<h4>Parameters</h4>
+					<div class="list"><dl>
+						<dt><var>$string</var></dt>
+						<dd>The string to parse</dd>
+						<dt><var>$filename</var></dt>
+						<dd>The filename for reference (will be visible in the source map)</dd>
+						<dt><var>$returnRuleset</var></dt>
+						<dd>Return the ruleset?</dd>
+					</dl></div>
+
+					<h4>Returns</h4>
+					<div class="list">
+						<br>$this
+					</div>
+
+
+
+
+			</div>
+			</div></td>
+		</tr>
+		<tr data-order="addVariables" id="_addVariables">
+
+			<td class="attributes"><code>
+				 public 
+				
+				
+				</code>
+			</td>
+
+			<td class="name"><div>
+			<a class="anchor" href="#_addVariables">#</a>
+			<code><a href="source-class-ILess.Parser.Core.html#241-252" title="Go to source code">addVariables</a>( <span>array <var>$variables</var></span> )</code>
+
+			<div class="description short">
+				<p>Adds variables</p>
+			</div>
+
+			<div class="description detailed hidden">
+				<p>Adds variables</p>
+
+
+					<h4>Parameters</h4>
+					<div class="list"><dl>
+						<dt><var>$variables</var></dt>
+						<dd>Array of variables</dd>
+					</dl></div>
+
+					<h4>Returns</h4>
+					<div class="list">
+						<br>$this
+					</div>
+
+
+
+
+			</div>
+			</div></td>
+		</tr>
+		<tr data-order="clearVariables" id="_clearVariables">
+
+			<td class="attributes"><code>
+				 public 
+				
+				
+				</code>
+			</td>
+
+			<td class="name"><div>
+			<a class="anchor" href="#_clearVariables">#</a>
+			<code><a href="source-class-ILess.Parser.Core.html#254-264" title="Go to source code">clearVariables</a>( )</code>
+
+			<div class="description short">
+				<p>Clears all assigned variables</p>
+			</div>
+
+			<div class="description detailed hidden">
+				<p>Clears all assigned variables</p>
+
+
+
+					<h4>Returns</h4>
+					<div class="list">
+						<br>$this
+					</div>
+
+
+
+
+			</div>
+			</div></td>
+		</tr>
+		<tr data-order="setVariables" id="_setVariables">
+
+			<td class="attributes"><code>
+				 public 
+				
+				
+				</code>
+			</td>
+
+			<td class="name"><div>
+			<a class="anchor" href="#_setVariables">#</a>
+			<code><a href="source-class-ILess.Parser.Core.html#266-277" title="Go to source code">setVariables</a>( <span>array <var>$variables</var></span> )</code>
+
+			<div class="description short">
+				<p>Sets variables</p>
+			</div>
+
+			<div class="description detailed hidden">
+				<p>Sets variables</p>
+
+
+					<h4>Parameters</h4>
+					<div class="list"><dl>
+						<dt><var>$variables</var></dt>
+						<dd></dd>
+					</dl></div>
+
+					<h4>Returns</h4>
+					<div class="list">
+						<br>$this
+					</div>
+
+
+
+
+			</div>
+			</div></td>
+		</tr>
+		<tr data-order="unsetVariable" id="_unsetVariable">
+
+			<td class="attributes"><code>
+				 public 
+				
+				
+				</code>
+			</td>
+
+			<td class="name"><div>
+			<a class="anchor" href="#_unsetVariable">#</a>
+			<code><a href="source-class-ILess.Parser.Core.html#279-301" title="Go to source code">unsetVariable</a>( <span>string|array <var>$variable</var></span> )</code>
+
+			<div class="description short">
+				<p>Unsets a previously set variable</p>
+			</div>
+
+			<div class="description detailed hidden">
+				<p>Unsets a previously set variable</p>
+
+
+					<h4>Parameters</h4>
+					<div class="list"><dl>
+						<dt><var>$variable</var></dt>
+						<dd>The variable name(s) to unset as string or an array</dd>
+					</dl></div>
+
+					<h4>Returns</h4>
+					<div class="list">
+						<br>$this
+					</div>
+
+
+					<h4>See</h4>
+					<div class="list">
+							<code><a href="class-ILess.Parser.Core.html#_setVariables">ILess\Parser\Core::setVariables()</a></code>, <code><a href="class-ILess.Parser.Core.html#_addVariables">ILess\Parser\Core::addVariables()</a></code><br>
+					</div>
+
+
+			</div>
+			</div></td>
+		</tr>
+		<tr data-order="parse" id="_parse">
+
+			<td class="attributes"><code>
+				 protected 
+				array
+				
+				</code>
+			</td>
+
+			<td class="name"><div>
+			<a class="anchor" href="#_parse">#</a>
+			<code><a href="source-class-ILess.Parser.Core.html#303-353" title="Go to source code">parse</a>( <span>string <var>$string</var></span> )</code>
+
+			<div class="description short">
+				<p>Parse a Less string into nodes</p>
+			</div>
+
+			<div class="description detailed hidden">
+				<p>Parse a Less string into nodes</p>
+
+
+					<h4>Parameters</h4>
+					<div class="list"><dl>
+						<dt><var>$string</var></dt>
+						<dd>The string to parse</dd>
+					</dl></div>
+
+					<h4>Returns</h4>
+					<div class="list">
+						array
+					</div>
+
+					<h4>Throws</h4>
+					<div class="list">
+						<code><a href="class-ILess.Exception.ParserException.html">ILess\Exception\ParserException</a></code><br>If there was an error in parsing the string
+					</div>
+
+
+
+			</div>
+			</div></td>
+		</tr>
+		<tr data-order="reset" id="_reset">
+
+			<td class="attributes"><code>
+				 public 
+				
+				
+				</code>
+			</td>
+
+			<td class="name"><div>
+			<a class="anchor" href="#_reset">#</a>
+			<code><a href="source-class-ILess.Parser.Core.html#355-370" title="Go to source code">reset</a>( <span>boolean <var>$variables</var> = <span class="php-keyword1">true</span></span> )</code>
+
+			<div class="description short">
+				<p>Resets the parser</p>
+			</div>
+
+			<div class="description detailed hidden">
+				<p>Resets the parser</p>
+
+
+					<h4>Parameters</h4>
+					<div class="list"><dl>
+						<dt><var>$variables</var></dt>
+						<dd>Reset also assigned variables via the API?</dd>
+					</dl></div>
+
+					<h4>Returns</h4>
+					<div class="list">
+						<br>$this
+					</div>
+
+
+
+
+			</div>
+			</div></td>
+		</tr>
+		<tr data-order="getPluginManager" id="_getPluginManager">
+
+			<td class="attributes"><code>
+				 public 
+				<code><a href="class-ILess.PluginManager.html">ILess\PluginManager</a></code>|null
+				
+				</code>
+			</td>
+
+			<td class="name"><div>
+			<a class="anchor" href="#_getPluginManager">#</a>
+			<code><a href="source-class-ILess.Parser.Core.html#372-380" title="Go to source code">getPluginManager</a>( )</code>
+
+			<div class="description short">
+				<p>Returns the plugin manager</p>
+			</div>
+
+			<div class="description detailed hidden">
+				<p>Returns the plugin manager</p>
+
+
+
+					<h4>Returns</h4>
+					<div class="list">
+						<code><a href="class-ILess.PluginManager.html">ILess\PluginManager</a></code>|null
+					</div>
+
+
+
+
+			</div>
+			</div></td>
+		</tr>
+		<tr data-order="generateCacheKey" id="_generateCacheKey">
+
+			<td class="attributes"><code>
+				 protected 
+				string
+				
+				</code>
+			</td>
+
+			<td class="name"><div>
+			<a class="anchor" href="#_generateCacheKey">#</a>
+			<code><a href="source-class-ILess.Parser.Core.html#382-391" title="Go to source code">generateCacheKey</a>( <span>string <var>$filename</var></span> )</code>
+
+			<div class="description short">
+				<p>Generates unique cache key for given $filename</p>
+			</div>
+
+			<div class="description detailed hidden">
+				<p>Generates unique cache key for given $filename</p>
+
+
+					<h4>Parameters</h4>
+					<div class="list"><dl>
+						<dt><var>$filename</var></dt>
+						<dd></dd>
+					</dl></div>
+
+					<h4>Returns</h4>
+					<div class="list">
+						string
+					</div>
+
+
+
+
+			</div>
+			</div></td>
+		</tr>
+		<tr data-order="getCSS" id="_getCSS">
+
+			<td class="attributes"><code>
+				 public 
+				string
+				
+				</code>
+			</td>
+
+			<td class="name"><div>
+			<a class="anchor" href="#_getCSS">#</a>
+			<code><a href="source-class-ILess.Parser.Core.html#393-405" title="Go to source code">getCSS</a>( )</code>
+
+			<div class="description short">
+				<p>Returns the CSS</p>
+			</div>
+
+			<div class="description detailed hidden">
+				<p>Returns the CSS</p>
+
+
+
+					<h4>Returns</h4>
+					<div class="list">
+						string
+					</div>
+
+
+
+
+			</div>
+			</div></td>
+		</tr>
+		<tr data-order="getRootRuleset" id="_getRootRuleset">
+
+			<td class="attributes"><code>
+				 protected 
+				<code><a href="class-ILess.Node.RulesetNode.html">ILess\Node\RulesetNode</a></code>
+				
+				</code>
+			</td>
+
+			<td class="name"><div>
+			<a class="anchor" href="#_getRootRuleset">#</a>
+			<code><a href="source-class-ILess.Parser.Core.html#407-420" title="Go to source code">getRootRuleset</a>( )</code>
+
+			<div class="description short">
+				<p>Returns root ruleset</p>
+			</div>
+
+			<div class="description detailed hidden">
+				<p>Returns root ruleset</p>
+
+
+
+					<h4>Returns</h4>
+					<div class="list">
+						<code><a href="class-ILess.Node.RulesetNode.html">ILess\Node\RulesetNode</a></code>
+					</div>
+
+
+
+
+			</div>
+			</div></td>
+		</tr>
+		<tr data-order="toCSS" id="_toCSS">
+
+			<td class="attributes"><code>
+				 protected 
+				string
+				
+				</code>
+			</td>
+
+			<td class="name"><div>
+			<a class="anchor" href="#_toCSS">#</a>
+			<code><a href="source-class-ILess.Parser.Core.html#422-508" title="Go to source code">toCSS</a>( <span><code><a href="class-ILess.Node.RulesetNode.html">ILess\Node\RulesetNode</a></code> <var>$ruleset</var></span>, <span>array <var>$variables</var></span> )</code>
+
+			<div class="description short">
+				<p>Converts the ruleset to CSS</p>
+			</div>
+
+			<div class="description detailed hidden">
+				<p>Converts the ruleset to CSS</p>
+
+
+					<h4>Parameters</h4>
+					<div class="list"><dl>
+						<dt><var>$ruleset</var></dt>
+						<dd></dd>
+						<dt><var>$variables</var></dt>
+						<dd></dd>
+					</dl></div>
+
+					<h4>Returns</h4>
+					<div class="list">
+						string<br>The generated CSS code
+					</div>
+
+					<h4>Throws</h4>
+					<div class="list">
+						
+					</div>
+
+
+
+			</div>
+			</div></td>
+		</tr>
+		<tr data-order="prepareVariables" id="_prepareVariables">
+
+			<td class="attributes"><code>
+				 protected 
+				
+				
+				</code>
+			</td>
+
+			<td class="name"><div>
+			<a class="anchor" href="#_prepareVariables">#</a>
+			<code><a href="source-class-ILess.Parser.Core.html#510-536" title="Go to source code">prepareVariables</a>( <span><code><a href="class-ILess.Context.html">ILess\Context</a></code> <var>$context</var></span>, <span>array <var>$variables</var></span> )</code>
+
+			<div class="description short">
+				<p>Prepare variable to be used as nodes</p>
+			</div>
+
+			<div class="description detailed hidden">
+				<p>Prepare variable to be used as nodes</p>
+
+
+					<h4>Parameters</h4>
+					<div class="list"><dl>
+						<dt><var>$context</var></dt>
+						<dd></dd>
+						<dt><var>$variables</var></dt>
+						<dd></dd>
+					</dl></div>
+
+
+
+
+
+			</div>
+			</div></td>
+		</tr>
+		<tr data-order="getPreCompileVisitors" id="_getPreCompileVisitors">
+
+			<td class="attributes"><code>
+				 protected 
+				array
+				
+				</code>
+			</td>
+
+			<td class="name"><div>
+			<a class="anchor" href="#_getPreCompileVisitors">#</a>
+			<code><a href="source-class-ILess.Parser.Core.html#538-559" title="Go to source code">getPreCompileVisitors</a>( )</code>
+
+			<div class="description short">
+				<p>Returns array of pre compilation visitors</p>
+			</div>
+
+			<div class="description detailed hidden">
+				<p>Returns array of pre compilation visitors</p>
+
+
+
+					<h4>Returns</h4>
+					<div class="list">
+						array
+					</div>
+
+
+
+
+			</div>
+			</div></td>
+		</tr>
+		<tr data-order="getPostCompileVisitors" id="_getPostCompileVisitors">
+
+			<td class="attributes"><code>
+				 protected 
+				array
+				
+				</code>
+			</td>
+
+			<td class="name"><div>
+			<a class="anchor" href="#_getPostCompileVisitors">#</a>
+			<code><a href="source-class-ILess.Parser.Core.html#561-584" title="Go to source code">getPostCompileVisitors</a>( )</code>
+
+			<div class="description short">
+				<p>Returns an array of post compilation visitors</p>
+			</div>
+
+			<div class="description detailed hidden">
+				<p>Returns an array of post compilation visitors</p>
+
+
+
+					<h4>Returns</h4>
+					<div class="list">
+						array
+					</div>
+
+
+
+
+			</div>
+			</div></td>
+		</tr>
+		<tr data-order="parsePrimary" id="_parsePrimary">
+
+			<td class="attributes"><code>
+				 protected 
+				array
+				
+				</code>
+			</td>
+
+			<td class="name"><div>
+			<a class="anchor" href="#_parsePrimary">#</a>
+			<code><a href="source-class-ILess.Parser.Core.html#586-640" title="Go to source code">parsePrimary</a>( )</code>
+
+			<div class="description short">
+				
+			</div>
+
+			<div class="description detailed hidden">
+				
+
+
+
+					<h4>Returns</h4>
+					<div class="list">
+						array
+					</div>
+
+
+
+
+			</div>
+			</div></td>
+		</tr>
+		<tr data-order="parseComment" id="_parseComment">
+
+			<td class="attributes"><code>
+				 protected 
+				<code><a href="class-ILess.Node.CommentNode.html">ILess\Node\CommentNode</a></code>|null
+				
+				</code>
+			</td>
+
+			<td class="name"><div>
+			<a class="anchor" href="#_parseComment">#</a>
+			<code><a href="source-class-ILess.Parser.Core.html#642-660" title="Go to source code">parseComment</a>( )</code>
+
+			<div class="description short">
+				<p>comments are collected by the main parsing mechanism and then assigned to nodes
+where the current structure allows it</p>
+			</div>
+
+			<div class="description detailed hidden">
+				<p>comments are collected by the main parsing mechanism and then assigned to nodes
+where the current structure allows it</p>
+
+
+
+					<h4>Returns</h4>
+					<div class="list">
+						<code><a href="class-ILess.Node.CommentNode.html">ILess\Node\CommentNode</a></code>|null
+					</div>
+
+
+
+
+			</div>
+			</div></td>
+		</tr>
+		<tr data-order="parseRulesetCall" id="_parseRulesetCall">
+
+			<td class="attributes"><code>
+				 protected 
+				
+				
+				</code>
+			</td>
+
+			<td class="name"><div>
+			<a class="anchor" href="#_parseRulesetCall">#</a>
+			<code><a href="source-class-ILess.Parser.Core.html#666-671" title="Go to source code">parseRulesetCall</a>( )</code>
+
+			<div class="description short">
+				
+			</div>
+
+			<div class="description detailed hidden">
+				
+
+
+
+
+
+
+
+			</div>
+			</div></td>
+		</tr>
+		<tr data-order="parseMixinDefinition" id="_parseMixinDefinition">
+
+			<td class="attributes"><code>
+				 protected 
+				<code><a href="class-ILess.Node.MixinDefinitionNode.html">ILess\Node\MixinDefinitionNode</a></code>|null
+				
+				</code>
+			</td>
+
+			<td class="name"><div>
+			<a class="anchor" href="#_parseMixinDefinition">#</a>
+			<code><a href="source-class-ILess.Parser.Core.html#673-724" title="Go to source code">parseMixinDefinition</a>( )</code>
+
+			<div class="description short">
+				<p>Parses a mixin definition</p>
+			</div>
+
+			<div class="description detailed hidden">
+				<p>Parses a mixin definition</p>
+
+
+
+					<h4>Returns</h4>
+					<div class="list">
+						<code><a href="class-ILess.Node.MixinDefinitionNode.html">ILess\Node\MixinDefinitionNode</a></code>|null
+					</div>
+
+
+
+
+			</div>
+			</div></td>
+		</tr>
+		<tr data-order="parseMixinCall" id="_parseMixinCall">
+
+			<td class="attributes"><code>
+				 protected 
+				<code><a href="class-ILess.Node.MixinCallNode.html">ILess\Node\MixinCallNode</a></code>|null
+				
+				</code>
+			</td>
+
+			<td class="name"><div>
+			<a class="anchor" href="#_parseMixinCall">#</a>
+			<code><a href="source-class-ILess.Parser.Core.html#726-783" title="Go to source code">parseMixinCall</a>( )</code>
+
+			<div class="description short">
+				<p>Parses a mixin call with an optional argument list</p>
+			</div>
+
+			<div class="description detailed hidden">
+				<p>Parses a mixin call with an optional argument list</p>
+
+<h1>mixins > .square(#fff); .rounded(4px, black); .button;</h1>
+
+<p>The <code>while</code> loop is there because mixins can be
+namespaced, but we only support the child and descendant
+selector for now.</p>
+
+
+
+					<h4>Returns</h4>
+					<div class="list">
+						<code><a href="class-ILess.Node.MixinCallNode.html">ILess\Node\MixinCallNode</a></code>|null
+					</div>
+
+
+
+
+			</div>
+			</div></td>
+		</tr>
+		<tr data-order="parseMixinArgs" id="_parseMixinArgs">
+
+			<td class="attributes"><code>
+				 protected 
+				array
+				
+				</code>
+			</td>
+
+			<td class="name"><div>
+			<a class="anchor" href="#_parseMixinArgs">#</a>
+			<code><a href="source-class-ILess.Parser.Core.html#785-938" title="Go to source code">parseMixinArgs</a>( <span>boolean <var>$isCall</var></span> )</code>
+
+			<div class="description short">
+				<p>Parses mixin arguments</p>
+			</div>
+
+			<div class="description detailed hidden">
+				<p>Parses mixin arguments</p>
+
+
+					<h4>Parameters</h4>
+					<div class="list"><dl>
+						<dt><var>$isCall</var></dt>
+						<dd>The definition or function call?</dd>
+					</dl></div>
+
+					<h4>Returns</h4>
+					<div class="list">
+						array
+					</div>
+
+					<h4>Throws</h4>
+					<div class="list">
+						<code><a href="class-ILess.Exception.CompilerException.html">ILess\Exception\CompilerException</a></code><br>If there is an error the definition of arguments
+					</div>
+
+
+
+			</div>
+			</div></td>
+		</tr>
+		<tr data-order="parseRule" id="_parseRule">
+
+			<td class="attributes"><code>
+				 protected 
+				<code><a href="class-ILess.Node.RuleNode.html">ILess\Node\RuleNode</a></code>|null
+				
+				</code>
+			</td>
+
+			<td class="name"><div>
+			<a class="anchor" href="#_parseRule">#</a>
+			<code><a href="source-class-ILess.Parser.Core.html#940-1019" title="Go to source code">parseRule</a>( <span>boolean <var>$tryAnonymous</var> = <span class="php-keyword1">false</span></span> )</code>
+
+			<div class="description short">
+				<p>Parses a rule</p>
+			</div>
+
+			<div class="description detailed hidden">
+				<p>Parses a rule</p>
+
+
+					<h4>Parameters</h4>
+					<div class="list"><dl>
+						<dt><var>$tryAnonymous</var></dt>
+						<dd></dd>
+					</dl></div>
+
+					<h4>Returns</h4>
+					<div class="list">
+						<code><a href="class-ILess.Node.RuleNode.html">ILess\Node\RuleNode</a></code>|null
+					</div>
+
+
+
+
+			</div>
+			</div></td>
+		</tr>
+		<tr data-order="parseAnonymousValue" id="_parseAnonymousValue">
+
+			<td class="attributes"><code>
+				 protected 
+				<code><a href="class-ILess.Node.AnonymousNode.html">ILess\Node\AnonymousNode</a></code>|null
+				
+				</code>
+			</td>
+
+			<td class="name"><div>
+			<a class="anchor" href="#_parseAnonymousValue">#</a>
+			<code><a href="source-class-ILess.Parser.Core.html#1021-1031" title="Go to source code">parseAnonymousValue</a>( )</code>
+
+			<div class="description short">
+				<p>Parses an anonymous value</p>
+			</div>
+
+			<div class="description detailed hidden">
+				<p>Parses an anonymous value</p>
+
+
+
+					<h4>Returns</h4>
+					<div class="list">
+						<code><a href="class-ILess.Node.AnonymousNode.html">ILess\Node\AnonymousNode</a></code>|null
+					</div>
+
+
+
+
+			</div>
+			</div></td>
+		</tr>
+		<tr data-order="parseRuleset" id="_parseRuleset">
+
+			<td class="attributes"><code>
+				 protected 
+				<code><a href="class-ILess.Node.RulesetNode.html">ILess\Node\RulesetNode</a></code>|null
+				
+				</code>
+			</td>
+
+			<td class="name"><div>
+			<a class="anchor" href="#_parseRuleset">#</a>
+			<code><a href="source-class-ILess.Parser.Core.html#1033-1091" title="Go to source code">parseRuleset</a>( )</code>
+
+			<div class="description short">
+				<p>Parses a ruleset like: <code>div, .class, body &gt; p {...}</code></p>
+			</div>
+
+			<div class="description detailed hidden">
+				<p>Parses a ruleset like: <code>div, .class, body &gt; p {...}</code></p>
+
+
+
+					<h4>Returns</h4>
+					<div class="list">
+						<code><a href="class-ILess.Node.RulesetNode.html">ILess\Node\RulesetNode</a></code>|null
+					</div>
+
+					<h4>Throws</h4>
+					<div class="list">
+						<code><a href="class-ILess.Exception.ParserException.html">ILess\Exception\ParserException</a></code>
+					</div>
+
+
+
+			</div>
+			</div></td>
+		</tr>
+		<tr data-order="parseLessSelector" id="_parseLessSelector">
+
+			<td class="attributes"><code>
+				 protected 
+				<code><a href="class-ILess.Node.SelectorNode.html">ILess\Node\SelectorNode</a></code>|null
+				
+				</code>
+			</td>
+
+			<td class="name"><div>
+			<a class="anchor" href="#_parseLessSelector">#</a>
+			<code><a href="source-class-ILess.Parser.Core.html#1093-1101" title="Go to source code">parseLessSelector</a>( )</code>
+
+			<div class="description short">
+				<p>Parses a selector with less extensions e.g. the ability to extend and guard</p>
+			</div>
+
+			<div class="description detailed hidden">
+				<p>Parses a selector with less extensions e.g. the ability to extend and guard</p>
+
+
+
+					<h4>Returns</h4>
+					<div class="list">
+						<code><a href="class-ILess.Node.SelectorNode.html">ILess\Node\SelectorNode</a></code>|null
+					</div>
+
+
+
+
+			</div>
+			</div></td>
+		</tr>
+		<tr data-order="parseSelector" id="_parseSelector">
+
+			<td class="attributes"><code>
+				 protected 
+				<code><a href="class-ILess.Node.SelectorNode.html">ILess\Node\SelectorNode</a></code>|null
+				
+				</code>
+			</td>
+
+			<td class="name"><div>
+			<a class="anchor" href="#_parseSelector">#</a>
+			<code><a href="source-class-ILess.Parser.Core.html#1103-1162" title="Go to source code">parseSelector</a>( <span>boolean <var>$isLess</var> = <span class="php-keyword1">false</span></span> )</code>
+
+			<div class="description short">
+				<p>Parses a CSS selector.</p>
+			</div>
+
+			<div class="description detailed hidden">
+				<p>Parses a CSS selector.</p>
+
+
+					<h4>Parameters</h4>
+					<div class="list"><dl>
+						<dt><var>$isLess</var></dt>
+						<dd>Is this a less sector? (ie. has ability to extend and guard)</dd>
+					</dl></div>
+
+					<h4>Returns</h4>
+					<div class="list">
+						<code><a href="class-ILess.Node.SelectorNode.html">ILess\Node\SelectorNode</a></code>|null
+					</div>
+
+					<h4>Throws</h4>
+					<div class="list">
+						<code><a href="class-ILess.Exception.ParserException.html">ILess\Exception\ParserException</a></code>
+					</div>
+
+
+
+			</div>
+			</div></td>
+		</tr>
+		<tr data-order="parseExtend" id="_parseExtend">
+
+			<td class="attributes"><code>
+				 protected 
+				<code><a href="class-ILess.Node.ExtendNode.html">ILess\Node\ExtendNode</a></code>|null
+				
+				</code>
+			</td>
+
+			<td class="name"><div>
+			<a class="anchor" href="#_parseExtend">#</a>
+			<code><a href="source-class-ILess.Parser.Core.html#1164-1214" title="Go to source code">parseExtend</a>( <span>boolean <var>$isRule</var> = <span class="php-keyword1">false</span></span> )</code>
+
+			<div class="description short">
+				<p>Parses extend</p>
+			</div>
+
+			<div class="description detailed hidden">
+				<p>Parses extend</p>
+
+
+					<h4>Parameters</h4>
+					<div class="list"><dl>
+						<dt><var>$isRule</var></dt>
+						<dd>Is is a rule?</dd>
+					</dl></div>
+
+					<h4>Returns</h4>
+					<div class="list">
+						<code><a href="class-ILess.Node.ExtendNode.html">ILess\Node\ExtendNode</a></code>|null
+					</div>
+
+					<h4>Throws</h4>
+					<div class="list">
+						<code><a href="class-ILess.Exception.CompilerException.html">ILess\Exception\CompilerException</a></code>
+					</div>
+
+
+
+			</div>
+			</div></td>
+		</tr>
+		<tr data-order="parseExtendRule" id="_parseExtendRule">
+
+			<td class="attributes"><code>
+				 protected 
+				<code><a href="class-ILess.Node.ExtendNode.html">ILess\Node\ExtendNode</a></code>|null
+				
+				</code>
+			</td>
+
+			<td class="name"><div>
+			<a class="anchor" href="#_parseExtendRule">#</a>
+			<code><a href="source-class-ILess.Parser.Core.html#1216-1224" title="Go to source code">parseExtendRule</a>( )</code>
+
+			<div class="description short">
+				<p>Parses extend rule</p>
+			</div>
+
+			<div class="description detailed hidden">
+				<p>Parses extend rule</p>
+
+
+
+					<h4>Returns</h4>
+					<div class="list">
+						<code><a href="class-ILess.Node.ExtendNode.html">ILess\Node\ExtendNode</a></code>|null
+					</div>
+
+
+
+
+			</div>
+			</div></td>
+		</tr>
+		<tr data-order="parseElement" id="_parseElement">
+
+			<td class="attributes"><code>
+				 protected 
+				<code><a href="class-ILess.Node.ElementNode.html">ILess\Node\ElementNode</a></code>|null
+				
+				</code>
+			</td>
+
+			<td class="name"><div>
+			<a class="anchor" href="#_parseElement">#</a>
+			<code><a href="source-class-ILess.Parser.Core.html#1226-1277" title="Go to source code">parseElement</a>( )</code>
+
+			<div class="description short">
+				<p>Parses a selector element</p>
+			</div>
+
+			<div class="description detailed hidden">
+				<p>Parses a selector element</p>
+
+<ul>
+<li><code>div</code> * <code>+ h1</code> * <code>#socks</code> * <code>input[type="text"]</code></li>
+</ul>
+
+<p>Elements are the building blocks for selectors,
+they are made out of a <code>combinator</code> and an element name, such as a tag a class, or <code>*</code>.</p>
+
+
+
+					<h4>Returns</h4>
+					<div class="list">
+						<code><a href="class-ILess.Node.ElementNode.html">ILess\Node\ElementNode</a></code>|null
+					</div>
+
+
+
+
+			</div>
+			</div></td>
+		</tr>
+		<tr data-order="parseCombinator" id="_parseCombinator">
+
+			<td class="attributes"><code>
+				 protected 
+				<code><a href="class-ILess.Node.CombinatorNode.html">ILess\Node\CombinatorNode</a></code>|null
+				
+				</code>
+			</td>
+
+			<td class="name"><div>
+			<a class="anchor" href="#_parseCombinator">#</a>
+			<code><a href="source-class-ILess.Parser.Core.html#1279-1320" title="Go to source code">parseCombinator</a>( )</code>
+
+			<div class="description short">
+				<p>Parses a combinator. Combinators combine elements together, in a selector.</p>
+			</div>
+
+			<div class="description detailed hidden">
+				<p>Parses a combinator. Combinators combine elements together, in a selector.</p>
+
+<p>Because our parser isn't white-space sensitive, special care
+has to be taken, when parsing the descendant combinator, <code></code>,
+as it's an empty space. We have to check the previous character
+in the input, to see if it's a <code></code> character.</p>
+
+
+
+					<h4>Returns</h4>
+					<div class="list">
+						<code><a href="class-ILess.Node.CombinatorNode.html">ILess\Node\CombinatorNode</a></code>|null
+					</div>
+
+
+
+
+			</div>
+			</div></td>
+		</tr>
+		<tr data-order="parseAttribute" id="_parseAttribute">
+
+			<td class="attributes"><code>
+				 protected 
+				<code><a href="class-ILess.Node.AttributeNode.html">ILess\Node\AttributeNode</a></code>|null
+				
+				</code>
+			</td>
+
+			<td class="name"><div>
+			<a class="anchor" href="#_parseAttribute">#</a>
+			<code><a href="source-class-ILess.Parser.Core.html#1322-1353" title="Go to source code">parseAttribute</a>( )</code>
+
+			<div class="description short">
+				<p>Parses an attribute</p>
+			</div>
+
+			<div class="description detailed hidden">
+				<p>Parses an attribute</p>
+
+
+
+					<h4>Returns</h4>
+					<div class="list">
+						<code><a href="class-ILess.Node.AttributeNode.html">ILess\Node\AttributeNode</a></code>|null
+					</div>
+
+
+
+
+			</div>
+			</div></td>
+		</tr>
+		<tr data-order="parseValue" id="_parseValue">
+
+			<td class="attributes"><code>
+				 protected 
+				<code><a href="class-ILess.Node.ValueNode.html">ILess\Node\ValueNode</a></code>|null
+				
+				</code>
+			</td>
+
+			<td class="name"><div>
+			<a class="anchor" href="#_parseValue">#</a>
+			<code><a href="source-class-ILess.Parser.Core.html#1355-1379" title="Go to source code">parseValue</a>( )</code>
+
+			<div class="description short">
+				<p>Parses a value - a comma-delimited list of expressions like:</p>
+			</div>
+
+			<div class="description detailed hidden">
+				<p>Parses a value - a comma-delimited list of expressions like:</p>
+
+<p><code>font-family: Baskerville, Georgia, serif;</code></p>
+
+
+
+					<h4>Returns</h4>
+					<div class="list">
+						<code><a href="class-ILess.Node.ValueNode.html">ILess\Node\ValueNode</a></code>|null
+					</div>
+
+
+
+
+			</div>
+			</div></td>
+		</tr>
+		<tr data-order="parseImportant" id="_parseImportant">
+
+			<td class="attributes"><code>
+				 protected 
+				string|null
+				
+				</code>
+			</td>
+
+			<td class="name"><div>
+			<a class="anchor" href="#_parseImportant">#</a>
+			<code><a href="source-class-ILess.Parser.Core.html#1381-1391" title="Go to source code">parseImportant</a>( )</code>
+
+			<div class="description short">
+				<p>Parses the <code>!important</code> keyword</p>
+			</div>
+
+			<div class="description detailed hidden">
+				<p>Parses the <code>!important</code> keyword</p>
+
+
+
+					<h4>Returns</h4>
+					<div class="list">
+						string|null
+					</div>
+
+
+
+
+			</div>
+			</div></td>
+		</tr>
+		<tr data-order="parseVariable" id="_parseVariable">
+
+			<td class="attributes"><code>
+				 protected 
+				string
+				
+				</code>
+			</td>
+
+			<td class="name"><div>
+			<a class="anchor" href="#_parseVariable">#</a>
+			<code><a href="source-class-ILess.Parser.Core.html#1393-1403" title="Go to source code">parseVariable</a>( )</code>
+
+			<div class="description short">
+				<p>Parses a variable</p>
+			</div>
+
+			<div class="description detailed hidden">
+				<p>Parses a variable</p>
+
+
+
+					<h4>Returns</h4>
+					<div class="list">
+						string
+					</div>
+
+
+
+
+			</div>
+			</div></td>
+		</tr>
+		<tr data-order="parseEntitiesVariableCurly" id="_parseEntitiesVariableCurly">
+
+			<td class="attributes"><code>
+				 protected 
+				<code><a href="class-ILess.Node.VariableNode.html">ILess\Node\VariableNode</a></code>|null
+				
+				</code>
+			</td>
+
+			<td class="name"><div>
+			<a class="anchor" href="#_parseEntitiesVariableCurly">#</a>
+			<code><a href="source-class-ILess.Parser.Core.html#1405-1416" title="Go to source code">parseEntitiesVariableCurly</a>( )</code>
+
+			<div class="description short">
+				<p>Parses a variable entity using the protective <code>{}</code> like: <code>@{variable}</code></p>
+			</div>
+
+			<div class="description detailed hidden">
+				<p>Parses a variable entity using the protective <code>{}</code> like: <code>@{variable}</code></p>
+
+
+
+					<h4>Returns</h4>
+					<div class="list">
+						<code><a href="class-ILess.Node.VariableNode.html">ILess\Node\VariableNode</a></code>|null
+					</div>
+
+
+
+
+			</div>
+			</div></td>
+		</tr>
+		<tr data-order="parseRuleProperty" id="_parseRuleProperty">
+
+			<td class="attributes"><code>
+				 protected 
+				array
+				
+				</code>
+			</td>
+
+			<td class="name"><div>
+			<a class="anchor" href="#_parseRuleProperty">#</a>
+			<code><a href="source-class-ILess.Parser.Core.html#1418-1480" title="Go to source code">parseRuleProperty</a>( )</code>
+
+			<div class="description short">
+				<p>Parses rule property</p>
+			</div>
+
+			<div class="description detailed hidden">
+				<p>Parses rule property</p>
+
+
+
+					<h4>Returns</h4>
+					<div class="list">
+						array
+					</div>
+
+
+
+
+			</div>
+			</div></td>
+		</tr>
+		<tr data-order="parseAddition" id="_parseAddition">
+
+			<td class="attributes"><code>
+				 protected 
+				<code><a href="class-ILess.Node.OperationNode.html">ILess\Node\OperationNode</a></code>|null
+				
+				</code>
+			</td>
+
+			<td class="name"><div>
+			<a class="anchor" href="#_parseAddition">#</a>
+			<code><a href="source-class-ILess.Parser.Core.html#1483-1515" title="Go to source code">parseAddition</a>( )</code>
+
+			<div class="description short">
+				<p>Parses an addition operation</p>
+			</div>
+
+			<div class="description detailed hidden">
+				<p>Parses an addition operation</p>
+
+
+
+					<h4>Returns</h4>
+					<div class="list">
+						<code><a href="class-ILess.Node.OperationNode.html">ILess\Node\OperationNode</a></code>|null
+					</div>
+
+
+
+
+			</div>
+			</div></td>
+		</tr>
+		<tr data-order="parseMultiplication" id="_parseMultiplication">
+
+			<td class="attributes"><code>
+				 protected 
+				<code><a href="class-ILess.Node.OperationNode.html">ILess\Node\OperationNode</a></code>|null
+				
+				</code>
+			</td>
+
+			<td class="name"><div>
+			<a class="anchor" href="#_parseMultiplication">#</a>
+			<code><a href="source-class-ILess.Parser.Core.html#1517-1560" title="Go to source code">parseMultiplication</a>( )</code>
+
+			<div class="description short">
+				<p>Parses multiplication operation</p>
+			</div>
+
+			<div class="description detailed hidden">
+				<p>Parses multiplication operation</p>
+
+
+
+					<h4>Returns</h4>
+					<div class="list">
+						<code><a href="class-ILess.Node.OperationNode.html">ILess\Node\OperationNode</a></code>|null
+					</div>
+
+
+
+
+			</div>
+			</div></td>
+		</tr>
+		<tr data-order="parseConditions" id="_parseConditions">
+
+			<td class="attributes"><code>
+				 protected 
+				<code><a href="class-ILess.Node.ConditionNode.html">ILess\Node\ConditionNode</a></code>|null
+				
+				</code>
+			</td>
+
+			<td class="name"><div>
+			<a class="anchor" href="#_parseConditions">#</a>
+			<code><a href="source-class-ILess.Parser.Core.html#1562-1586" title="Go to source code">parseConditions</a>( )</code>
+
+			<div class="description short">
+				<p>Parses the conditions</p>
+			</div>
+
+			<div class="description detailed hidden">
+				<p>Parses the conditions</p>
+
+
+
+					<h4>Returns</h4>
+					<div class="list">
+						<code><a href="class-ILess.Node.ConditionNode.html">ILess\Node\ConditionNode</a></code>|null
+					</div>
+
+
+
+
+			</div>
+			</div></td>
+		</tr>
+		<tr data-order="parseCondition" id="_parseCondition">
+
+			<td class="attributes"><code>
+				 protected 
+				<code><a href="class-ILess.Node.ConditionNode.html">ILess\Node\ConditionNode</a></code>|null
+				
+				</code>
+			</td>
+
+			<td class="name"><div>
+			<a class="anchor" href="#_parseCondition">#</a>
+			<code><a href="source-class-ILess.Parser.Core.html#1588-1644" title="Go to source code">parseCondition</a>( )</code>
+
+			<div class="description short">
+				<p>Parses condition</p>
+			</div>
+
+			<div class="description detailed hidden">
+				<p>Parses condition</p>
+
+
+
+					<h4>Returns</h4>
+					<div class="list">
+						<code><a href="class-ILess.Node.ConditionNode.html">ILess\Node\ConditionNode</a></code>|null
+					</div>
+
+					<h4>Throws</h4>
+					<div class="list">
+						<code><a href="class-ILess.Exception.ParserException.html">ILess\Exception\ParserException</a></code>
+					</div>
+
+
+
+			</div>
+			</div></td>
+		</tr>
+		<tr data-order="parseSubExpression" id="_parseSubExpression">
+
+			<td class="attributes"><code>
+				 protected 
+				<code><a href="class-ILess.Node.ExpressionNode.html">ILess\Node\ExpressionNode</a></code>|null
+				
+				</code>
+			</td>
+
+			<td class="name"><div>
+			<a class="anchor" href="#_parseSubExpression">#</a>
+			<code><a href="source-class-ILess.Parser.Core.html#1646-1671" title="Go to source code">parseSubExpression</a>( )</code>
+
+			<div class="description short">
+				<p>Parses a sub-expression</p>
+			</div>
+
+			<div class="description detailed hidden">
+				<p>Parses a sub-expression</p>
+
+
+
+					<h4>Returns</h4>
+					<div class="list">
+						<code><a href="class-ILess.Node.ExpressionNode.html">ILess\Node\ExpressionNode</a></code>|null
+					</div>
+
+
+
+
+			</div>
+			</div></td>
+		</tr>
+		<tr data-order="parseOperand" id="_parseOperand">
+
+			<td class="attributes"><code>
+				 protected 
+				<code><a href="class-ILess.Node.NegativeNode.html">ILess\Node\NegativeNode</a></code>|null
+				
+				</code>
+			</td>
+
+			<td class="name"><div>
+			<a class="anchor" href="#_parseOperand">#</a>
+			<code><a href="source-class-ILess.Parser.Core.html#1673-1702" title="Go to source code">parseOperand</a>( )</code>
+
+			<div class="description short">
+				<p>Parses an operand. An operand is anything that can be part of an operation,
+such as a color, or a variable</p>
+			</div>
+
+			<div class="description detailed hidden">
+				<p>Parses an operand. An operand is anything that can be part of an operation,
+such as a color, or a variable</p>
+
+
+
+					<h4>Returns</h4>
+					<div class="list">
+						<code><a href="class-ILess.Node.NegativeNode.html">ILess\Node\NegativeNode</a></code>|null
+					</div>
+
+
+
+
+			</div>
+			</div></td>
+		</tr>
+		<tr data-order="parseBlock" id="_parseBlock">
+
+			<td class="attributes"><code>
+				 protected 
+				array
+				
+				</code>
+			</td>
+
+			<td class="name"><div>
+			<a class="anchor" href="#_parseBlock">#</a>
+			<code><a href="source-class-ILess.Parser.Core.html#1704-1715" title="Go to source code">parseBlock</a>( )</code>
+
+			<div class="description short">
+				<p>Parses a block. The <code>block</code> rule is used by <code>ruleset</code> and <code>mixin definition</code>.
+It's a wrapper around the <code>primary</code> rule, with added <code>{}</code>.</p>
+			</div>
+
+			<div class="description detailed hidden">
+				<p>Parses a block. The <code>block</code> rule is used by <code>ruleset</code> and <code>mixin definition</code>.
+It's a wrapper around the <code>primary</code> rule, with added <code>{}</code>.</p>
+
+
+
+					<h4>Returns</h4>
+					<div class="list">
+						array
+					</div>
+
+
+
+
+			</div>
+			</div></td>
+		</tr>
+		<tr data-order="parseBlockRuleset" id="_parseBlockRuleset">
+
+			<td class="attributes"><code>
+				 protected 
+				<code><a href="class-ILess.Node.html">ILess\Node</a></code>|<code><a href="class-ILess.Node.RulesetNode.html">ILess\Node\RulesetNode</a></code>|null
+				
+				</code>
+			</td>
+
+			<td class="name"><div>
+			<a class="anchor" href="#_parseBlockRuleset">#</a>
+			<code><a href="source-class-ILess.Parser.Core.html#1717-1728" title="Go to source code">parseBlockRuleset</a>( )</code>
+
+			<div class="description short">
+				
+			</div>
+
+			<div class="description detailed hidden">
+				
+
+
+
+					<h4>Returns</h4>
+					<div class="list">
+						<code><a href="class-ILess.Node.html">ILess\Node</a></code>|<code><a href="class-ILess.Node.RulesetNode.html">ILess\Node\RulesetNode</a></code>|null
+					</div>
+
+
+
+
+			</div>
+			</div></td>
+		</tr>
+		<tr data-order="parseDetachedRuleset" id="_parseDetachedRuleset">
+
+			<td class="attributes"><code>
+				 protected 
+				<code><a href="class-ILess.Node.DetachedRulesetNode.html">ILess\Node\DetachedRulesetNode</a></code>|null
+				
+				</code>
+			</td>
+
+			<td class="name"><div>
+			<a class="anchor" href="#_parseDetachedRuleset">#</a>
+			<code><a href="source-class-ILess.Parser.Core.html#1730-1739" title="Go to source code">parseDetachedRuleset</a>( )</code>
+
+			<div class="description short">
+				
+			</div>
+
+			<div class="description detailed hidden">
+				
+
+
+
+					<h4>Returns</h4>
+					<div class="list">
+						<code><a href="class-ILess.Node.DetachedRulesetNode.html">ILess\Node\DetachedRulesetNode</a></code>|null
+					</div>
+
+
+
+
+			</div>
+			</div></td>
+		</tr>
+		<tr data-order="parseComments" id="_parseComments">
+
+			<td class="attributes"><code>
+				 protected 
+				array
+				
+				</code>
+			</td>
+
+			<td class="name"><div>
+			<a class="anchor" href="#_parseComments">#</a>
+			<code><a href="source-class-ILess.Parser.Core.html#1741-1754" title="Go to source code">parseComments</a>( )</code>
+
+			<div class="description short">
+				<p>Parses comments</p>
+			</div>
+
+			<div class="description detailed hidden">
+				<p>Parses comments</p>
+
+
+
+					<h4>Returns</h4>
+					<div class="list">
+						array<br>Array of comments
+					</div>
+
+
+
+
+			</div>
+			</div></td>
+		</tr>
+		<tr data-order="parseDirective" id="_parseDirective">
+
+			<td class="attributes"><code>
+				 protected 
+				<code><a href="class-ILess.Node.DirectiveNode.html">ILess\Node\DirectiveNode</a></code>|null
+				
+				</code>
+			</td>
+
+			<td class="name"><div>
+			<a class="anchor" href="#_parseDirective">#</a>
+			<code><a href="source-class-ILess.Parser.Core.html#1756-1886" title="Go to source code">parseDirective</a>( )</code>
+
+			<div class="description short">
+				<p>Parses the CSS directive like:</p>
+			</div>
+
+			<div class="description detailed hidden">
+				<p>Parses the CSS directive like:</p>
+
+<p>&lt;</p>
+
+<p>pre></p>
+
+
+
+					<h4>Returns</h4>
+					<div class="list">
+						<code><a href="class-ILess.Node.DirectiveNode.html">ILess\Node\DirectiveNode</a></code>|null
+					</div>
+
+					<h4>Throws</h4>
+					<div class="list">
+						<code><a href="class-ILess.Exception.ParserException.html">ILess\Exception\ParserException</a></code>
+					</div>
+
+					<h4>Charset</h4>
+					<div class="list">
+							<p>"utf-8";
+</pre></p><br>
+					</div>
+
+
+			</div>
+			</div></td>
+		</tr>
+		<tr data-order="parseEntity" id="_parseEntity">
+
+			<td class="attributes"><code>
+				 protected 
+				<code><a href="class-ILess.Node.html">ILess\Node</a></code>|null
+				
+				</code>
+			</td>
+
+			<td class="name"><div>
+			<a class="anchor" href="#_parseEntity">#</a>
+			<code><a href="source-class-ILess.Parser.Core.html#1888-1906" title="Go to source code">parseEntity</a>( )</code>
+
+			<div class="description short">
+				<p>Entities are the smallest recognized token, and can be found inside a rule's value.</p>
+			</div>
+
+			<div class="description detailed hidden">
+				<p>Entities are the smallest recognized token, and can be found inside a rule's value.</p>
+
+
+
+					<h4>Returns</h4>
+					<div class="list">
+						<code><a href="class-ILess.Node.html">ILess\Node</a></code>|null
+					</div>
+
+
+
+
+			</div>
+			</div></td>
+		</tr>
+		<tr data-order="parseEntitiesLiteral" id="_parseEntitiesLiteral">
+
+			<td class="attributes"><code>
+				 protected 
+				<code><a href="class-ILess.Node.html">ILess\Node</a></code>|null
+				
+				</code>
+			</td>
+
+			<td class="name"><div>
+			<a class="anchor" href="#_parseEntitiesLiteral">#</a>
+			<code><a href="source-class-ILess.Parser.Core.html#1908-1923" title="Go to source code">parseEntitiesLiteral</a>( )</code>
+
+			<div class="description short">
+				<p>Parse entities literal</p>
+			</div>
+
+			<div class="description detailed hidden">
+				<p>Parse entities literal</p>
+
+
+
+					<h4>Returns</h4>
+					<div class="list">
+						<code><a href="class-ILess.Node.html">ILess\Node</a></code>|null
+					</div>
+
+
+
+
+			</div>
+			</div></td>
+		</tr>
+		<tr data-order="parseEntitiesVariable" id="_parseEntitiesVariable">
+
+			<td class="attributes"><code>
+				 protected 
+				<code><a href="class-ILess.Node.VariableNode.html">ILess\Node\VariableNode</a></code>|null
+				
+				</code>
+			</td>
+
+			<td class="name"><div>
+			<a class="anchor" href="#_parseEntitiesVariable">#</a>
+			<code><a href="source-class-ILess.Parser.Core.html#1925-1936" title="Go to source code">parseEntitiesVariable</a>( )</code>
+
+			<div class="description short">
+				<p>Parses an entity variable</p>
+			</div>
+
+			<div class="description detailed hidden">
+				<p>Parses an entity variable</p>
+
+
+
+					<h4>Returns</h4>
+					<div class="list">
+						<code><a href="class-ILess.Node.VariableNode.html">ILess\Node\VariableNode</a></code>|null
+					</div>
+
+
+
+
+			</div>
+			</div></td>
+		</tr>
+		<tr data-order="parseEntitiesDimension" id="_parseEntitiesDimension">
+
+			<td class="attributes"><code>
+				 protected 
+				<code><a href="class-ILess.Node.DimensionNode.html">ILess\Node\DimensionNode</a></code>|null
+				
+				</code>
+			</td>
+
+			<td class="name"><div>
+			<a class="anchor" href="#_parseEntitiesDimension">#</a>
+			<code><a href="source-class-ILess.Parser.Core.html#1938-1952" title="Go to source code">parseEntitiesDimension</a>( )</code>
+
+			<div class="description short">
+				<p>Parse entities dimension (a number and a unit like 0.5em, 95%)</p>
+			</div>
+
+			<div class="description detailed hidden">
+				<p>Parse entities dimension (a number and a unit like 0.5em, 95%)</p>
+
+
+
+					<h4>Returns</h4>
+					<div class="list">
+						<code><a href="class-ILess.Node.DimensionNode.html">ILess\Node\DimensionNode</a></code>|null
+					</div>
+
+
+
+
+			</div>
+			</div></td>
+		</tr>
+		<tr data-order="parseEntitiesColor" id="_parseEntitiesColor">
+
+			<td class="attributes"><code>
+				 protected 
+				<code><a href="class-ILess.Node.ColorNode.html">ILess\Node\ColorNode</a></code>
+				
+				</code>
+			</td>
+
+			<td class="name"><div>
+			<a class="anchor" href="#_parseEntitiesColor">#</a>
+			<code><a href="source-class-ILess.Parser.Core.html#1954-1974" title="Go to source code">parseEntitiesColor</a>( )</code>
+
+			<div class="description short">
+				<p>Parses a hexadecimal color.</p>
+			</div>
+
+			<div class="description detailed hidden">
+				<p>Parses a hexadecimal color.</p>
+
+
+
+					<h4>Returns</h4>
+					<div class="list">
+						<code><a href="class-ILess.Node.ColorNode.html">ILess\Node\ColorNode</a></code>
+					</div>
+
+					<h4>Throws</h4>
+					<div class="list">
+						<code><a href="class-ILess.Exception.ParserException.html">ILess\Exception\ParserException</a></code>
+					</div>
+
+
+
+			</div>
+			</div></td>
+		</tr>
+		<tr data-order="parseEntitiesQuoted" id="_parseEntitiesQuoted">
+
+			<td class="attributes"><code>
+				 protected 
+				<code><a href="class-ILess.Node.QuotedNode.html">ILess\Node\QuotedNode</a></code>|null
+				
+				</code>
+			</td>
+
+			<td class="name"><div>
+			<a class="anchor" href="#_parseEntitiesQuoted">#</a>
+			<code><a href="source-class-ILess.Parser.Core.html#1976-2010" title="Go to source code">parseEntitiesQuoted</a>( )</code>
+
+			<div class="description short">
+				<p>Parses a string, which supports escaping " and '
+"milky way" 'he\'s the one!'</p>
+			</div>
+
+			<div class="description detailed hidden">
+				<p>Parses a string, which supports escaping " and '
+"milky way" 'he\'s the one!'</p>
+
+
+
+					<h4>Returns</h4>
+					<div class="list">
+						<code><a href="class-ILess.Node.QuotedNode.html">ILess\Node\QuotedNode</a></code>|null
+					</div>
+
+
+
+
+			</div>
+			</div></td>
+		</tr>
+		<tr data-order="parseUnicodeDescriptor" id="_parseUnicodeDescriptor">
+
+			<td class="attributes"><code>
+				 protected 
+				<code><a href="class-ILess.Node.UnicodeDescriptorNode.html">ILess\Node\UnicodeDescriptorNode</a></code>|null
+				
+				</code>
+			</td>
+
+			<td class="name"><div>
+			<a class="anchor" href="#_parseUnicodeDescriptor">#</a>
+			<code><a href="source-class-ILess.Parser.Core.html#2012-2022" title="Go to source code">parseUnicodeDescriptor</a>( )</code>
+
+			<div class="description short">
+				<p>Parses an unicode descriptor, as is used in unicode-range U+0?? or U+00A1-00A9</p>
+			</div>
+
+			<div class="description detailed hidden">
+				<p>Parses an unicode descriptor, as is used in unicode-range U+0?? or U+00A1-00A9</p>
+
+
+
+					<h4>Returns</h4>
+					<div class="list">
+						<code><a href="class-ILess.Node.UnicodeDescriptorNode.html">ILess\Node\UnicodeDescriptorNode</a></code>|null
+					</div>
+
+
+
+
+			</div>
+			</div></td>
+		</tr>
+		<tr data-order="parseEntitiesKeyword" id="_parseEntitiesKeyword">
+
+			<td class="attributes"><code>
+				 protected 
+				<code><a href="class-ILess.Node.ColorNode.html">ILess\Node\ColorNode</a></code>|<code><a href="class-ILess.Node.KeywordNode.html">ILess\Node\KeywordNode</a></code>|null
+				
+				</code>
+			</td>
+
+			<td class="name"><div>
+			<a class="anchor" href="#_parseEntitiesKeyword">#</a>
+			<code><a href="source-class-ILess.Parser.Core.html#2024-2044" title="Go to source code">parseEntitiesKeyword</a>( )</code>
+
+			<div class="description short">
+				<p>A catch-all word, such as: <code>black border-collapse</code></p>
+			</div>
+
+			<div class="description detailed hidden">
+				<p>A catch-all word, such as: <code>black border-collapse</code></p>
+
+
+
+					<h4>Returns</h4>
+					<div class="list">
+						<code><a href="class-ILess.Node.ColorNode.html">ILess\Node\ColorNode</a></code>|<code><a href="class-ILess.Node.KeywordNode.html">ILess\Node\KeywordNode</a></code>|null
+					</div>
+
+
+
+
+			</div>
+			</div></td>
+		</tr>
+		<tr data-order="parseEntitiesUrl" id="_parseEntitiesUrl">
+
+			<td class="attributes"><code>
+				 protected 
+				<code><a href="class-ILess.Node.UrlNode.html">ILess\Node\UrlNode</a></code>|null
+				
+				</code>
+			</td>
+
+			<td class="name"><div>
+			<a class="anchor" href="#_parseEntitiesUrl">#</a>
+			<code><a href="source-class-ILess.Parser.Core.html#2046-2081" title="Go to source code">parseEntitiesUrl</a>( )</code>
+
+			<div class="description short">
+				<p>Parses url() tokens</p>
+			</div>
+
+			<div class="description detailed hidden">
+				<p>Parses url() tokens</p>
+
+
+
+					<h4>Returns</h4>
+					<div class="list">
+						<code><a href="class-ILess.Node.UrlNode.html">ILess\Node\UrlNode</a></code>|null
+					</div>
+
+
+
+
+			</div>
+			</div></td>
+		</tr>
+		<tr data-order="parseEntitiesCall" id="_parseEntitiesCall">
+
+			<td class="attributes"><code>
+				 protected 
+				<code><a href="class-ILess.Node.CallNode.html">ILess\Node\CallNode</a></code>|null
+				
+				</code>
+			</td>
+
+			<td class="name"><div>
+			<a class="anchor" href="#_parseEntitiesCall">#</a>
+			<code><a href="source-class-ILess.Parser.Core.html#2083-2129" title="Go to source code">parseEntitiesCall</a>( )</code>
+
+			<div class="description short">
+				<p>Parses a function call</p>
+			</div>
+
+			<div class="description detailed hidden">
+				<p>Parses a function call</p>
+
+
+
+					<h4>Returns</h4>
+					<div class="list">
+						<code><a href="class-ILess.Node.CallNode.html">ILess\Node\CallNode</a></code>|null
+					</div>
+
+
+
+
+			</div>
+			</div></td>
+		</tr>
+		<tr data-order="parseEntitiesArguments" id="_parseEntitiesArguments">
+
+			<td class="attributes"><code>
+				 protected 
+				array
+				
+				</code>
+			</td>
+
+			<td class="name"><div>
+			<a class="anchor" href="#_parseEntitiesArguments">#</a>
+			<code><a href="source-class-ILess.Parser.Core.html#2131-2152" title="Go to source code">parseEntitiesArguments</a>( )</code>
+
+			<div class="description short">
+				<p>Parse a list of arguments</p>
+			</div>
+
+			<div class="description detailed hidden">
+				<p>Parse a list of arguments</p>
+
+
+
+					<h4>Returns</h4>
+					<div class="list">
+						array
+					</div>
+
+
+
+
+			</div>
+			</div></td>
+		</tr>
+		<tr data-order="parseEntitiesAssignment" id="_parseEntitiesAssignment">
+
+			<td class="attributes"><code>
+				 protected 
+				<code><a href="class-ILess.Node.AssignmentNode.html">ILess\Node\AssignmentNode</a></code>|null
+				
+				</code>
+			</td>
+
+			<td class="name"><div>
+			<a class="anchor" href="#_parseEntitiesAssignment">#</a>
+			<code><a href="source-class-ILess.Parser.Core.html#2154-2185" title="Go to source code">parseEntitiesAssignment</a>( )</code>
+
+			<div class="description short">
+				<p>Parses an assignments (argument entities for calls).
+They are present in ie filter properties as shown below.
+filter: progid:DXImageTransform.Microsoft.Alpha( <em>opacity=50</em> )</p>
+			</div>
+
+			<div class="description detailed hidden">
+				<p>Parses an assignments (argument entities for calls).
+They are present in ie filter properties as shown below.
+filter: progid:DXImageTransform.Microsoft.Alpha( <em>opacity=50</em> )</p>
+
+
+
+					<h4>Returns</h4>
+					<div class="list">
+						<code><a href="class-ILess.Node.AssignmentNode.html">ILess\Node\AssignmentNode</a></code>|null
+					</div>
+
+
+
+
+			</div>
+			</div></td>
+		</tr>
+		<tr data-order="parseExpression" id="_parseExpression">
+
+			<td class="attributes"><code>
+				 protected 
+				<code><a href="class-ILess.Node.ExpressionNode.html">ILess\Node\ExpressionNode</a></code>|null
+				
+				</code>
+			</td>
+
+			<td class="name"><div>
+			<a class="anchor" href="#_parseExpression">#</a>
+			<code><a href="source-class-ILess.Parser.Core.html#2187-2220" title="Go to source code">parseExpression</a>( )</code>
+
+			<div class="description short">
+				<p>Parses an expression. Expressions either represent mathematical operations,
+or white-space delimited entities like: <code>1px solid black</code>, <code>@var * 2</code></p>
+			</div>
+
+			<div class="description detailed hidden">
+				<p>Parses an expression. Expressions either represent mathematical operations,
+or white-space delimited entities like: <code>1px solid black</code>, <code>@var * 2</code></p>
+
+
+
+					<h4>Returns</h4>
+					<div class="list">
+						<code><a href="class-ILess.Node.ExpressionNode.html">ILess\Node\ExpressionNode</a></code>|null
+					</div>
+
+
+
+
+			</div>
+			</div></td>
+		</tr>
+		<tr data-order="parseAlpha" id="_parseAlpha">
+
+			<td class="attributes"><code>
+				 protected 
+				<code><a href="class-ILess.Node.AlphaNode.html">ILess\Node\AlphaNode</a></code>|null
+				
+				</code>
+			</td>
+
+			<td class="name"><div>
+			<a class="anchor" href="#_parseAlpha">#</a>
+			<code><a href="source-class-ILess.Parser.Core.html#2222-2244" title="Go to source code">parseAlpha</a>( )</code>
+
+			<div class="description short">
+				<p>Parses IE's alpha function <code>alpha(opacity=88)</code></p>
+			</div>
+
+			<div class="description detailed hidden">
+				<p>Parses IE's alpha function <code>alpha(opacity=88)</code></p>
+
+
+
+					<h4>Returns</h4>
+					<div class="list">
+						<code><a href="class-ILess.Node.AlphaNode.html">ILess\Node\AlphaNode</a></code>|null
+					</div>
+
+
+
+
+			</div>
+			</div></td>
+		</tr>
+		<tr data-order="parseEntitiesJavascript" id="_parseEntitiesJavascript">
+
+			<td class="attributes"><code>
+				 protected 
+				<code><a href="class-ILess.Node.JavascriptNode.html">ILess\Node\JavascriptNode</a></code>|null
+				
+				</code>
+			</td>
+
+			<td class="name"><div>
+			<a class="anchor" href="#_parseEntitiesJavascript">#</a>
+			<code><a href="source-class-ILess.Parser.Core.html#2246-2278" title="Go to source code">parseEntitiesJavascript</a>( )</code>
+
+			<div class="description short">
+				<p>Parses a javascript code</p>
+			</div>
+
+			<div class="description detailed hidden">
+				<p>Parses a javascript code</p>
+
+
+
+					<h4>Returns</h4>
+					<div class="list">
+						<code><a href="class-ILess.Node.JavascriptNode.html">ILess\Node\JavascriptNode</a></code>|null
+					</div>
+
+
+
+
+			</div>
+			</div></td>
+		</tr>
+		<tr data-order="parseImport" id="_parseImport">
+
+			<td class="attributes"><code>
+				 protected 
+				<code><a href="class-ILess.Node.ImportNode.html">ILess\Node\ImportNode</a></code>|null
+				
+				</code>
+			</td>
+
+			<td class="name"><div>
+			<a class="anchor" href="#_parseImport">#</a>
+			<code><a href="source-class-ILess.Parser.Core.html#2280-2319" title="Go to source code">parseImport</a>( )</code>
+
+			<div class="description short">
+				<p>Parses a @import directive</p>
+			</div>
+
+			<div class="description detailed hidden">
+				<p>Parses a @import directive</p>
+
+
+
+					<h4>Returns</h4>
+					<div class="list">
+						<code><a href="class-ILess.Node.ImportNode.html">ILess\Node\ImportNode</a></code>|null
+					</div>
+
+					<h4>Throws</h4>
+					<div class="list">
+						<code><a href="class-ILess.Exception.ParserException.html">ILess\Exception\ParserException</a></code>
+					</div>
+
+
+
+			</div>
+			</div></td>
+		</tr>
+		<tr data-order="parseImportOptions" id="_parseImportOptions">
+
+			<td class="attributes"><code>
+				 protected 
+				array
+				
+				</code>
+			</td>
+
+			<td class="name"><div>
+			<a class="anchor" href="#_parseImportOptions">#</a>
+			<code><a href="source-class-ILess.Parser.Core.html#2321-2359" title="Go to source code">parseImportOptions</a>( )</code>
+
+			<div class="description short">
+				<p>Parses import options</p>
+			</div>
+
+			<div class="description detailed hidden">
+				<p>Parses import options</p>
+
+
+
+					<h4>Returns</h4>
+					<div class="list">
+						array
+					</div>
+
+
+
+
+			</div>
+			</div></td>
+		</tr>
+		<tr data-order="parseImportOption" id="_parseImportOption">
+
+			<td class="attributes"><code>
+				 protected 
+				string|null
+				
+				</code>
+			</td>
+
+			<td class="name"><div>
+			<a class="anchor" href="#_parseImportOption">#</a>
+			<code><a href="source-class-ILess.Parser.Core.html#2361-2371" title="Go to source code">parseImportOption</a>( )</code>
+
+			<div class="description short">
+				<p>Parses import option</p>
+			</div>
+
+			<div class="description detailed hidden">
+				<p>Parses import option</p>
+
+
+
+					<h4>Returns</h4>
+					<div class="list">
+						string|null
+					</div>
+
+
+
+
+			</div>
+			</div></td>
+		</tr>
+		<tr data-order="parseMedia" id="_parseMedia">
+
+			<td class="attributes"><code>
+				 protected 
+				<code><a href="class-ILess.Node.MediaNode.html">ILess\Node\MediaNode</a></code>|null
+				
+				</code>
+			</td>
+
+			<td class="name"><div>
+			<a class="anchor" href="#_parseMedia">#</a>
+			<code><a href="source-class-ILess.Parser.Core.html#2373-2409" title="Go to source code">parseMedia</a>( )</code>
+
+			<div class="description short">
+				<p>Parses media block</p>
+			</div>
+
+			<div class="description detailed hidden">
+				<p>Parses media block</p>
+
+
+
+					<h4>Returns</h4>
+					<div class="list">
+						<code><a href="class-ILess.Node.MediaNode.html">ILess\Node\MediaNode</a></code>|null
+					</div>
+
+
+
+
+			</div>
+			</div></td>
+		</tr>
+		<tr data-order="parseMediaFeatures" id="_parseMediaFeatures">
+
+			<td class="attributes"><code>
+				 protected 
+				array
+				
+				</code>
+			</td>
+
+			<td class="name"><div>
+			<a class="anchor" href="#_parseMediaFeatures">#</a>
+			<code><a href="source-class-ILess.Parser.Core.html#2411-2434" title="Go to source code">parseMediaFeatures</a>( )</code>
+
+			<div class="description short">
+				<p>Parses media features</p>
+			</div>
+
+			<div class="description detailed hidden">
+				<p>Parses media features</p>
+
+
+
+					<h4>Returns</h4>
+					<div class="list">
+						array
+					</div>
+
+
+
+
+			</div>
+			</div></td>
+		</tr>
+		<tr data-order="parseMediaFeature" id="_parseMediaFeature">
+
+			<td class="attributes"><code>
+				 protected 
+				<code><a href="class-ILess.Node.ExpressionNode.html">ILess\Node\ExpressionNode</a></code>|null
+				
+				</code>
+			</td>
+
+			<td class="name"><div>
+			<a class="anchor" href="#_parseMediaFeature">#</a>
+			<code><a href="source-class-ILess.Parser.Core.html#2437-2478" title="Go to source code">parseMediaFeature</a>( )</code>
+
+			<div class="description short">
+				<p>Parses single media feature</p>
+			</div>
+
+			<div class="description detailed hidden">
+				<p>Parses single media feature</p>
+
+
+
+					<h4>Returns</h4>
+					<div class="list">
+						<code><a href="class-ILess.Node.ExpressionNode.html">ILess\Node\ExpressionNode</a></code>|null
+					</div>
+
+
+
+
+			</div>
+			</div></td>
+		</tr>
+		<tr data-order="parsePlugin" id="_parsePlugin">
+
+			<td class="attributes"><code>
+				 protected 
+				<code><a href="class-ILess.Node.ImportNode.html">ILess\Node\ImportNode</a></code>|null
+				
+				</code>
+			</td>
+
+			<td class="name"><div>
+			<a class="anchor" href="#_parsePlugin">#</a>
+			<code><a href="source-class-ILess.Parser.Core.html#2480-2504" title="Go to source code">parsePlugin</a>( )</code>
+
+			<div class="description short">
+				<p>A @plugin directive, used to import compiler extensions dynamically. <code>@plugin "lib"</code>;</p>
+			</div>
+
+			<div class="description detailed hidden">
+				<p>A @plugin directive, used to import compiler extensions dynamically. <code>@plugin "lib"</code>;</p>
+
+
+
+					<h4>Returns</h4>
+					<div class="list">
+						<code><a href="class-ILess.Node.ImportNode.html">ILess\Node\ImportNode</a></code>|null
+					</div>
+
+					<h4>Throws</h4>
+					<div class="list">
+						<code><a href="class-ILess.Exception.ParserException.html">ILess\Exception\ParserException</a></code>
+					</div>
+
+
+
+			</div>
+			</div></td>
+		</tr>
+		<tr data-order="parseProperty" id="_parseProperty">
+
+			<td class="attributes"><code>
+				 protected 
+				string|null
+				
+				</code>
+			</td>
+
+			<td class="name"><div>
+			<a class="anchor" href="#_parseProperty">#</a>
+			<code><a href="source-class-ILess.Parser.Core.html#2506-2516" title="Go to source code">parseProperty</a>( )</code>
+
+			<div class="description short">
+				<p>Parses the property</p>
+			</div>
+
+			<div class="description detailed hidden">
+				<p>Parses the property</p>
+
+
+
+					<h4>Returns</h4>
+					<div class="list">
+						string|null
+					</div>
+
+
+
+
+			</div>
+			</div></td>
+		</tr>
+		<tr data-order="parseEnd" id="_parseEnd">
+
+			<td class="attributes"><code>
+				 protected 
+				string
+				
+				</code>
+			</td>
+
+			<td class="name"><div>
+			<a class="anchor" href="#_parseEnd">#</a>
+			<code><a href="source-class-ILess.Parser.Core.html#2518-2526" title="Go to source code">parseEnd</a>( )</code>
+
+			<div class="description short">
+				<p>Parses a rule terminator</p>
+			</div>
+
+			<div class="description detailed hidden">
+				<p>Parses a rule terminator</p>
+
+
+
+					<h4>Returns</h4>
+					<div class="list">
+						string
+					</div>
+
+
+
+
+			</div>
+			</div></td>
+		</tr>
+		<tr data-order="getContext" id="_getContext">
+
+			<td class="attributes"><code>
+				 public 
+				<code><a href="class-ILess.Context.html">ILess\Context</a></code>
+				
+				</code>
+			</td>
+
+			<td class="name"><div>
+			<a class="anchor" href="#_getContext">#</a>
+			<code><a href="source-class-ILess.Parser.Core.html#2528-2536" title="Go to source code">getContext</a>( )</code>
+
+			<div class="description short">
+				<p>Returns the context</p>
+			</div>
+
+			<div class="description detailed hidden">
+				<p>Returns the context</p>
+
+
+
+					<h4>Returns</h4>
+					<div class="list">
+						<code><a href="class-ILess.Context.html">ILess\Context</a></code>
+					</div>
+
+
+
+
+			</div>
+			</div></td>
+		</tr>
+		<tr data-order="setContext" id="_setContext">
+
+			<td class="attributes"><code>
+				 public 
+				
+				
+				</code>
+			</td>
+
+			<td class="name"><div>
+			<a class="anchor" href="#_setContext">#</a>
+			<code><a href="source-class-ILess.Parser.Core.html#2538-2549" title="Go to source code">setContext</a>( <span><code><a href="class-ILess.Context.html">ILess\Context</a></code> <var>$context</var></span> )</code>
+
+			<div class="description short">
+				<p>Set the current parser environment</p>
+			</div>
+
+			<div class="description detailed hidden">
+				<p>Set the current parser environment</p>
+
+
+					<h4>Parameters</h4>
+					<div class="list"><dl>
+						<dt><var>$context</var></dt>
+						<dd></dd>
+					</dl></div>
+
+					<h4>Returns</h4>
+					<div class="list">
+						<br>$this
+					</div>
+
+
+
+
+			</div>
+			</div></td>
+		</tr>
+		<tr data-order="getImporter" id="_getImporter">
+
+			<td class="attributes"><code>
+				 public 
+				<code><a href="class-ILess.Importer.html">ILess\Importer</a></code>
+				
+				</code>
+			</td>
+
+			<td class="name"><div>
+			<a class="anchor" href="#_getImporter">#</a>
+			<code><a href="source-class-ILess.Parser.Core.html#2551-2559" title="Go to source code">getImporter</a>( )</code>
+
+			<div class="description short">
+				<p>Returns the importer</p>
+			</div>
+
+			<div class="description detailed hidden">
+				<p>Returns the importer</p>
+
+
+
+					<h4>Returns</h4>
+					<div class="list">
+						<code><a href="class-ILess.Importer.html">ILess\Importer</a></code>
+					</div>
+
+
+
+
+			</div>
+			</div></td>
+		</tr>
+		<tr data-order="setImporter" id="_setImporter">
+
+			<td class="attributes"><code>
+				 public 
+				
+				
+				</code>
+			</td>
+
+			<td class="name"><div>
+			<a class="anchor" href="#_setImporter">#</a>
+			<code><a href="source-class-ILess.Parser.Core.html#2561-2572" title="Go to source code">setImporter</a>( <span><code><a href="class-ILess.Importer.html">ILess\Importer</a></code> <var>$importer</var></span> )</code>
+
+			<div class="description short">
+				<p>Set the importer</p>
+			</div>
+
+			<div class="description detailed hidden">
+				<p>Set the importer</p>
+
+
+					<h4>Parameters</h4>
+					<div class="list"><dl>
+						<dt><var>$importer</var></dt>
+						<dd></dd>
+					</dl></div>
+
+					<h4>Returns</h4>
+					<div class="list">
+						<br>$this
+					</div>
+
+
+
+
+			</div>
+			</div></td>
+		</tr>
+		<tr data-order="match" id="_match">
+
+			<td class="attributes"><code>
+				 protected 
+				null|boolean|object
+				
+				</code>
+			</td>
+
+			<td class="name"><div>
+			<a class="anchor" href="#_match">#</a>
+			<code><a href="source-class-ILess.Parser.Core.html#2574-2600" title="Go to source code">match</a>( <span>array|string <var>$token</var></span> )</code>
+
+			<div class="description short">
+				<p>Parse from a token, regexp or string, and move forward if match</p>
+			</div>
+
+			<div class="description detailed hidden">
+				<p>Parse from a token, regexp or string, and move forward if match</p>
+
+
+					<h4>Parameters</h4>
+					<div class="list"><dl>
+						<dt><var>$token</var></dt>
+						<dd>The token</dd>
+					</dl></div>
+
+					<h4>Returns</h4>
+					<div class="list">
+						null|boolean|object
+					</div>
+
+
+
+
+			</div>
+			</div></td>
+		</tr>
+		<tr data-order="matchFuncs" id="_matchFuncs">
+
+			<td class="attributes"><code>
+				 protected 
+				<code><a href="class-ILess.Node.html">ILess\Node</a></code>|mixed
+				
+				</code>
+			</td>
+
+			<td class="name"><div>
+			<a class="anchor" href="#_matchFuncs">#</a>
+			<code><a href="source-class-ILess.Parser.Core.html#2602-2621" title="Go to source code">matchFuncs</a>( <span>array <var>$functions</var></span> )</code>
+
+			<div class="description short">
+				<p>Matches given functions. Returns the result of the first which returns
+any non null value.</p>
+			</div>
+
+			<div class="description detailed hidden">
+				<p>Matches given functions. Returns the result of the first which returns
+any non null value.</p>
+
+
+					<h4>Parameters</h4>
+					<div class="list"><dl>
+						<dt><var>$functions</var></dt>
+						<dd>The array of functions to call</dd>
+					</dl></div>
+
+					<h4>Returns</h4>
+					<div class="list">
+						<code><a href="class-ILess.Node.html">ILess\Node</a></code>|mixed
+					</div>
+
+					<h4>Throws</h4>
+					<div class="list">
+						<code><a href="class-InvalidArgumentException.html">InvalidArgumentException</a></code><br>If the function does not exist
+					</div>
+
+
+
+			</div>
+			</div></td>
+		</tr>
+		<tr data-order="expect" id="_expect">
+
+			<td class="attributes"><code>
+				 protected 
+				<code><a href="class-ILess.Node.html">ILess\Node</a></code>|null
+				
+				</code>
+			</td>
+
+			<td class="name"><div>
+			<a class="anchor" href="#_expect">#</a>
+			<code><a href="source-class-ILess.Parser.Core.html#2623-2648" title="Go to source code">expect</a>( <span>string <var>$token</var></span>, <span>string <var>$message</var> = <span class="php-keyword1">null</span></span> )</code>
+
+			<div class="description short">
+				<p>Expects a string to be present at the current position</p>
+			</div>
+
+			<div class="description detailed hidden">
+				<p>Expects a string to be present at the current position</p>
+
+
+					<h4>Parameters</h4>
+					<div class="list"><dl>
+						<dt><var>$token</var></dt>
+						<dd>The single character</dd>
+						<dt><var>$message</var></dt>
+						<dd>The error message for the exception</dd>
+					</dl></div>
+
+					<h4>Returns</h4>
+					<div class="list">
+						<code><a href="class-ILess.Node.html">ILess\Node</a></code>|null
+					</div>
+
+					<h4>Throws</h4>
+					<div class="list">
+						<code><a href="class-ILess.Exception.ParserException.html">ILess\Exception\ParserException</a></code><br>If the expected token does not match
+					</div>
+
+
+
+			</div>
+			</div></td>
+		</tr>
+		<tr data-order="getDebugInfo" id="_getDebugInfo">
+
+			<td class="attributes"><code>
+				 protected 
+				<code><a href="class-ILess.DebugInfo.html">ILess\DebugInfo</a></code>
+				
+				</code>
+			</td>
+
+			<td class="name"><div>
+			<a class="anchor" href="#_getDebugInfo">#</a>
+			<code><a href="source-class-ILess.Parser.Core.html#2650-2661" title="Go to source code">getDebugInfo</a>( <span>integer <var>$index</var></span> )</code>
+
+			<div class="description short">
+				<p>Returns the debug information</p>
+			</div>
+
+			<div class="description detailed hidden">
+				<p>Returns the debug information</p>
+
+
+					<h4>Parameters</h4>
+					<div class="list"><dl>
+						<dt><var>$index</var></dt>
+						<dd>The index</dd>
+					</dl></div>
+
+					<h4>Returns</h4>
+					<div class="list">
+						<code><a href="class-ILess.DebugInfo.html">ILess\DebugInfo</a></code>
+					</div>
+
+
+
+
+			</div>
+			</div></td>
+		</tr>
+			</table>
+		</div>
+
+
+
+
+
+
+
+
+		<div class="panel panel-default">
+            <div class="panel-heading"><h2>Constants summary</h2></div>
+			<table class="summary table table-bordered table-striped constants" id="constants">
+			<tr data-order="VERSION" id="VERSION">
+
+				<td class="attributes"><code>string</code></td>
+				<td class="name">
+					<code>
+						<a href="source-class-ILess.Parser.Core.html#74-77" title="Go to source code"><b>VERSION</b></a>
+					</code>
+
+					<div class="description short">
+						<p>Parser version</p>
+					</div>
+
+					<div class="description detailed hidden">
+						<p>Parser version</p>
+
+					</div>
+				</td>
+				<td class="value">
+					<div>
+						<a href="#VERSION" class="anchor">#</a>
+						<code><span class="php-quote">'2.0.0'</span></code>
+					</div>
+				</td>
+			</tr>
+			<tr data-order="LESS_JS_VERSION" id="LESS_JS_VERSION">
+
+				<td class="attributes"><code>string</code></td>
+				<td class="name">
+					<code>
+						<a href="source-class-ILess.Parser.Core.html#79-82" title="Go to source code"><b>LESS_JS_VERSION</b></a>
+					</code>
+
+					<div class="description short">
+						<p>Less.js compatibility version</p>
+					</div>
+
+					<div class="description detailed hidden">
+						<p>Less.js compatibility version</p>
+
+					</div>
+				</td>
+				<td class="value">
+					<div>
+						<a href="#LESS_JS_VERSION" class="anchor">#</a>
+						<code><span class="php-quote">'2.5.x'</span></code>
+					</div>
+				</td>
+			</tr>
+			</table>
+		</div>
+
+
+
+
+		<div class="panel panel-default">
+            <div class="panel-heading"><h2>Properties summary</h2></div>
+			<table class="summary table table-bordered table-striped properties" id="properties">
+		<tr data-order="context" id="$context">
+			<td class="attributes"><code>
+				protected  
+				<code><a href="class-ILess.Context.html">ILess\Context</a></code>
+			</code></td>
+
+			<td class="name">
+					<a href="source-class-ILess.Parser.Core.html#84-89" title="Go to source code"><var>$context</var></a>
+
+				<div class="description short">
+					<p>The context</p>
+				</div>
+
+				<div class="description detailed hidden">
+					<p>The context</p>
+
+				</div>
+			</td>
+			<td class="value">
+				<div>
+					<a href="#$context" class="anchor">#</a>
+					<code></code>
+				</div>
+			</td>
+		</tr>
+		<tr data-order="importer" id="$importer">
+			<td class="attributes"><code>
+				protected  
+				<code><a href="class-ILess.Importer.html">ILess\Importer</a></code>
+			</code></td>
+
+			<td class="name">
+					<a href="source-class-ILess.Parser.Core.html#91-96" title="Go to source code"><var>$importer</var></a>
+
+				<div class="description short">
+					<p>The importer</p>
+				</div>
+
+				<div class="description detailed hidden">
+					<p>The importer</p>
+
+				</div>
+			</td>
+			<td class="value">
+				<div>
+					<a href="#$importer" class="anchor">#</a>
+					<code></code>
+				</div>
+			</td>
+		</tr>
+		<tr data-order="variables" id="$variables">
+			<td class="attributes"><code>
+				protected  
+				array
+			</code></td>
+
+			<td class="name">
+					<a href="source-class-ILess.Parser.Core.html#98-103" title="Go to source code"><var>$variables</var></a>
+
+				<div class="description short">
+					<p>Array of variables</p>
+				</div>
+
+				<div class="description detailed hidden">
+					<p>Array of variables</p>
+
+				</div>
+			</td>
+			<td class="value">
+				<div>
+					<a href="#$variables" class="anchor">#</a>
+					<code><span class="php-keyword1">array</span>()</code>
+				</div>
+			</td>
+		</tr>
+		<tr data-order="rules" id="$rules">
+			<td class="attributes"><code>
+				protected  
+				array
+			</code></td>
+
+			<td class="name">
+					<a href="source-class-ILess.Parser.Core.html#105-110" title="Go to source code"><var>$rules</var></a>
+
+				<div class="description short">
+					<p>Array of parsed rules</p>
+				</div>
+
+				<div class="description detailed hidden">
+					<p>Array of parsed rules</p>
+
+				</div>
+			</td>
+			<td class="value">
+				<div>
+					<a href="#$rules" class="anchor">#</a>
+					<code><span class="php-keyword1">array</span>()</code>
+				</div>
+			</td>
+		</tr>
+		<tr data-order="input" id="$input">
+			<td class="attributes"><code>
+				protected  
+				<code><a href="class-ILess.Parser.ParserInput.html">ILess\Parser\ParserInput</a></code>
+			</code></td>
+
+			<td class="name">
+					<a href="source-class-ILess.Parser.Core.html#112-115" title="Go to source code"><var>$input</var></a>
+
+				<div class="description short">
+					
+				</div>
+
+				<div class="description detailed hidden">
+					
+
+				</div>
+			</td>
+			<td class="value">
+				<div>
+					<a href="#$input" class="anchor">#</a>
+					<code></code>
+				</div>
+			</td>
+		</tr>
+		<tr data-order="pluginManager" id="$pluginManager">
+			<td class="attributes"><code>
+				protected  
+				<code><a href="class-ILess.PluginManager.html">ILess\PluginManager</a></code>|null
+			</code></td>
+
+			<td class="name">
+					<a href="source-class-ILess.Parser.Core.html#117-120" title="Go to source code"><var>$pluginManager</var></a>
+
+				<div class="description short">
+					
+				</div>
+
+				<div class="description detailed hidden">
+					
+
+				</div>
+			</td>
+			<td class="value">
+				<div>
+					<a href="#$pluginManager" class="anchor">#</a>
+					<code></code>
+				</div>
+			</td>
+		</tr>
+			</table>
+		</div>
+
+
+
+
+
+
+</div>
+	</div>
+
+	<div id="footer">
+		ILess API docs API documentation generated by <a href="http://apigen.org">ApiGen</a>
+	</div>
+</div>
+<script src="resources/combined.js"></script>
+<script src="elementlist.js"></script>
+</body>
+</html>

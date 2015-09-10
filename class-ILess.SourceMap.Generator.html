@@ -1,0 +1,932 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+
+	<title>Class ILess\SourceMap\Generator | ILess API docs</title>
+
+	<link rel="stylesheet" href="resources/bootstrap.min.css?973e37a8502921d56bc02bb55321f45b072b6f71">
+	<link rel="stylesheet" href="resources/style.css?49f43d3208c5d7e33fa16d36107a345bf11cc00d">
+
+	<script>
+		var _gaq = _gaq || [];
+		_gaq.push(['_setAccount', "UA-67370642-2"]);
+		_gaq.push(['_trackPageview']);
+
+		(function() {
+			var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+			ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+			var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+		})();
+	</script>
+</head>
+
+<body>
+	<nav id="navigation" class="navbar navbar-default navbar-fixed-top">
+		<div class="container-fluid">
+			<div class="navbar-header">
+				<a href="index.html" class="navbar-brand">ILess API docs</a>
+			</div>
+			<div class="collapse navbar-collapse">
+
+                <form id="search" class="navbar-form navbar-left" role="search">
+                    <input type="hidden" name="cx" value="">
+                    <input type="hidden" name="ie" value="UTF-8">
+                    <div class="form-group">
+                        <input type="text" name="q" class="search-query form-control" placeholder="Search">
+					</div>
+				</form>
+
+				<ul class="nav navbar-nav">
+					<li>
+						<a href="namespace-ILess.SourceMap.html" title="Summary of ILess\SourceMap"><span>Namespace</span></a>
+					</li>
+					<li class="active">
+<span>Class</span>					</li>
+
+					<li class="divider-vertical"></li>
+
+					<li>
+						<a href="tree.html" title="Tree view of classes, interfaces, traits and exceptions"><span>Tree</span></a>
+					</li>
+
+						<li>
+							<a href="annotation-group-deprecated.html" title="List of elements with deprecated annotation">
+								<span>Deprecated</span>
+							</a>
+						</li>
+						<li>
+							<a href="annotation-group-todo.html" title="List of elements with todo annotation">
+								<span>Todo</span>
+							</a>
+						</li>
+
+
+				</ul>
+			</div>
+		</div>
+	</nav>
+
+	<div id="left">
+	<div id="menu">
+
+		<div id="groups">
+				<h3>Namespaces</h3>
+			<ul>
+					<li class="active">
+						<a href="namespace-ILess.html">
+							ILess<span></span>
+						</a>
+							<ul>
+					<li>
+						<a href="namespace-ILess.Cache.html">
+							Cache						</a>
+							</li>
+					<li>
+						<a href="namespace-ILess.CLI.html">
+							CLI						</a>
+							</li>
+					<li>
+						<a href="namespace-ILess.Exception.html">
+							Exception						</a>
+							</li>
+					<li>
+						<a href="namespace-ILess.Importer.html">
+							Importer						</a>
+							</li>
+					<li>
+						<a href="namespace-ILess.Node.html">
+							Node						</a>
+							</li>
+					<li>
+						<a href="namespace-ILess.Output.html">
+							Output						</a>
+							</li>
+					<li>
+						<a href="namespace-ILess.OutputFilter.html">
+							OutputFilter						</a>
+							</li>
+					<li>
+						<a href="namespace-ILess.Parser.html">
+							Parser						</a>
+							</li>
+					<li>
+						<a href="namespace-ILess.Plugin.html">
+							Plugin						</a>
+							</li>
+					<li class="active">
+						<a href="namespace-ILess.SourceMap.html">
+							SourceMap						</a>
+							</li>
+					<li>
+						<a href="namespace-ILess.Util.html">
+							Util						</a>
+							</li>
+					<li>
+						<a href="namespace-ILess.Visitor.html">
+							Visitor						</a>
+							</li>
+								</ul></li>
+					<li>
+						<a href="namespace-PHP.html">
+							PHP						</a>
+							</li>
+			</ul>
+		</div>
+
+
+		<div id="elements">
+			<h3>Classes</h3>
+			<ul>
+				<li><a href="class-ILess.SourceMap.Base64VLQ.html">Base64VLQ</a></li>
+				<li class="active"><a href="class-ILess.SourceMap.Generator.html">Generator</a></li>
+			</ul>
+
+
+
+
+
+		</div>
+	</div>
+</div>
+
+<div id="splitter"></div>
+
+<div id="right">
+	<div id="rightInner">
+<div id="content" class="class">
+	<h1>Class Generator</h1>
+
+
+	<div class="description">
+	<p>Source map generator</p>
+	</div>
+
+	<dl class="tree well">
+		<dd style="padding-left:0px">
+			<a href="class-ILess.Configurable.html"><span>ILess\Configurable</span></a>
+			
+			
+			
+		</dd>
+		<dd style="padding-left:30px">
+			<img src="resources/inherit.png" alt="Extended by">
+<b><span>ILess\SourceMap\Generator</span></b>			
+			
+			
+		</dd>
+	</dl>
+
+
+
+
+
+
+
+
+	<div class="alert alert-info">
+		
+		
+		<b>Namespace:</b> <a href="namespace-ILess.html">ILess</a>\<a href="namespace-ILess.SourceMap.html">SourceMap</a><br>
+		<b>Package:</b> ILess\SourceMap<br>
+
+			<b>Located at</b> <a href="source-class-ILess.SourceMap.Generator.html#20-412" title="Go to source code">ILess/SourceMap/Generator.php</a>
+		<br>
+	</div>
+
+
+
+		<div class="panel panel-default">
+			<div class="panel-heading"><h2>Methods summary</h2></div>
+			<table class="summary table table-bordered table-striped methods" id="methods">
+		<tr data-order="__construct" id="___construct">
+
+			<td class="attributes"><code>
+				 public 
+				
+				
+				</code>
+			</td>
+
+			<td class="name"><div>
+			<a class="anchor" href="#___construct">#</a>
+			<code><a href="source-class-ILess.SourceMap.Generator.html#91-109" title="Go to source code">__construct</a>( <span><code><a href="class-ILess.Node.RulesetNode.html">ILess\Node\RulesetNode</a></code> <var>$root</var></span>, <span>array <var>$contentsMap</var></span>, <span>array <var>$options</var> = <span class="php-keyword1">array</span>()</span>, <span><code><a href="class-ILess.SourceMap.Base64VLQ.html">ILess\SourceMap\Base64VLQ</a></code> <var>$encoder</var> = <span class="php-keyword1">null</span> </span> )</code>
+
+			<div class="description short">
+				<p>Constructor</p>
+			</div>
+
+			<div class="description detailed hidden">
+				<p>Constructor</p>
+
+
+					<h4>Parameters</h4>
+					<div class="list"><dl>
+						<dt><var>$root</var></dt>
+						<dd>The root node</dd>
+						<dt><var>$contentsMap</var></dt>
+						<dd>Array of file contents map</dd>
+						<dt><var>$options</var></dt>
+						<dd>Array of options</dd>
+						<dt><var>$encoder</var></dt>
+						<dd>The encoder</dd>
+					</dl></div>
+
+
+
+
+					<h4>Overrides</h4>
+					<div class="list"><code><a href="class-ILess.Configurable.html#___construct">ILess\Configurable::__construct</a></code></div>
+
+			</div>
+			</div></td>
+		</tr>
+		<tr data-order="setup" id="_setup">
+
+			<td class="attributes"><code>
+				 protected 
+				
+				
+				</code>
+			</td>
+
+			<td class="name"><div>
+			<a class="anchor" href="#_setup">#</a>
+			<code><a href="source-class-ILess.SourceMap.Generator.html#111-122" title="Go to source code">setup</a>( )</code>
+
+			<div class="description short">
+				<p>Setups the generator</p>
+			</div>
+
+			<div class="description detailed hidden">
+				<p>Setups the generator</p>
+
+
+
+
+
+
+					<h4>Overrides</h4>
+					<div class="list"><code><a href="class-ILess.Configurable.html#_setup">ILess\Configurable::setup</a></code></div>
+
+			</div>
+			</div></td>
+		</tr>
+		<tr data-order="generateCSS" id="_generateCSS">
+
+			<td class="attributes"><code>
+				 public 
+				string
+				
+				</code>
+			</td>
+
+			<td class="name"><div>
+			<a class="anchor" href="#_generateCSS">#</a>
+			<code><a href="source-class-ILess.SourceMap.Generator.html#124-181" title="Go to source code">generateCSS</a>( <span><code><a href="class-ILess.Context.html">ILess\Context</a></code> <var>$context</var></span> )</code>
+
+			<div class="description short">
+				<p>Generates the CSS</p>
+			</div>
+
+			<div class="description detailed hidden">
+				<p>Generates the CSS</p>
+
+
+					<h4>Parameters</h4>
+					<div class="list"><dl>
+						<dt><var>$context</var></dt>
+						<dd></dd>
+					</dl></div>
+
+					<h4>Returns</h4>
+					<div class="list">
+						string
+					</div>
+
+
+
+
+			</div>
+			</div></td>
+		</tr>
+		<tr data-order="saveMap" id="_saveMap">
+
+			<td class="attributes"><code>
+				 protected 
+				
+				
+				</code>
+			</td>
+
+			<td class="name"><div>
+			<a class="anchor" href="#_saveMap">#</a>
+			<code><a href="source-class-ILess.SourceMap.Generator.html#183-205" title="Go to source code">saveMap</a>( <span>string <var>$file</var></span>, <span>string <var>$content</var></span> )</code>
+
+			<div class="description short">
+				<p>Saves the source map to a file</p>
+			</div>
+
+			<div class="description detailed hidden">
+				<p>Saves the source map to a file</p>
+
+
+					<h4>Parameters</h4>
+					<div class="list"><dl>
+						<dt><var>$file</var></dt>
+						<dd>The absolute path to a file</dd>
+						<dt><var>$content</var></dt>
+						<dd>The content to write</dd>
+					</dl></div>
+
+
+					<h4>Throws</h4>
+					<div class="list">
+						<code><a href="class-ILess.Exception.IOException.html">ILess\Exception\IOException</a></code><br>If the file could not be saved<br>
+						<code><a href="class-InvalidArgumentException.html">InvalidArgumentException</a></code><br>If the directory to write the map to does not exist or is not writable
+					</div>
+
+
+
+			</div>
+			</div></td>
+		</tr>
+		<tr data-order="normalizeFilename" id="_normalizeFilename">
+
+			<td class="attributes"><code>
+				 protected 
+				string
+				
+				</code>
+			</td>
+
+			<td class="name"><div>
+			<a class="anchor" href="#_normalizeFilename">#</a>
+			<code><a href="source-class-ILess.SourceMap.Generator.html#207-226" title="Go to source code">normalizeFilename</a>( <span>string <var>$filename</var></span> )</code>
+
+			<div class="description short">
+				<p>Normalizes the filename</p>
+			</div>
+
+			<div class="description detailed hidden">
+				<p>Normalizes the filename</p>
+
+
+					<h4>Parameters</h4>
+					<div class="list"><dl>
+						<dt><var>$filename</var></dt>
+						<dd></dd>
+					</dl></div>
+
+					<h4>Returns</h4>
+					<div class="list">
+						string
+					</div>
+
+
+
+
+			</div>
+			</div></td>
+		</tr>
+		<tr data-order="addMapping" id="_addMapping">
+
+			<td class="attributes"><code>
+				 public 
+				<code><a href="class-ILess.SourceMap.Generator.html">ILess\SourceMap\Generator</a></code>
+				
+				</code>
+			</td>
+
+			<td class="name"><div>
+			<a class="anchor" href="#_addMapping">#</a>
+			<code><a href="source-class-ILess.SourceMap.Generator.html#228-254" title="Go to source code">addMapping</a>( <span>integer <var>$generatedLine</var></span>, <span>integer <var>$generatedColumn</var></span>, <span>integer <var>$originalLine</var></span>, <span>integer <var>$originalColumn</var></span>, <span>string <var>$sourceFile</var></span> )</code>
+
+			<div class="description short">
+				<p>Adds a mapping</p>
+			</div>
+
+			<div class="description detailed hidden">
+				<p>Adds a mapping</p>
+
+
+					<h4>Parameters</h4>
+					<div class="list"><dl>
+						<dt><var>$generatedLine</var></dt>
+						<dd>The line number in generated file</dd>
+						<dt><var>$generatedColumn</var></dt>
+						<dd>The column number in generated file</dd>
+						<dt><var>$originalLine</var></dt>
+						<dd>The line number in original file</dd>
+						<dt><var>$originalColumn</var></dt>
+						<dd>The column number in original file</dd>
+						<dt><var>$sourceFile</var></dt>
+						<dd>The original source file</dd>
+					</dl></div>
+
+					<h4>Returns</h4>
+					<div class="list">
+						<code><a href="class-ILess.SourceMap.Generator.html">ILess\SourceMap\Generator</a></code>
+					</div>
+
+
+
+
+			</div>
+			</div></td>
+		</tr>
+		<tr data-order="clear" id="_clear">
+
+			<td class="attributes"><code>
+				 public 
+				<code><a href="class-ILess.SourceMap.Generator.html">ILess\SourceMap\Generator</a></code>
+				
+				</code>
+			</td>
+
+			<td class="name"><div>
+			<a class="anchor" href="#_clear">#</a>
+			<code><a href="source-class-ILess.SourceMap.Generator.html#256-266" title="Go to source code">clear</a>( )</code>
+
+			<div class="description short">
+				<p>Clear the mappings</p>
+			</div>
+
+			<div class="description detailed hidden">
+				<p>Clear the mappings</p>
+
+
+
+					<h4>Returns</h4>
+					<div class="list">
+						<code><a href="class-ILess.SourceMap.Generator.html">ILess\SourceMap\Generator</a></code>
+					</div>
+
+
+
+
+			</div>
+			</div></td>
+		</tr>
+		<tr data-order="setEncoder" id="_setEncoder">
+
+			<td class="attributes"><code>
+				 public 
+				<code><a href="class-ILess.SourceMap.Generator.html">ILess\SourceMap\Generator</a></code>
+				
+				</code>
+			</td>
+
+			<td class="name"><div>
+			<a class="anchor" href="#_setEncoder">#</a>
+			<code><a href="source-class-ILess.SourceMap.Generator.html#268-279" title="Go to source code">setEncoder</a>( <span><code><a href="class-ILess.SourceMap.Base64VLQ.html">ILess\SourceMap\Base64VLQ</a></code> <var>$encoder</var></span> )</code>
+
+			<div class="description short">
+				<p>Sets the encoder</p>
+			</div>
+
+			<div class="description detailed hidden">
+				<p>Sets the encoder</p>
+
+
+					<h4>Parameters</h4>
+					<div class="list"><dl>
+						<dt><var>$encoder</var></dt>
+						<dd></dd>
+					</dl></div>
+
+					<h4>Returns</h4>
+					<div class="list">
+						<code><a href="class-ILess.SourceMap.Generator.html">ILess\SourceMap\Generator</a></code>
+					</div>
+
+
+
+
+			</div>
+			</div></td>
+		</tr>
+		<tr data-order="getEncoder" id="_getEncoder">
+
+			<td class="attributes"><code>
+				 public 
+				<code><a href="class-ILess.SourceMap.Base64VLQ.html">ILess\SourceMap\Base64VLQ</a></code>
+				
+				</code>
+			</td>
+
+			<td class="name"><div>
+			<a class="anchor" href="#_getEncoder">#</a>
+			<code><a href="source-class-ILess.SourceMap.Generator.html#281-289" title="Go to source code">getEncoder</a>( )</code>
+
+			<div class="description short">
+				<p>Returns the encoder</p>
+			</div>
+
+			<div class="description detailed hidden">
+				<p>Returns the encoder</p>
+
+
+
+					<h4>Returns</h4>
+					<div class="list">
+						<code><a href="class-ILess.SourceMap.Base64VLQ.html">ILess\SourceMap\Base64VLQ</a></code>
+					</div>
+
+
+
+
+			</div>
+			</div></td>
+		</tr>
+		<tr data-order="generateJson" id="_generateJson">
+
+			<td class="attributes"><code>
+				 protected 
+				string
+				
+				</code>
+			</td>
+
+			<td class="name"><div>
+			<a class="anchor" href="#_generateJson">#</a>
+			<code><a href="source-class-ILess.SourceMap.Generator.html#291-328" title="Go to source code">generateJson</a>( )</code>
+
+			<div class="description short">
+				<p>Generates the JSON source map</p>
+			</div>
+
+			<div class="description detailed hidden">
+				<p>Generates the JSON source map</p>
+
+
+
+					<h4>Returns</h4>
+					<div class="list">
+						string
+					</div>
+
+
+					<h4>See</h4>
+					<div class="list">
+							https://docs.google.com/document/d/1U1RGAehQwRypUTovF1KRlpiOFze0b-_2gc6fAH0KY0k/edit#<br>
+					</div>
+
+
+			</div>
+			</div></td>
+		</tr>
+		<tr data-order="getSourcesContent" id="_getSourcesContent">
+
+			<td class="attributes"><code>
+				 protected 
+				array|null
+				
+				</code>
+			</td>
+
+			<td class="name"><div>
+			<a class="anchor" href="#_getSourcesContent">#</a>
+			<code><a href="source-class-ILess.SourceMap.Generator.html#330-343" title="Go to source code">getSourcesContent</a>( )</code>
+
+			<div class="description short">
+				<p>Returns the sources contents</p>
+			</div>
+
+			<div class="description detailed hidden">
+				<p>Returns the sources contents</p>
+
+
+
+					<h4>Returns</h4>
+					<div class="list">
+						array|null
+					</div>
+
+
+
+
+			</div>
+			</div></td>
+		</tr>
+		<tr data-order="generateMappings" id="_generateMappings">
+
+			<td class="attributes"><code>
+				 public 
+				string
+				
+				</code>
+			</td>
+
+			<td class="name"><div>
+			<a class="anchor" href="#_generateMappings">#</a>
+			<code><a href="source-class-ILess.SourceMap.Generator.html#345-399" title="Go to source code">generateMappings</a>( )</code>
+
+			<div class="description short">
+				<p>Generates the mappings string</p>
+			</div>
+
+			<div class="description detailed hidden">
+				<p>Generates the mappings string</p>
+
+
+
+					<h4>Returns</h4>
+					<div class="list">
+						string
+					</div>
+
+
+
+
+			</div>
+			</div></td>
+		</tr>
+		<tr data-order="findFileIndex" id="_findFileIndex">
+
+			<td class="attributes"><code>
+				 protected 
+				integer|false
+				
+				</code>
+			</td>
+
+			<td class="name"><div>
+			<a class="anchor" href="#_findFileIndex">#</a>
+			<code><a href="source-class-ILess.SourceMap.Generator.html#401-410" title="Go to source code">findFileIndex</a>( <span>string <var>$filename</var></span> )</code>
+
+			<div class="description short">
+				<p>Finds the index for the filename</p>
+			</div>
+
+			<div class="description detailed hidden">
+				<p>Finds the index for the filename</p>
+
+
+					<h4>Parameters</h4>
+					<div class="list"><dl>
+						<dt><var>$filename</var></dt>
+						<dd></dd>
+					</dl></div>
+
+					<h4>Returns</h4>
+					<div class="list">
+						integer|false
+					</div>
+
+
+
+
+			</div>
+			</div></td>
+		</tr>
+			</table>
+		</div>
+
+		<div class="panel panel-default">
+	        <div class="panel-heading"><h3>Methods inherited from <a href="class-ILess.Configurable.html#methods">ILess\Configurable</a></h3></div>
+			<p class="elementList">
+				<code><a href="class-ILess.Configurable.html#_addOptions">addOptions()</a></code>, 
+				<code><a href="class-ILess.Configurable.html#_getDefaultOptions">getDefaultOptions()</a></code>, 
+				<code><a href="class-ILess.Configurable.html#_getOption">getOption()</a></code>, 
+				<code><a href="class-ILess.Configurable.html#_getOptions">getOptions()</a></code>, 
+				<code><a href="class-ILess.Configurable.html#_hasOption">hasOption()</a></code>, 
+				<code><a href="class-ILess.Configurable.html#_setOption">setOption()</a></code>, 
+				<code><a href="class-ILess.Configurable.html#_setOptions">setOptions()</a></code>
+			</p>
+		</div>
+
+
+
+
+
+
+
+		<div class="panel panel-default">
+            <div class="panel-heading"><h2>Constants summary</h2></div>
+			<table class="summary table table-bordered table-striped constants" id="constants">
+			<tr data-order="VERSION" id="VERSION">
+
+				<td class="attributes"><code>integer</code></td>
+				<td class="name">
+					<code>
+						<a href="source-class-ILess.SourceMap.Generator.html#27-30" title="Go to source code"><b>VERSION</b></a>
+					</code>
+
+					<div class="description short">
+						<p>What version of source map does the generator generate?</p>
+					</div>
+
+					<div class="description detailed hidden">
+						<p>What version of source map does the generator generate?</p>
+
+					</div>
+				</td>
+				<td class="value">
+					<div>
+						<a href="#VERSION" class="anchor">#</a>
+						<code><span class="php-num">3</span></code>
+					</div>
+				</td>
+			</tr>
+			</table>
+		</div>
+
+
+
+
+		<div class="panel panel-default">
+            <div class="panel-heading"><h2>Properties summary</h2></div>
+			<table class="summary table table-bordered table-striped properties" id="properties">
+		<tr data-order="defaultOptions" id="$defaultOptions">
+			<td class="attributes"><code>
+				protected  
+				array
+			</code></td>
+
+			<td class="name">
+					<a href="source-class-ILess.SourceMap.Generator.html#32-54" title="Go to source code"><var>$defaultOptions</var></a>
+
+				<div class="description short">
+					<p>Array of default options</p>
+				</div>
+
+				<div class="description detailed hidden">
+					<p>Array of default options</p>
+
+				</div>
+			</td>
+			<td class="value">
+				<div>
+					<a href="#$defaultOptions" class="anchor">#</a>
+					<code><span class="php-keyword1">array</span>(
+    <span class="php-comment">// an optional source root, useful for relocating source files</span>
+    <span class="php-comment">// on a server or removing repeated values in the 'sources' entry.</span>
+    <span class="php-comment">// This value is prepended to the individual entries in the 'source' field.</span>
+    <span class="php-quote">'sourceRoot'</span> =&gt; <span class="php-quote">''</span>,
+    <span class="php-comment">// an optional name of the generated code that this source map is associated with.</span>
+    <span class="php-quote">'filename'</span> =&gt; <span class="php-keyword1">null</span>,
+    <span class="php-comment">// url of the map</span>
+    <span class="php-quote">'url'</span> =&gt; <span class="php-keyword1">null</span>,
+    <span class="php-comment">// absolute path to a file to write the map to</span>
+    <span class="php-quote">'write_to'</span> =&gt; <span class="php-keyword1">null</span>,
+    <span class="php-comment">// output source contents?</span>
+    <span class="php-quote">'source_contents'</span> =&gt; <span class="php-keyword1">false</span>,
+    <span class="php-comment">// base path for filename normalization</span>
+    <span class="php-quote">'base_path'</span> =&gt; <span class="php-quote">''</span>,
+    <span class="php-comment">// encode inline map using base64?</span>
+    <span class="php-quote">'inline_encode_base64'</span> =&gt; <span class="php-keyword1">true</span>,
+)</code>
+				</div>
+			</td>
+		</tr>
+		<tr data-order="encoder" id="$encoder">
+			<td class="attributes"><code>
+				protected  
+				<code><a href="class-ILess.SourceMap.Base64VLQ.html">ILess\SourceMap\Base64VLQ</a></code>
+			</code></td>
+
+			<td class="name">
+					<a href="source-class-ILess.SourceMap.Generator.html#56-61" title="Go to source code"><var>$encoder</var></a>
+
+				<div class="description short">
+					<p>The base64 VLQ encoder</p>
+				</div>
+
+				<div class="description detailed hidden">
+					<p>The base64 VLQ encoder</p>
+
+				</div>
+			</td>
+			<td class="value">
+				<div>
+					<a href="#$encoder" class="anchor">#</a>
+					<code></code>
+				</div>
+			</td>
+		</tr>
+		<tr data-order="mappings" id="$mappings">
+			<td class="attributes"><code>
+				protected  
+				array
+			</code></td>
+
+			<td class="name">
+					<a href="source-class-ILess.SourceMap.Generator.html#63-68" title="Go to source code"><var>$mappings</var></a>
+
+				<div class="description short">
+					<p>Array of mappings</p>
+				</div>
+
+				<div class="description detailed hidden">
+					<p>Array of mappings</p>
+
+				</div>
+			</td>
+			<td class="value">
+				<div>
+					<a href="#$mappings" class="anchor">#</a>
+					<code><span class="php-keyword1">array</span>()</code>
+				</div>
+			</td>
+		</tr>
+		<tr data-order="root" id="$root">
+			<td class="attributes"><code>
+				protected  
+				<code><a href="class-ILess.Node.RulesetNode.html">ILess\Node\RulesetNode</a></code>
+			</code></td>
+
+			<td class="name">
+					<a href="source-class-ILess.SourceMap.Generator.html#70-75" title="Go to source code"><var>$root</var></a>
+
+				<div class="description short">
+					<p>The root node</p>
+				</div>
+
+				<div class="description detailed hidden">
+					<p>The root node</p>
+
+				</div>
+			</td>
+			<td class="value">
+				<div>
+					<a href="#$root" class="anchor">#</a>
+					<code></code>
+				</div>
+			</td>
+		</tr>
+		<tr data-order="contentsMap" id="$contentsMap">
+			<td class="attributes"><code>
+				protected  
+				array
+			</code></td>
+
+			<td class="name">
+					<a href="source-class-ILess.SourceMap.Generator.html#77-82" title="Go to source code"><var>$contentsMap</var></a>
+
+				<div class="description short">
+					<p>Array of contents map</p>
+				</div>
+
+				<div class="description detailed hidden">
+					<p>Array of contents map</p>
+
+				</div>
+			</td>
+			<td class="value">
+				<div>
+					<a href="#$contentsMap" class="anchor">#</a>
+					<code><span class="php-keyword1">array</span>()</code>
+				</div>
+			</td>
+		</tr>
+		<tr data-order="sources" id="$sources">
+			<td class="attributes"><code>
+				protected  
+				array
+			</code></td>
+
+			<td class="name">
+					<a href="source-class-ILess.SourceMap.Generator.html#84-89" title="Go to source code"><var>$sources</var></a>
+
+				<div class="description short">
+					<p>File to content map</p>
+				</div>
+
+				<div class="description detailed hidden">
+					<p>File to content map</p>
+
+				</div>
+			</td>
+			<td class="value">
+				<div>
+					<a href="#$sources" class="anchor">#</a>
+					<code><span class="php-keyword1">array</span>()</code>
+				</div>
+			</td>
+		</tr>
+			</table>
+		</div>
+
+		<div class="panel panel-default">
+            <div class="panel-heading"><h3>Properties inherited from <a href="class-ILess.Configurable.html#properties">ILess\Configurable</a></h3></div>
+			<p class="elementList">
+				<code><a href="class-ILess.Configurable.html#$options"><var>$options</var></a></code>
+			</p>
+		</div>
+
+
+
+
+
+</div>
+	</div>
+
+	<div id="footer">
+		ILess API docs API documentation generated by <a href="http://apigen.org">ApiGen</a>
+	</div>
+</div>
+<script src="resources/combined.js"></script>
+<script src="elementlist.js"></script>
+</body>
+</html>

@@ -1,0 +1,1528 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+
+	<title>Class ILess\Context | ILess API docs</title>
+
+	<link rel="stylesheet" href="resources/bootstrap.min.css?973e37a8502921d56bc02bb55321f45b072b6f71">
+	<link rel="stylesheet" href="resources/style.css?49f43d3208c5d7e33fa16d36107a345bf11cc00d">
+
+	<script>
+		var _gaq = _gaq || [];
+		_gaq.push(['_setAccount', "UA-67370642-2"]);
+		_gaq.push(['_trackPageview']);
+
+		(function() {
+			var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+			ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+			var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+		})();
+	</script>
+</head>
+
+<body>
+	<nav id="navigation" class="navbar navbar-default navbar-fixed-top">
+		<div class="container-fluid">
+			<div class="navbar-header">
+				<a href="index.html" class="navbar-brand">ILess API docs</a>
+			</div>
+			<div class="collapse navbar-collapse">
+
+                <form id="search" class="navbar-form navbar-left" role="search">
+                    <input type="hidden" name="cx" value="">
+                    <input type="hidden" name="ie" value="UTF-8">
+                    <div class="form-group">
+                        <input type="text" name="q" class="search-query form-control" placeholder="Search">
+					</div>
+				</form>
+
+				<ul class="nav navbar-nav">
+					<li>
+						<a href="namespace-ILess.html" title="Summary of ILess"><span>Namespace</span></a>
+					</li>
+					<li class="active">
+<span>Class</span>					</li>
+
+					<li class="divider-vertical"></li>
+
+					<li>
+						<a href="tree.html" title="Tree view of classes, interfaces, traits and exceptions"><span>Tree</span></a>
+					</li>
+
+						<li>
+							<a href="annotation-group-deprecated.html" title="List of elements with deprecated annotation">
+								<span>Deprecated</span>
+							</a>
+						</li>
+						<li>
+							<a href="annotation-group-todo.html" title="List of elements with todo annotation">
+								<span>Todo</span>
+							</a>
+						</li>
+
+
+				</ul>
+			</div>
+		</div>
+	</nav>
+
+	<div id="left">
+	<div id="menu">
+
+		<div id="groups">
+				<h3>Namespaces</h3>
+			<ul>
+					<li class="active">
+						<a href="namespace-ILess.html">
+							ILess<span></span>
+						</a>
+							<ul>
+					<li>
+						<a href="namespace-ILess.Cache.html">
+							Cache						</a>
+							</li>
+					<li>
+						<a href="namespace-ILess.CLI.html">
+							CLI						</a>
+							</li>
+					<li>
+						<a href="namespace-ILess.Exception.html">
+							Exception						</a>
+							</li>
+					<li>
+						<a href="namespace-ILess.Importer.html">
+							Importer						</a>
+							</li>
+					<li>
+						<a href="namespace-ILess.Node.html">
+							Node						</a>
+							</li>
+					<li>
+						<a href="namespace-ILess.Output.html">
+							Output						</a>
+							</li>
+					<li>
+						<a href="namespace-ILess.OutputFilter.html">
+							OutputFilter						</a>
+							</li>
+					<li>
+						<a href="namespace-ILess.Parser.html">
+							Parser						</a>
+							</li>
+					<li>
+						<a href="namespace-ILess.Plugin.html">
+							Plugin						</a>
+							</li>
+					<li>
+						<a href="namespace-ILess.SourceMap.html">
+							SourceMap						</a>
+							</li>
+					<li>
+						<a href="namespace-ILess.Util.html">
+							Util						</a>
+							</li>
+					<li>
+						<a href="namespace-ILess.Visitor.html">
+							Visitor						</a>
+							</li>
+								</ul></li>
+					<li>
+						<a href="namespace-PHP.html">
+							PHP						</a>
+							</li>
+			</ul>
+		</div>
+
+
+		<div id="elements">
+			<h3>Classes</h3>
+			<ul>
+				<li><a href="class-ILess.Autoloader.html">Autoloader</a></li>
+				<li><a href="class-ILess.CLI.html">CLI</a></li>
+				<li><a href="class-ILess.Color.html">Color</a></li>
+				<li><a href="class-ILess.Configurable.html">Configurable</a></li>
+				<li class="active"><a href="class-ILess.Context.html">Context</a></li>
+				<li><a href="class-ILess.Debug.html">Debug</a></li>
+				<li><a href="class-ILess.DebugInfo.html">DebugInfo</a></li>
+				<li><a href="class-ILess.DefaultFunc.html">DefaultFunc</a></li>
+				<li><a href="class-ILess.FileInfo.html">FileInfo</a></li>
+				<li><a href="class-ILess.FunctionRegistry.html">FunctionRegistry</a></li>
+				<li><a href="class-ILess.ImportedFile.html">ImportedFile</a></li>
+				<li><a href="class-ILess.Importer.html">Importer</a></li>
+				<li><a href="class-ILess.ImportSequencer.html">ImportSequencer</a></li>
+				<li><a href="class-ILess.Math.html">Math</a></li>
+				<li><a href="class-ILess.NamedColors.html">NamedColors</a></li>
+				<li><a href="class-ILess.Node.html">Node</a></li>
+				<li><a href="class-ILess.Parser.html">Parser</a></li>
+				<li><a href="class-ILess.PluginManager.html">PluginManager</a></li>
+				<li><a href="class-ILess.Util.html">Util</a></li>
+				<li><a href="class-ILess.Variable.html">Variable</a></li>
+			</ul>
+
+
+
+
+
+		</div>
+	</div>
+</div>
+
+<div id="splitter"></div>
+
+<div id="right">
+	<div id="rightInner">
+<div id="content" class="class">
+	<h1>Class Context</h1>
+
+
+	<div class="description">
+	<p>Context</p>
+	</div>
+
+
+
+
+
+
+
+
+
+	<div class="alert alert-info">
+		
+		
+		<b>Namespace:</b> <a href="namespace-ILess.html">ILess</a><br>
+		<b>Package:</b> ILess<br>
+
+			<b>Located at</b> <a href="source-class-ILess.Context.html#17-491" title="Go to source code">ILess/Context.php</a>
+		<br>
+	</div>
+
+
+
+		<div class="panel panel-default">
+			<div class="panel-heading"><h2>Methods summary</h2></div>
+			<table class="summary table table-bordered table-striped methods" id="methods">
+		<tr data-order="__construct" id="___construct">
+
+			<td class="attributes"><code>
+				 public 
+				
+				
+				</code>
+			</td>
+
+			<td class="name"><div>
+			<a class="anchor" href="#___construct">#</a>
+			<code><a href="source-class-ILess.Context.html#227-285" title="Go to source code">__construct</a>( <span>array <var>$options</var> = <span class="php-keyword1">array</span>()</span>, <span><code><a href="class-ILess.FunctionRegistry.html">ILess\FunctionRegistry</a></code> <var>$registry</var> = <span class="php-keyword1">null</span></span> )</code>
+
+			<div class="description short">
+				<p>Constructor</p>
+			</div>
+
+			<div class="description detailed hidden">
+				<p>Constructor</p>
+
+
+					<h4>Parameters</h4>
+					<div class="list"><dl>
+						<dt><var>$options</var></dt>
+						<dd>$registry The function registry</dd>
+						<dt><var>$registry</var></dt>
+						<dd>$options</dd>
+					</dl></div>
+
+
+					<h4>Throws</h4>
+					<div class="list">
+						<code><a href="class-InvalidArgumentException.html">InvalidArgumentException</a></code><br>If passed options are invalid
+					</div>
+
+
+
+			</div>
+			</div></td>
+		</tr>
+		<tr data-order="getFunctionRegistry" id="_getFunctionRegistry">
+
+			<td class="attributes"><code>
+				 public 
+				<code><a href="class-ILess.FunctionRegistry.html">ILess\FunctionRegistry</a></code>
+				
+				</code>
+			</td>
+
+			<td class="name"><div>
+			<a class="anchor" href="#_getFunctionRegistry">#</a>
+			<code><a href="source-class-ILess.Context.html#287-295" title="Go to source code">getFunctionRegistry</a>( )</code>
+
+			<div class="description short">
+				<p>Returns the function registry</p>
+			</div>
+
+			<div class="description detailed hidden">
+				<p>Returns the function registry</p>
+
+
+
+					<h4>Returns</h4>
+					<div class="list">
+						<code><a href="class-ILess.FunctionRegistry.html">ILess\FunctionRegistry</a></code>
+					</div>
+
+
+
+
+			</div>
+			</div></td>
+		</tr>
+		<tr data-order="getContentsMap" id="_getContentsMap">
+
+			<td class="attributes"><code>
+				 public 
+				array
+				
+				</code>
+			</td>
+
+			<td class="name"><div>
+			<a class="anchor" href="#_getContentsMap">#</a>
+			<code><a href="source-class-ILess.Context.html#297-305" title="Go to source code">getContentsMap</a>( )</code>
+
+			<div class="description short">
+				<p>Returns the contents map</p>
+			</div>
+
+			<div class="description detailed hidden">
+				<p>Returns the contents map</p>
+
+
+
+					<h4>Returns</h4>
+					<div class="list">
+						array
+					</div>
+
+
+
+
+			</div>
+			</div></td>
+		</tr>
+		<tr data-order="setFileContent" id="_setFileContent">
+
+			<td class="attributes"><code>
+				 public 
+				<code><a href="class-ILess.Context.html">ILess\Context</a></code>
+				
+				</code>
+			</td>
+
+			<td class="name"><div>
+			<a class="anchor" href="#_setFileContent">#</a>
+			<code><a href="source-class-ILess.Context.html#307-319" title="Go to source code">setFileContent</a>( <span>string <var>$filePath</var></span>, <span>string <var>$content</var></span> )</code>
+
+			<div class="description short">
+				<p>Sets file contents to the map</p>
+			</div>
+
+			<div class="description detailed hidden">
+				<p>Sets file contents to the map</p>
+
+
+					<h4>Parameters</h4>
+					<div class="list"><dl>
+						<dt><var>$filePath</var></dt>
+						<dd></dd>
+						<dt><var>$content</var></dt>
+						<dd></dd>
+					</dl></div>
+
+					<h4>Returns</h4>
+					<div class="list">
+						<code><a href="class-ILess.Context.html">ILess\Context</a></code>
+					</div>
+
+
+
+
+			</div>
+			</div></td>
+		</tr>
+		<tr data-order="setFunctionRegistry" id="_setFunctionRegistry">
+
+			<td class="attributes"><code>
+				 public 
+				<code><a href="class-ILess.Context.html">ILess\Context</a></code>
+				
+				</code>
+			</td>
+
+			<td class="name"><div>
+			<a class="anchor" href="#_setFunctionRegistry">#</a>
+			<code><a href="source-class-ILess.Context.html#321-334" title="Go to source code">setFunctionRegistry</a>( <span><code><a href="class-ILess.FunctionRegistry.html">ILess\FunctionRegistry</a></code> <var>$registry</var></span> )</code>
+
+			<div class="description short">
+				<p>Sets the function registry, also links the registry with this environment instance</p>
+			</div>
+
+			<div class="description detailed hidden">
+				<p>Sets the function registry, also links the registry with this environment instance</p>
+
+
+					<h4>Parameters</h4>
+					<div class="list"><dl>
+						<dt><var>$registry</var></dt>
+						<dd></dd>
+					</dl></div>
+
+					<h4>Returns</h4>
+					<div class="list">
+						<code><a href="class-ILess.Context.html">ILess\Context</a></code>
+					</div>
+
+
+
+
+			</div>
+			</div></td>
+		</tr>
+		<tr data-order="setCurrentFile" id="_setCurrentFile">
+
+			<td class="attributes"><code>
+				 public 
+				
+				
+				</code>
+			</td>
+
+			<td class="name"><div>
+			<a class="anchor" href="#_setCurrentFile">#</a>
+			<code><a href="source-class-ILess.Context.html#336-353" title="Go to source code">setCurrentFile</a>( <span>string <var>$file</var></span> )</code>
+
+			<div class="description short">
+				<p>Sets current file</p>
+			</div>
+
+			<div class="description detailed hidden">
+				<p>Sets current file</p>
+
+
+					<h4>Parameters</h4>
+					<div class="list"><dl>
+						<dt><var>$file</var></dt>
+						<dd>The path to a file</dd>
+					</dl></div>
+
+
+
+
+
+			</div>
+			</div></td>
+		</tr>
+		<tr data-order="createCopy" id="_createCopy">
+
+			<td class="attributes"><code>
+				 public static
+				<code><a href="class-ILess.Context.html">ILess\Context</a></code>
+				
+				</code>
+			</td>
+
+			<td class="name"><div>
+			<a class="anchor" href="#_createCopy">#</a>
+			<code><a href="source-class-ILess.Context.html#355-391" title="Go to source code">createCopy</a>( <span><code><a href="class-ILess.Context.html">ILess\Context</a></code> <var>$context</var></span>, <span>array <var>$frames</var> = <span class="php-keyword1">array</span>()</span> )</code>
+
+			<div class="description short">
+				<p>Creates a copy of The context</p>
+			</div>
+
+			<div class="description detailed hidden">
+				<p>Creates a copy of The context</p>
+
+
+					<h4>Parameters</h4>
+					<div class="list"><dl>
+						<dt><var>$context</var></dt>
+						<dd></dd>
+						<dt><var>$frames</var></dt>
+						<dd></dd>
+					</dl></div>
+
+					<h4>Returns</h4>
+					<div class="list">
+						<code><a href="class-ILess.Context.html">ILess\Context</a></code>
+					</div>
+
+
+
+
+			</div>
+			</div></td>
+		</tr>
+		<tr data-order="createCopyForCompilation" id="_createCopyForCompilation">
+
+			<td class="attributes"><code>
+				 public static
+				<code><a href="class-ILess.Context.html">ILess\Context</a></code>
+				
+				</code>
+			</td>
+
+			<td class="name"><div>
+			<a class="anchor" href="#_createCopyForCompilation">#</a>
+			<code><a href="source-class-ILess.Context.html#393-418" title="Go to source code">createCopyForCompilation</a>( <span><code><a href="class-ILess.Context.html">ILess\Context</a></code> <var>$context</var></span>, <span>array <var>$frames</var> = <span class="php-keyword1">array</span>()</span> )</code>
+
+			<div class="description short">
+				
+			</div>
+
+			<div class="description detailed hidden">
+				
+
+
+					<h4>Parameters</h4>
+					<div class="list"><dl>
+						<dt><var>$context</var></dt>
+						<dd></dd>
+						<dt><var>$frames</var></dt>
+						<dd></dd>
+					</dl></div>
+
+					<h4>Returns</h4>
+					<div class="list">
+						<code><a href="class-ILess.Context.html">ILess\Context</a></code>
+					</div>
+
+
+
+
+			</div>
+			</div></td>
+		</tr>
+		<tr data-order="isMathOn" id="_isMathOn">
+
+			<td class="attributes"><code>
+				 public 
+				boolean
+				
+				</code>
+			</td>
+
+			<td class="name"><div>
+			<a class="anchor" href="#_isMathOn">#</a>
+			<code><a href="source-class-ILess.Context.html#429-437" title="Go to source code">isMathOn</a>( )</code>
+
+			<div class="description short">
+				<p>Is math on?</p>
+			</div>
+
+			<div class="description detailed hidden">
+				<p>Is math on?</p>
+
+
+
+					<h4>Returns</h4>
+					<div class="list">
+						boolean
+					</div>
+
+
+
+
+			</div>
+			</div></td>
+		</tr>
+		<tr data-order="inParenthesis" id="_inParenthesis">
+
+			<td class="attributes"><code>
+				 public 
+				<code><a href="class-ILess.Context.html">ILess\Context</a></code>
+				
+				</code>
+			</td>
+
+			<td class="name"><div>
+			<a class="anchor" href="#_inParenthesis">#</a>
+			<code><a href="source-class-ILess.Context.html#439-447" title="Go to source code">inParenthesis</a>( )</code>
+
+			<div class="description short">
+				
+			</div>
+
+			<div class="description detailed hidden">
+				
+
+
+
+					<h4>Returns</h4>
+					<div class="list">
+						<code><a href="class-ILess.Context.html">ILess\Context</a></code>
+					</div>
+
+
+
+
+			</div>
+			</div></td>
+		</tr>
+		<tr data-order="outOfParenthesis" id="_outOfParenthesis">
+
+			<td class="attributes"><code>
+				 public 
+				<code><a href="class-ILess.Context.html">ILess\Context</a></code>
+				
+				</code>
+			</td>
+
+			<td class="name"><div>
+			<a class="anchor" href="#_outOfParenthesis">#</a>
+			<code><a href="source-class-ILess.Context.html#449-457" title="Go to source code">outOfParenthesis</a>( )</code>
+
+			<div class="description short">
+				
+			</div>
+
+			<div class="description detailed hidden">
+				
+
+
+
+					<h4>Returns</h4>
+					<div class="list">
+						<code><a href="class-ILess.Context.html">ILess\Context</a></code>
+					</div>
+
+
+
+
+			</div>
+			</div></td>
+		</tr>
+		<tr data-order="unshiftFrame" id="_unshiftFrame">
+
+			<td class="attributes"><code>
+				 public 
+				
+				
+				</code>
+			</td>
+
+			<td class="name"><div>
+			<a class="anchor" href="#_unshiftFrame">#</a>
+			<code><a href="source-class-ILess.Context.html#459-465" title="Go to source code">unshiftFrame</a>( <span><code><a href="class-ILess.Node.html">ILess\Node</a></code> <var>$frame</var></span> )</code>
+
+			<div class="description short">
+				
+			</div>
+
+			<div class="description detailed hidden">
+				
+
+
+					<h4>Parameters</h4>
+					<div class="list"><dl>
+						<dt><var>$frame</var></dt>
+						<dd></dd>
+					</dl></div>
+
+
+
+
+
+			</div>
+			</div></td>
+		</tr>
+		<tr data-order="shiftFrame" id="_shiftFrame">
+
+			<td class="attributes"><code>
+				 public 
+				array
+				
+				</code>
+			</td>
+
+			<td class="name"><div>
+			<a class="anchor" href="#_shiftFrame">#</a>
+			<code><a href="source-class-ILess.Context.html#467-473" title="Go to source code">shiftFrame</a>( )</code>
+
+			<div class="description short">
+				
+			</div>
+
+			<div class="description detailed hidden">
+				
+
+
+
+					<h4>Returns</h4>
+					<div class="list">
+						array
+					</div>
+
+
+
+
+			</div>
+			</div></td>
+		</tr>
+		<tr data-order="addFrame" id="_addFrame">
+
+			<td class="attributes"><code>
+				 public 
+				
+				
+				</code>
+			</td>
+
+			<td class="name"><div>
+			<a class="anchor" href="#_addFrame">#</a>
+			<code><a href="source-class-ILess.Context.html#475-481" title="Go to source code">addFrame</a>( <span>array <var>$frame</var></span> )</code>
+
+			<div class="description short">
+				
+			</div>
+
+			<div class="description detailed hidden">
+				
+
+
+					<h4>Parameters</h4>
+					<div class="list"><dl>
+						<dt><var>$frame</var></dt>
+						<dd></dd>
+					</dl></div>
+
+
+
+
+
+			</div>
+			</div></td>
+		</tr>
+		<tr data-order="addFrames" id="_addFrames">
+
+			<td class="attributes"><code>
+				 public 
+				
+				
+				</code>
+			</td>
+
+			<td class="name"><div>
+			<a class="anchor" href="#_addFrames">#</a>
+			<code><a href="source-class-ILess.Context.html#483-489" title="Go to source code">addFrames</a>( <span>array <var>$frames</var></span> )</code>
+
+			<div class="description short">
+				
+			</div>
+
+			<div class="description detailed hidden">
+				
+
+
+					<h4>Parameters</h4>
+					<div class="list"><dl>
+						<dt><var>$frames</var></dt>
+						<dd></dd>
+					</dl></div>
+
+
+
+
+
+			</div>
+			</div></td>
+		</tr>
+			</table>
+		</div>
+
+
+
+
+
+
+
+
+
+
+
+		<div class="panel panel-default">
+            <div class="panel-heading"><h2>Properties summary</h2></div>
+			<table class="summary table table-bordered table-striped properties" id="properties">
+		<tr data-order="frames" id="$frames">
+			<td class="attributes"><code>
+				public  
+				array
+			</code></td>
+
+			<td class="name">
+					<a href="source-class-ILess.Context.html#24-29" title="Go to source code"><var>$frames</var></a>
+
+				<div class="description short">
+					<p>Array of frames</p>
+				</div>
+
+				<div class="description detailed hidden">
+					<p>Array of frames</p>
+
+				</div>
+			</td>
+			<td class="value">
+				<div>
+					<a href="#$frames" class="anchor">#</a>
+					<code><span class="php-keyword1">array</span>()</code>
+				</div>
+			</td>
+		</tr>
+		<tr data-order="customVariables" id="$customVariables">
+			<td class="attributes"><code>
+				public  
+				<code><a href="class-ILess.Node.RulesetNode.html">ILess\Node\RulesetNode</a></code>
+			</code></td>
+
+			<td class="name">
+					<a href="source-class-ILess.Context.html#31-36" title="Go to source code"><var>$customVariables</var></a>
+
+				<div class="description short">
+					<p>Custom variables</p>
+				</div>
+
+				<div class="description detailed hidden">
+					<p>Custom variables</p>
+
+				</div>
+			</td>
+			<td class="value">
+				<div>
+					<a href="#$customVariables" class="anchor">#</a>
+					<code></code>
+				</div>
+			</td>
+		</tr>
+		<tr data-order="compress" id="$compress">
+			<td class="attributes"><code>
+				public  
+				boolean
+			</code></td>
+
+			<td class="name">
+					<a href="source-class-ILess.Context.html#38-43" title="Go to source code"><var>$compress</var></a>
+
+				<div class="description short">
+					<p>Compress the output?</p>
+				</div>
+
+				<div class="description detailed hidden">
+					<p>Compress the output?</p>
+
+				</div>
+			</td>
+			<td class="value">
+				<div>
+					<a href="#$compress" class="anchor">#</a>
+					<code><span class="php-keyword1">false</span></code>
+				</div>
+			</td>
+		</tr>
+		<tr data-order="canShortenColors" id="$canShortenColors">
+			<td class="attributes"><code>
+				public  
+				boolean
+			</code></td>
+
+			<td class="name">
+					<a href="source-class-ILess.Context.html#45-50" title="Go to source code"><var>$canShortenColors</var></a>
+
+				<div class="description short">
+					<p>Can shorten colors?</p>
+				</div>
+
+				<div class="description detailed hidden">
+					<p>Can shorten colors?</p>
+
+				</div>
+			</td>
+			<td class="value">
+				<div>
+					<a href="#$canShortenColors" class="anchor">#</a>
+					<code><span class="php-keyword1">true</span></code>
+				</div>
+			</td>
+		</tr>
+		<tr data-order="numPrecision" id="$numPrecision">
+			<td class="attributes"><code>
+				public  
+				integer
+			</code></td>
+
+			<td class="name">
+					<a href="source-class-ILess.Context.html#52-57" title="Go to source code"><var>$numPrecision</var></a>
+
+				<div class="description short">
+					<p>The math precision</p>
+				</div>
+
+				<div class="description detailed hidden">
+					<p>The math precision</p>
+
+				</div>
+			</td>
+			<td class="value">
+				<div>
+					<a href="#$numPrecision" class="anchor">#</a>
+					<code><span class="php-keyword1">null</span></code>
+				</div>
+			</td>
+		</tr>
+		<tr data-order="strictImports" id="$strictImports">
+			<td class="attributes"><code>
+				public  
+				boolean
+			</code></td>
+
+			<td class="name">
+					<a href="source-class-ILess.Context.html#59-62" title="Go to source code"><var>$strictImports</var></a>
+
+				<div class="description short">
+					
+				</div>
+
+				<div class="description detailed hidden">
+					
+
+				</div>
+			</td>
+			<td class="value">
+				<div>
+					<a href="#$strictImports" class="anchor">#</a>
+					<code><span class="php-keyword1">false</span></code>
+				</div>
+			</td>
+		</tr>
+		<tr data-order="relativeUrls" id="$relativeUrls">
+			<td class="attributes"><code>
+				public  
+				boolean
+			</code></td>
+
+			<td class="name">
+					<a href="source-class-ILess.Context.html#64-69" title="Go to source code"><var>$relativeUrls</var></a>
+
+				<div class="description short">
+					<p>Adjust URL's to be relative?</p>
+				</div>
+
+				<div class="description detailed hidden">
+					<p>Adjust URL's to be relative?</p>
+
+				</div>
+			</td>
+			<td class="value">
+				<div>
+					<a href="#$relativeUrls" class="anchor">#</a>
+					<code><span class="php-keyword1">false</span></code>
+				</div>
+			</td>
+		</tr>
+		<tr data-order="rootPath" id="$rootPath">
+			<td class="attributes"><code>
+				public  
+				string
+			</code></td>
+
+			<td class="name">
+					<a href="source-class-ILess.Context.html#71-76" title="Go to source code"><var>$rootPath</var></a>
+
+				<div class="description short">
+					<p>Root path</p>
+				</div>
+
+				<div class="description detailed hidden">
+					<p>Root path</p>
+
+				</div>
+			</td>
+			<td class="value">
+				<div>
+					<a href="#$rootPath" class="anchor">#</a>
+					<code></code>
+				</div>
+			</td>
+		</tr>
+		<tr data-order="mediaBlocks" id="$mediaBlocks">
+			<td class="attributes"><code>
+				public  
+				array
+			</code></td>
+
+			<td class="name">
+					<a href="source-class-ILess.Context.html#78-81" title="Go to source code"><var>$mediaBlocks</var></a>
+
+				<div class="description short">
+					
+				</div>
+
+				<div class="description detailed hidden">
+					
+
+				</div>
+			</td>
+			<td class="value">
+				<div>
+					<a href="#$mediaBlocks" class="anchor">#</a>
+					<code><span class="php-keyword1">array</span>()</code>
+				</div>
+			</td>
+		</tr>
+		<tr data-order="mediaPath" id="$mediaPath">
+			<td class="attributes"><code>
+				public  
+				array
+			</code></td>
+
+			<td class="name">
+					<a href="source-class-ILess.Context.html#83-86" title="Go to source code"><var>$mediaPath</var></a>
+
+				<div class="description short">
+					
+				</div>
+
+				<div class="description detailed hidden">
+					
+
+				</div>
+			</td>
+			<td class="value">
+				<div>
+					<a href="#$mediaPath" class="anchor">#</a>
+					<code><span class="php-keyword1">array</span>()</code>
+				</div>
+			</td>
+		</tr>
+		<tr data-order="paths" id="$paths">
+			<td class="attributes"><code>
+				public  
+				array
+			</code></td>
+
+			<td class="name">
+					<a href="source-class-ILess.Context.html#88-91" title="Go to source code"><var>$paths</var></a>
+
+				<div class="description short">
+					
+				</div>
+
+				<div class="description detailed hidden">
+					
+
+				</div>
+			</td>
+			<td class="value">
+				<div>
+					<a href="#$paths" class="anchor">#</a>
+					<code><span class="php-keyword1">array</span>()</code>
+				</div>
+			</td>
+		</tr>
+		<tr data-order="strictMath" id="$strictMath">
+			<td class="attributes"><code>
+				public  
+				boolean
+			</code></td>
+
+			<td class="name">
+					<a href="source-class-ILess.Context.html#93-98" title="Go to source code"><var>$strictMath</var></a>
+
+				<div class="description short">
+					<p>Math is required to be in parenthesis like:</p>
+
+<pre>(<span class="php-num">1</span>+<span class="php-num">1</span>)</pre>
+				</div>
+
+				<div class="description detailed hidden">
+					<p>Math is required to be in parenthesis like:</p>
+
+<pre>(<span class="php-num">1</span>+<span class="php-num">1</span>)</pre>
+
+				</div>
+			</td>
+			<td class="value">
+				<div>
+					<a href="#$strictMath" class="anchor">#</a>
+					<code><span class="php-keyword1">true</span></code>
+				</div>
+			</td>
+		</tr>
+		<tr data-order="strictUnits" id="$strictUnits">
+			<td class="attributes"><code>
+				public  
+				boolean
+			</code></td>
+
+			<td class="name">
+					<a href="source-class-ILess.Context.html#100-105" title="Go to source code"><var>$strictUnits</var></a>
+
+				<div class="description short">
+					<p>Validate the units used?</p>
+				</div>
+
+				<div class="description detailed hidden">
+					<p>Validate the units used?</p>
+
+				</div>
+			</td>
+			<td class="value">
+				<div>
+					<a href="#$strictUnits" class="anchor">#</a>
+					<code><span class="php-keyword1">true</span></code>
+				</div>
+			</td>
+		</tr>
+		<tr data-order="processImports" id="$processImports">
+			<td class="attributes"><code>
+				public  
+				boolean
+			</code></td>
+
+			<td class="name">
+					<a href="source-class-ILess.Context.html#107-112" title="Go to source code"><var>$processImports</var></a>
+
+				<div class="description short">
+					<p>Process imports?</p>
+				</div>
+
+				<div class="description detailed hidden">
+					<p>Process imports?</p>
+
+				</div>
+			</td>
+			<td class="value">
+				<div>
+					<a href="#$processImports" class="anchor">#</a>
+					<code><span class="php-keyword1">true</span></code>
+				</div>
+			</td>
+		</tr>
+		<tr data-order="ieCompat" id="$ieCompat">
+			<td class="attributes"><code>
+				public  
+				boolean
+			</code></td>
+
+			<td class="name">
+					<a href="source-class-ILess.Context.html#114-119" title="Go to source code"><var>$ieCompat</var></a>
+
+				<div class="description short">
+					<p>IE8 data-uri compatibility</p>
+				</div>
+
+				<div class="description detailed hidden">
+					<p>IE8 data-uri compatibility</p>
+
+				</div>
+			</td>
+			<td class="value">
+				<div>
+					<a href="#$ieCompat" class="anchor">#</a>
+					<code><span class="php-keyword1">true</span></code>
+				</div>
+			</td>
+		</tr>
+		<tr data-order="dumpLineNumbers" id="$dumpLineNumbers">
+			<td class="attributes"><code>
+				public  
+				false|string
+			</code></td>
+
+			<td class="name">
+					<a href="source-class-ILess.Context.html#121-126" title="Go to source code"><var>$dumpLineNumbers</var></a>
+
+				<div class="description short">
+					<p>Dump line numbers?</p>
+				</div>
+
+				<div class="description detailed hidden">
+					<p>Dump line numbers?</p>
+
+				</div>
+			</td>
+			<td class="value">
+				<div>
+					<a href="#$dumpLineNumbers" class="anchor">#</a>
+					<code><span class="php-keyword1">false</span></code>
+				</div>
+			</td>
+		</tr>
+		<tr data-order="tabLevel" id="$tabLevel">
+			<td class="attributes"><code>
+				public  
+				integer
+			</code></td>
+
+			<td class="name">
+					<a href="source-class-ILess.Context.html#128-133" title="Go to source code"><var>$tabLevel</var></a>
+
+				<div class="description short">
+					<p>Tab level</p>
+				</div>
+
+				<div class="description detailed hidden">
+					<p>Tab level</p>
+
+				</div>
+			</td>
+			<td class="value">
+				<div>
+					<a href="#$tabLevel" class="anchor">#</a>
+					<code><span class="php-num">0</span></code>
+				</div>
+			</td>
+		</tr>
+		<tr data-order="firstSelector" id="$firstSelector">
+			<td class="attributes"><code>
+				public  
+				boolean
+			</code></td>
+
+			<td class="name">
+					<a href="source-class-ILess.Context.html#135-140" title="Go to source code"><var>$firstSelector</var></a>
+
+				<div class="description short">
+					<p>First selector flag</p>
+				</div>
+
+				<div class="description detailed hidden">
+					<p>First selector flag</p>
+
+				</div>
+			</td>
+			<td class="value">
+				<div>
+					<a href="#$firstSelector" class="anchor">#</a>
+					<code><span class="php-keyword1">false</span></code>
+				</div>
+			</td>
+		</tr>
+		<tr data-order="lastRule" id="$lastRule">
+			<td class="attributes"><code>
+				public  
+				boolean
+			</code></td>
+
+			<td class="name">
+					<a href="source-class-ILess.Context.html#142-147" title="Go to source code"><var>$lastRule</var></a>
+
+				<div class="description short">
+					<p>Last rule flag</p>
+				</div>
+
+				<div class="description detailed hidden">
+					<p>Last rule flag</p>
+
+				</div>
+			</td>
+			<td class="value">
+				<div>
+					<a href="#$lastRule" class="anchor">#</a>
+					<code><span class="php-keyword1">false</span></code>
+				</div>
+			</td>
+		</tr>
+		<tr data-order="isImportant" id="$isImportant">
+			<td class="attributes"><code>
+				public  
+				boolean
+			</code></td>
+
+			<td class="name">
+					<a href="source-class-ILess.Context.html#149-154" title="Go to source code"><var>$isImportant</var></a>
+
+				<div class="description short">
+					<p>Important flag (currently not implemented in less.js)</p>
+				</div>
+
+				<div class="description detailed hidden">
+					<p>Important flag (currently not implemented in less.js)</p>
+
+				</div>
+			</td>
+			<td class="value">
+				<div>
+					<a href="#$isImportant" class="anchor">#</a>
+					<code><span class="php-keyword1">false</span></code>
+				</div>
+			</td>
+		</tr>
+		<tr data-order="selectors" id="$selectors">
+			<td class="attributes"><code>
+				public  
+				array
+			</code></td>
+
+			<td class="name">
+					<a href="source-class-ILess.Context.html#156-161" title="Go to source code"><var>$selectors</var></a>
+
+				<div class="description short">
+					<p>Selectors</p>
+				</div>
+
+				<div class="description detailed hidden">
+					<p>Selectors</p>
+
+				</div>
+			</td>
+			<td class="value">
+				<div>
+					<a href="#$selectors" class="anchor">#</a>
+					<code><span class="php-keyword1">array</span>()</code>
+				</div>
+			</td>
+		</tr>
+		<tr data-order="parensStack" id="$parensStack">
+			<td class="attributes"><code>
+				protected  
+				array
+			</code></td>
+
+			<td class="name">
+					<a href="source-class-ILess.Context.html#163-168" title="Go to source code"><var>$parensStack</var></a>
+
+				<div class="description short">
+					<p>Parens stack</p>
+				</div>
+
+				<div class="description detailed hidden">
+					<p>Parens stack</p>
+
+				</div>
+			</td>
+			<td class="value">
+				<div>
+					<a href="#$parensStack" class="anchor">#</a>
+					<code><span class="php-keyword1">array</span>()</code>
+				</div>
+			</td>
+		</tr>
+		<tr data-order="currentFileInfo" id="$currentFileInfo">
+			<td class="attributes"><code>
+				public  
+				<code><a href="class-ILess.FileInfo.html">ILess\FileInfo</a></code>
+			</code></td>
+
+			<td class="name">
+					<a href="source-class-ILess.Context.html#170-176" title="Go to source code"><var>$currentFileInfo</var></a>
+
+				<div class="description short">
+					<p>Current file information. For error reporting,
+importing and making urls relative etc.</p>
+				</div>
+
+				<div class="description detailed hidden">
+					<p>Current file information. For error reporting,
+importing and making urls relative etc.</p>
+
+				</div>
+			</td>
+			<td class="value">
+				<div>
+					<a href="#$currentFileInfo" class="anchor">#</a>
+					<code></code>
+				</div>
+			</td>
+		</tr>
+		<tr data-order="importMultiple" id="$importMultiple">
+			<td class="attributes"><code>
+				public  
+				boolean
+			</code></td>
+
+			<td class="name">
+					<a href="source-class-ILess.Context.html#178-183" title="Go to source code"><var>$importMultiple</var></a>
+
+				<div class="description short">
+					<p>What is this for?</p>
+				</div>
+
+				<div class="description detailed hidden">
+					<p>What is this for?</p>
+
+				</div>
+			</td>
+			<td class="value">
+				<div>
+					<a href="#$importMultiple" class="anchor">#</a>
+					<code><span class="php-keyword1">false</span></code>
+				</div>
+			</td>
+		</tr>
+		<tr data-order="sourceMap" id="$sourceMap">
+			<td class="attributes"><code>
+				public  
+				boolean
+			</code></td>
+
+			<td class="name">
+					<a href="source-class-ILess.Context.html#185-190" title="Go to source code"><var>$sourceMap</var></a>
+
+				<div class="description short">
+					<p>Source map flag</p>
+				</div>
+
+				<div class="description detailed hidden">
+					<p>Source map flag</p>
+
+				</div>
+			</td>
+			<td class="value">
+				<div>
+					<a href="#$sourceMap" class="anchor">#</a>
+					<code><span class="php-keyword1">false</span></code>
+				</div>
+			</td>
+		</tr>
+		<tr data-order="sourceMapOptions" id="$sourceMapOptions">
+			<td class="attributes"><code>
+				public  
+				array
+			</code></td>
+
+			<td class="name">
+					<a href="source-class-ILess.Context.html#192-197" title="Go to source code"><var>$sourceMapOptions</var></a>
+
+				<div class="description short">
+					<p>Array of source map options</p>
+				</div>
+
+				<div class="description detailed hidden">
+					<p>Array of source map options</p>
+
+				</div>
+			</td>
+			<td class="value">
+				<div>
+					<a href="#$sourceMapOptions" class="anchor">#</a>
+					<code><span class="php-keyword1">array</span>()</code>
+				</div>
+			</td>
+		</tr>
+		<tr data-order="contentsMap" id="$contentsMap">
+			<td class="attributes"><code>
+				public  
+				array
+			</code></td>
+
+			<td class="name">
+					<a href="source-class-ILess.Context.html#199-204" title="Go to source code"><var>$contentsMap</var></a>
+
+				<div class="description short">
+					<p>Filename to contents of all parsed the files</p>
+				</div>
+
+				<div class="description detailed hidden">
+					<p>Filename to contents of all parsed the files</p>
+
+				</div>
+			</td>
+			<td class="value">
+				<div>
+					<a href="#$contentsMap" class="anchor">#</a>
+					<code><span class="php-keyword1">array</span>()</code>
+				</div>
+			</td>
+		</tr>
+		<tr data-order="functionRegistry" id="$functionRegistry">
+			<td class="attributes"><code>
+				protected  
+				<code><a href="class-ILess.FunctionRegistry.html">ILess\FunctionRegistry</a></code>
+			</code></td>
+
+			<td class="name">
+					<a href="source-class-ILess.Context.html#206-211" title="Go to source code"><var>$functionRegistry</var></a>
+
+				<div class="description short">
+					<p>The function registry</p>
+				</div>
+
+				<div class="description detailed hidden">
+					<p>The function registry</p>
+
+				</div>
+			</td>
+			<td class="value">
+				<div>
+					<a href="#$functionRegistry" class="anchor">#</a>
+					<code></code>
+				</div>
+			</td>
+		</tr>
+		<tr data-order="importantScope" id="$importantScope">
+			<td class="attributes"><code>
+				public  
+				array
+			</code></td>
+
+			<td class="name">
+					<a href="source-class-ILess.Context.html#213-218" title="Go to source code"><var>$importantScope</var></a>
+
+				<div class="description short">
+					<p>Used to bubble up !important statements</p>
+				</div>
+
+				<div class="description detailed hidden">
+					<p>Used to bubble up !important statements</p>
+
+				</div>
+			</td>
+			<td class="value">
+				<div>
+					<a href="#$importantScope" class="anchor">#</a>
+					<code><span class="php-keyword1">array</span>()</code>
+				</div>
+			</td>
+		</tr>
+		<tr data-order="urlArgs" id="$urlArgs">
+			<td class="attributes"><code>
+				public  
+				string
+			</code></td>
+
+			<td class="name">
+					<a href="source-class-ILess.Context.html#220-225" title="Go to source code"><var>$urlArgs</var></a>
+
+				<div class="description short">
+					<p>Whether to add args into url tokens</p>
+				</div>
+
+				<div class="description detailed hidden">
+					<p>Whether to add args into url tokens</p>
+
+				</div>
+			</td>
+			<td class="value">
+				<div>
+					<a href="#$urlArgs" class="anchor">#</a>
+					<code><span class="php-quote">''</span></code>
+				</div>
+			</td>
+		</tr>
+			</table>
+		</div>
+
+
+
+
+
+
+</div>
+	</div>
+
+	<div id="footer">
+		ILess API docs API documentation generated by <a href="http://apigen.org">ApiGen</a>
+	</div>
+</div>
+<script src="resources/combined.js"></script>
+<script src="elementlist.js"></script>
+</body>
+</html>

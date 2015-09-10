@@ -1,0 +1,970 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+
+	<title>Class ILess\Exception\Exception | ILess API docs</title>
+
+	<link rel="stylesheet" href="resources/bootstrap.min.css?973e37a8502921d56bc02bb55321f45b072b6f71">
+	<link rel="stylesheet" href="resources/style.css?49f43d3208c5d7e33fa16d36107a345bf11cc00d">
+
+	<script>
+		var _gaq = _gaq || [];
+		_gaq.push(['_setAccount', "UA-67370642-2"]);
+		_gaq.push(['_trackPageview']);
+
+		(function() {
+			var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+			ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+			var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+		})();
+	</script>
+</head>
+
+<body>
+	<nav id="navigation" class="navbar navbar-default navbar-fixed-top">
+		<div class="container-fluid">
+			<div class="navbar-header">
+				<a href="index.html" class="navbar-brand">ILess API docs</a>
+			</div>
+			<div class="collapse navbar-collapse">
+
+                <form id="search" class="navbar-form navbar-left" role="search">
+                    <input type="hidden" name="cx" value="">
+                    <input type="hidden" name="ie" value="UTF-8">
+                    <div class="form-group">
+                        <input type="text" name="q" class="search-query form-control" placeholder="Search">
+					</div>
+				</form>
+
+				<ul class="nav navbar-nav">
+					<li>
+						<a href="namespace-ILess.Exception.html" title="Summary of ILess\Exception"><span>Namespace</span></a>
+					</li>
+					<li class="active">
+<span>Class</span>					</li>
+
+					<li class="divider-vertical"></li>
+
+					<li>
+						<a href="tree.html" title="Tree view of classes, interfaces, traits and exceptions"><span>Tree</span></a>
+					</li>
+
+						<li>
+							<a href="annotation-group-deprecated.html" title="List of elements with deprecated annotation">
+								<span>Deprecated</span>
+							</a>
+						</li>
+						<li>
+							<a href="annotation-group-todo.html" title="List of elements with todo annotation">
+								<span>Todo</span>
+							</a>
+						</li>
+
+
+				</ul>
+			</div>
+		</div>
+	</nav>
+
+	<div id="left">
+	<div id="menu">
+
+		<div id="groups">
+				<h3>Namespaces</h3>
+			<ul>
+					<li class="active">
+						<a href="namespace-ILess.html">
+							ILess<span></span>
+						</a>
+							<ul>
+					<li>
+						<a href="namespace-ILess.Cache.html">
+							Cache						</a>
+							</li>
+					<li>
+						<a href="namespace-ILess.CLI.html">
+							CLI						</a>
+							</li>
+					<li class="active">
+						<a href="namespace-ILess.Exception.html">
+							Exception						</a>
+							</li>
+					<li>
+						<a href="namespace-ILess.Importer.html">
+							Importer						</a>
+							</li>
+					<li>
+						<a href="namespace-ILess.Node.html">
+							Node						</a>
+							</li>
+					<li>
+						<a href="namespace-ILess.Output.html">
+							Output						</a>
+							</li>
+					<li>
+						<a href="namespace-ILess.OutputFilter.html">
+							OutputFilter						</a>
+							</li>
+					<li>
+						<a href="namespace-ILess.Parser.html">
+							Parser						</a>
+							</li>
+					<li>
+						<a href="namespace-ILess.Plugin.html">
+							Plugin						</a>
+							</li>
+					<li>
+						<a href="namespace-ILess.SourceMap.html">
+							SourceMap						</a>
+							</li>
+					<li>
+						<a href="namespace-ILess.Util.html">
+							Util						</a>
+							</li>
+					<li>
+						<a href="namespace-ILess.Visitor.html">
+							Visitor						</a>
+							</li>
+								</ul></li>
+					<li>
+						<a href="namespace-PHP.html">
+							PHP						</a>
+							</li>
+			</ul>
+		</div>
+
+
+		<div id="elements">
+
+
+
+			<h3>Exceptions</h3>
+			<ul>
+				<li><a href="class-ILess.Exception.CacheException.html">CacheException</a></li>
+				<li><a href="class-ILess.Exception.CompilerException.html">CompilerException</a></li>
+				<li class="active"><a href="class-ILess.Exception.Exception.html">Exception</a></li>
+				<li><a href="class-ILess.Exception.FunctionException.html">FunctionException</a></li>
+				<li><a href="class-ILess.Exception.ImportException.html">ImportException</a></li>
+				<li><a href="class-ILess.Exception.IOException.html">IOException</a></li>
+				<li><a href="class-ILess.Exception.ParserException.html">ParserException</a></li>
+			</ul>
+
+
+		</div>
+	</div>
+</div>
+
+<div id="splitter"></div>
+
+<div id="right">
+	<div id="rightInner">
+<div id="content" class="class">
+	<h1>Class Exception</h1>
+
+
+	<div class="description">
+	<p>Base exception</p>
+	</div>
+
+	<dl class="tree well">
+		<dd style="padding-left:0px">
+			<a href="class-Exception.html"><span>Exception</span></a>
+			
+			
+			
+		</dd>
+		<dd style="padding-left:30px">
+			<img src="resources/inherit.png" alt="Extended by">
+<b><span>ILess\Exception\Exception</span></b>			
+			
+			
+		</dd>
+	</dl>
+
+
+	<div>
+		<h3>Direct known subclasses</h3>
+		<p class="elementList">
+			<code><a href="class-ILess.Exception.CompilerException.html">ILess\Exception\CompilerException</a></code>, 
+			<code><a href="class-ILess.Exception.FunctionException.html">ILess\Exception\FunctionException</a></code>, 
+			<code><a href="class-ILess.Exception.ImportException.html">ILess\Exception\ImportException</a></code>, 
+			<code><a href="class-ILess.Exception.IOException.html">ILess\Exception\IOException</a></code>, 
+			<code><a href="class-ILess.Exception.ParserException.html">ILess\Exception\ParserException</a></code>
+		</p>
+	</div>
+
+	<div>
+		<h3>Indirect known subclasses</h3>
+		<p class="elementList">
+			<code><a href="class-ILess.Exception.CacheException.html">ILess\Exception\CacheException</a></code>
+		</p>
+	</div>
+
+
+
+
+
+	<div class="alert alert-info">
+		
+		
+		<b>Namespace:</b> <a href="namespace-ILess.html">ILess</a>\<a href="namespace-ILess.Exception.html">Exception</a><br>
+		<b>Package:</b> ILess\Exception<br>
+
+			<b>Located at</b> <a href="source-class-ILess.Exception.Exception.html#16-382" title="Go to source code">ILess/Exception/Exception.php</a>
+		<br>
+	</div>
+
+
+
+		<div class="panel panel-default">
+			<div class="panel-heading"><h2>Methods summary</h2></div>
+			<table class="summary table table-bordered table-striped methods" id="methods">
+		<tr data-order="__construct" id="___construct">
+
+			<td class="attributes"><code>
+				 public 
+				
+				
+				</code>
+			</td>
+
+			<td class="name"><div>
+			<a class="anchor" href="#___construct">#</a>
+			<code><a href="source-class-ILess.Exception.Exception.html#75-101" title="Go to source code">__construct</a>( <span>string <var>$message</var> = <span class="php-keyword1">null</span></span>, <span>integer <var>$index</var> = <span class="php-keyword1">null</span></span>, <span><code><a href="class-ILess.FileInfo.html">ILess\FileInfo</a></code>|<code><a href="class-ILess.ImportedFile.html">ILess\ImportedFile</a></code>|string <var>$currentFile</var> = <span class="php-keyword1">null</span></span>, <span><code><a href="class-ILess.Exception.Exception.html">ILess\Exception\Exception</a></code> <var>$previous</var> = <span class="php-keyword1">null</span></span>, <span>integer <var>$code</var> = <span class="php-num">0</span> </span> )</code>
+
+			<div class="description short">
+				<p>Constructor</p>
+			</div>
+
+			<div class="description detailed hidden">
+				<p>Constructor</p>
+
+
+					<h4>Parameters</h4>
+					<div class="list"><dl>
+						<dt><var>$message</var></dt>
+						<dd>The exception message</dd>
+						<dt><var>$index</var></dt>
+						<dd>The current parser index</dd>
+						<dt><var>$currentFile</var></dt>
+						<dd>The file</dd>
+						<dt><var>$previous</var></dt>
+						<dd>Previous exception</dd>
+						<dt><var>$code</var></dt>
+						<dd>The exception code</dd>
+					</dl></div>
+
+
+
+
+					<h4>Overrides</h4>
+					<div class="list"><code><a href="class-Exception.html#___construct">Exception::__construct</a></code></div>
+
+			</div>
+			</div></td>
+		</tr>
+		<tr data-order="getLocation" id="_getLocation">
+
+			<td class="attributes"><code>
+				 protected 
+				array
+				
+				</code>
+			</td>
+
+			<td class="name"><div>
+			<a class="anchor" href="#_getLocation">#</a>
+			<code><a href="source-class-ILess.Exception.Exception.html#120-152" title="Go to source code">getLocation</a>( <span><code><a href="class-ILess.FileInfo.html">ILess\FileInfo</a></code>|<code><a href="class-ILess.ImportedFile.html">ILess\ImportedFile</a></code>|string <var>$currentFile</var></span>, <span>integer <var>$index</var></span>, <span>boolean <var>$column</var> = <span class="php-keyword1">null</span></span>, <span> <var>$excerpt</var> = <span class="php-keyword1">true</span></span> )</code>
+
+			<div class="description short">
+				<p>Returns the current line and column</p>
+			</div>
+
+			<div class="description detailed hidden">
+				<p>Returns the current line and column</p>
+
+
+					<h4>Parameters</h4>
+					<div class="list"><dl>
+						<dt><var>$currentFile</var></dt>
+						<dd>The file</dd>
+						<dt><var>$index</var></dt>
+						<dd>Current position index</dd>
+						<dt><var>$column</var></dt>
+						<dd>$excerpt Include the string excerpt?</dd>
+						<dt><var>$excerpt</var></dt>
+						<dd></dd>
+					</dl></div>
+
+					<h4>Returns</h4>
+					<div class="list">
+						array
+					</div>
+
+
+
+
+			</div>
+			</div></td>
+		</tr>
+		<tr data-order="updateFileErrorInformation" id="_updateFileErrorInformation">
+
+			<td class="attributes"><code>
+				 protected 
+				
+				
+				</code>
+			</td>
+
+			<td class="name"><div>
+			<a class="anchor" href="#_updateFileErrorInformation">#</a>
+			<code><a href="source-class-ILess.Exception.Exception.html#154-164" title="Go to source code">updateFileErrorInformation</a>( )</code>
+
+			<div class="description short">
+				<p>Updates the line, column and excerpt</p>
+			</div>
+
+			<div class="description detailed hidden">
+				<p>Updates the line, column and excerpt</p>
+
+
+
+
+
+
+
+			</div>
+			</div></td>
+		</tr>
+		<tr data-order="setFileEditorUrlFormat" id="_setFileEditorUrlFormat">
+
+			<td class="attributes"><code>
+				 public static
+				
+				
+				</code>
+			</td>
+
+			<td class="name"><div>
+			<a class="anchor" href="#_setFileEditorUrlFormat">#</a>
+			<code><a href="source-class-ILess.Exception.Exception.html#166-175" title="Go to source code">setFileEditorUrlFormat</a>( <span>string <var>$format</var></span> )</code>
+
+			<div class="description short">
+				<p>Sets the editor url format</p>
+			</div>
+
+			<div class="description detailed hidden">
+				<p>Sets the editor url format</p>
+
+
+					<h4>Parameters</h4>
+					<div class="list"><dl>
+						<dt><var>$format</var></dt>
+						<dd></dd>
+					</dl></div>
+
+
+
+
+
+			</div>
+			</div></td>
+		</tr>
+		<tr data-order="getFileEditorUrlFormat" id="_getFileEditorUrlFormat">
+
+			<td class="attributes"><code>
+				 public static
+				string
+				
+				</code>
+			</td>
+
+			<td class="name"><div>
+			<a class="anchor" href="#_getFileEditorUrlFormat">#</a>
+			<code><a href="source-class-ILess.Exception.Exception.html#177-185" title="Go to source code">getFileEditorUrlFormat</a>( )</code>
+
+			<div class="description short">
+				<p>Returns the editor url format</p>
+			</div>
+
+			<div class="description detailed hidden">
+				<p>Returns the editor url format</p>
+
+
+
+					<h4>Returns</h4>
+					<div class="list">
+						string
+					</div>
+
+
+
+
+			</div>
+			</div></td>
+		</tr>
+		<tr data-order="setFileExcerptLineNumber" id="_setFileExcerptLineNumber">
+
+			<td class="attributes"><code>
+				 public static
+				
+				
+				</code>
+			</td>
+
+			<td class="name"><div>
+			<a class="anchor" href="#_setFileExcerptLineNumber">#</a>
+			<code><a href="source-class-ILess.Exception.Exception.html#187-195" title="Go to source code">setFileExcerptLineNumber</a>( <span>integer|false <var>$number</var></span> )</code>
+
+			<div class="description short">
+				<p>Sets the number of lines to display in file excerpts when an exception is displayed</p>
+			</div>
+
+			<div class="description detailed hidden">
+				<p>Sets the number of lines to display in file excerpts when an exception is displayed</p>
+
+
+					<h4>Parameters</h4>
+					<div class="list"><dl>
+						<dt><var>$number</var></dt>
+						<dd></dd>
+					</dl></div>
+
+
+
+
+
+			</div>
+			</div></td>
+		</tr>
+		<tr data-order="getFileExcerptLineNumber" id="_getFileExcerptLineNumber">
+
+			<td class="attributes"><code>
+				 public static
+				integer|false
+				
+				</code>
+			</td>
+
+			<td class="name"><div>
+			<a class="anchor" href="#_getFileExcerptLineNumber">#</a>
+			<code><a href="source-class-ILess.Exception.Exception.html#197-205" title="Go to source code">getFileExcerptLineNumber</a>( )</code>
+
+			<div class="description short">
+				<p>Returns the number of lines to display in file excerpts</p>
+			</div>
+
+			<div class="description detailed hidden">
+				<p>Returns the number of lines to display in file excerpts</p>
+
+
+
+					<h4>Returns</h4>
+					<div class="list">
+						integer|false
+					</div>
+
+
+
+
+			</div>
+			</div></td>
+		</tr>
+		<tr data-order="getCurrentFile" id="_getCurrentFile">
+
+			<td class="attributes"><code>
+				 public 
+				<code><a href="class-ILess.ImportedFile.html">ILess\ImportedFile</a></code>|<code><a href="class-ILess.FileInfo.html">ILess\FileInfo</a></code>|null
+				
+				</code>
+			</td>
+
+			<td class="name"><div>
+			<a class="anchor" href="#_getCurrentFile">#</a>
+			<code><a href="source-class-ILess.Exception.Exception.html#207-215" title="Go to source code">getCurrentFile</a>( )</code>
+
+			<div class="description short">
+				<p>Returns the file</p>
+			</div>
+
+			<div class="description detailed hidden">
+				<p>Returns the file</p>
+
+
+
+					<h4>Returns</h4>
+					<div class="list">
+						<code><a href="class-ILess.ImportedFile.html">ILess\ImportedFile</a></code>|<code><a href="class-ILess.FileInfo.html">ILess\FileInfo</a></code>|null
+					</div>
+
+
+
+
+			</div>
+			</div></td>
+		</tr>
+		<tr data-order="setCurrentFile" id="_setCurrentFile">
+
+			<td class="attributes"><code>
+				 public 
+				
+				
+				</code>
+			</td>
+
+			<td class="name"><div>
+			<a class="anchor" href="#_setCurrentFile">#</a>
+			<code><a href="source-class-ILess.Exception.Exception.html#217-230" title="Go to source code">setCurrentFile</a>( <span><code><a href="class-ILess.ImportedFile.html">ILess\ImportedFile</a></code>|<code><a href="class-ILess.FileInfo.html">ILess\FileInfo</a></code>|string <var>$file</var></span>, <span>integer <var>$index</var> = <span class="php-keyword1">null</span></span> )</code>
+
+			<div class="description short">
+				<p>Sets the current file</p>
+			</div>
+
+			<div class="description detailed hidden">
+				<p>Sets the current file</p>
+
+
+					<h4>Parameters</h4>
+					<div class="list"><dl>
+						<dt><var>$file</var></dt>
+						<dd></dd>
+						<dt><var>$index</var></dt>
+						<dd>The current index</dd>
+					</dl></div>
+
+
+
+
+
+			</div>
+			</div></td>
+		</tr>
+		<tr data-order="getIndex" id="_getIndex">
+
+			<td class="attributes"><code>
+				final public 
+				integer
+				
+				</code>
+			</td>
+
+			<td class="name"><div>
+			<a class="anchor" href="#_getIndex">#</a>
+			<code><a href="source-class-ILess.Exception.Exception.html#232-240" title="Go to source code">getIndex</a>( )</code>
+
+			<div class="description short">
+				<p>Returns the current index</p>
+			</div>
+
+			<div class="description detailed hidden">
+				<p>Returns the current index</p>
+
+
+
+					<h4>Returns</h4>
+					<div class="list">
+						integer
+					</div>
+
+
+
+
+			</div>
+			</div></td>
+		</tr>
+		<tr data-order="getExcerpt" id="_getExcerpt">
+
+			<td class="attributes"><code>
+				final public 
+				string
+				
+				</code>
+			</td>
+
+			<td class="name"><div>
+			<a class="anchor" href="#_getExcerpt">#</a>
+			<code><a href="source-class-ILess.Exception.Exception.html#242-250" title="Go to source code">getExcerpt</a>( )</code>
+
+			<div class="description short">
+				<p>Returns the excerpt from the string which contains the error</p>
+			</div>
+
+			<div class="description detailed hidden">
+				<p>Returns the excerpt from the string which contains the error</p>
+
+
+
+					<h4>Returns</h4>
+					<div class="list">
+						string
+					</div>
+
+
+
+
+			</div>
+			</div></td>
+		</tr>
+		<tr data-order="setIndex" id="_setIndex">
+
+			<td class="attributes"><code>
+				final public 
+				
+				
+				</code>
+			</td>
+
+			<td class="name"><div>
+			<a class="anchor" href="#_setIndex">#</a>
+			<code><a href="source-class-ILess.Exception.Exception.html#252-261" title="Go to source code">setIndex</a>( <span>integer <var>$index</var></span> )</code>
+
+			<div class="description short">
+				<p>Sets index</p>
+			</div>
+
+			<div class="description detailed hidden">
+				<p>Sets index</p>
+
+
+					<h4>Parameters</h4>
+					<div class="list"><dl>
+						<dt><var>$index</var></dt>
+						<dd></dd>
+					</dl></div>
+
+
+
+
+
+			</div>
+			</div></td>
+		</tr>
+		<tr data-order="getErrorLine" id="_getErrorLine">
+
+			<td class="attributes"><code>
+				final public 
+				integer|null
+				
+				</code>
+			</td>
+
+			<td class="name"><div>
+			<a class="anchor" href="#_getErrorLine">#</a>
+			<code><a href="source-class-ILess.Exception.Exception.html#263-271" title="Go to source code">getErrorLine</a>( )</code>
+
+			<div class="description short">
+				<p>Returns current line from the file</p>
+			</div>
+
+			<div class="description detailed hidden">
+				<p>Returns current line from the file</p>
+
+
+
+					<h4>Returns</h4>
+					<div class="list">
+						integer|null
+					</div>
+
+
+
+
+			</div>
+			</div></td>
+		</tr>
+		<tr data-order="getErrorColumn" id="_getErrorColumn">
+
+			<td class="attributes"><code>
+				final public 
+				integer|null
+				
+				</code>
+			</td>
+
+			<td class="name"><div>
+			<a class="anchor" href="#_getErrorColumn">#</a>
+			<code><a href="source-class-ILess.Exception.Exception.html#273-281" title="Go to source code">getErrorColumn</a>( )</code>
+
+			<div class="description short">
+				<p>Returns the error column</p>
+			</div>
+
+			<div class="description detailed hidden">
+				<p>Returns the error column</p>
+
+
+
+					<h4>Returns</h4>
+					<div class="list">
+						integer|null
+					</div>
+
+
+
+
+			</div>
+			</div></td>
+		</tr>
+		<tr data-order="getFileEditorLink" id="_getFileEditorLink">
+
+			<td class="attributes"><code>
+				 protected 
+				string|
+				
+				</code>
+			</td>
+
+			<td class="name"><div>
+			<a class="anchor" href="#_getFileEditorLink">#</a>
+			<code><a href="source-class-ILess.Exception.Exception.html#283-317" title="Go to source code">getFileEditorLink</a>( <span><code><a href="class-ILess.FileInfo.html">ILess\FileInfo</a></code>|string <var>$file</var></span>, <span>integer <var>$line</var> = <span class="php-keyword1">null</span></span> )</code>
+
+			<div class="description short">
+				<p>Returns file editor link. The link format can be customized.</p>
+			</div>
+
+			<div class="description detailed hidden">
+				<p>Returns file editor link. The link format can be customized.</p>
+
+
+					<h4>Parameters</h4>
+					<div class="list"><dl>
+						<dt><var>$file</var></dt>
+						<dd>The current file</dd>
+						<dt><var>$line</var></dt>
+						<dd></dd>
+					</dl></div>
+
+					<h4>Returns</h4>
+					<div class="list">
+						string|
+					</div>
+
+
+					<h4>See</h4>
+					<div class="list">
+							<code><a href="class-ILess.Exception.Exception.html#_setFileEditorUrlFormat">ILess\Exception\Exception::setFileEditorUrlFormat()</a></code><br>
+					</div>
+
+
+			</div>
+			</div></td>
+		</tr>
+		<tr data-order="__toString" id="___toString">
+
+			<td class="attributes"><code>
+				 public 
+				string
+				
+				</code>
+			</td>
+
+			<td class="name"><div>
+			<a class="anchor" href="#___toString">#</a>
+			<code><a href="source-class-ILess.Exception.Exception.html#319-327" title="Go to source code">__toString</a>( )</code>
+
+			<div class="description short">
+				<p>Converts the exception to string</p>
+			</div>
+
+			<div class="description detailed hidden">
+				<p>Converts the exception to string</p>
+
+
+
+					<h4>Returns</h4>
+					<div class="list">
+						string
+					</div>
+
+
+
+					<h4>Overrides</h4>
+					<div class="list"><code><a href="class-Exception.html#___toString">Exception::__toString</a></code></div>
+
+			</div>
+			</div></td>
+		</tr>
+		<tr data-order="toString" id="_toString">
+
+			<td class="attributes"><code>
+				 public 
+				string
+				
+				</code>
+			</td>
+
+			<td class="name"><div>
+			<a class="anchor" href="#_toString">#</a>
+			<code><a href="source-class-ILess.Exception.Exception.html#329-360" title="Go to source code">toString</a>( <span>boolean <var>$includeExcerpt</var> = <span class="php-keyword1">true</span></span>, <span>boolean <var>$html</var> = <span class="php-keyword1">true</span></span> )</code>
+
+			<div class="description short">
+				<p>Converts the exception to string</p>
+			</div>
+
+			<div class="description detailed hidden">
+				<p>Converts the exception to string</p>
+
+
+					<h4>Parameters</h4>
+					<div class="list"><dl>
+						<dt><var>$includeExcerpt</var></dt>
+						<dd>Include excerpt?</dd>
+						<dt><var>$html</var></dt>
+						<dd>Convert to HTML?</dd>
+					</dl></div>
+
+					<h4>Returns</h4>
+					<div class="list">
+						string
+					</div>
+
+
+
+
+			</div>
+			</div></td>
+		</tr>
+		<tr data-order="prettyPrint" id="_prettyPrint">
+
+			<td class="attributes"><code>
+				 public 
+				string
+				
+				</code>
+			</td>
+
+			<td class="name"><div>
+			<a class="anchor" href="#_prettyPrint">#</a>
+			<code><a href="source-class-ILess.Exception.Exception.html#362-380" title="Go to source code">prettyPrint</a>( <span> <var>$trace</var> = <span class="php-keyword1">false</span></span> )</code>
+
+			<div class="description short">
+				
+			</div>
+
+			<div class="description detailed hidden">
+				
+
+
+
+					<h4>Returns</h4>
+					<div class="list">
+						string
+					</div>
+
+
+
+
+			</div>
+			</div></td>
+		</tr>
+			</table>
+		</div>
+
+		<div class="panel panel-default">
+	        <div class="panel-heading"><h3>Methods inherited from <a href="class-Exception.html#methods">Exception</a></h3></div>
+			<p class="elementList">
+				<code><a href="class-Exception.html#_getCode">getCode()</a></code>, 
+				<code><a href="class-Exception.html#_getFile">getFile()</a></code>, 
+				<code><a href="class-Exception.html#_getLine">getLine()</a></code>, 
+				<code><a href="class-Exception.html#_getMessage">getMessage()</a></code>, 
+				<code><a href="class-Exception.html#_getPrevious">getPrevious()</a></code>, 
+				<code><a href="class-Exception.html#_getTrace">getTrace()</a></code>, 
+				<code><a href="class-Exception.html#_getTraceAsString">getTraceAsString()</a></code>
+			</p>
+		</div>
+
+
+
+
+
+
+
+
+
+
+		<div class="panel panel-default">
+            <div class="panel-heading"><h2>Properties summary</h2></div>
+			<table class="summary table table-bordered table-striped properties" id="properties">
+		<tr data-order="fileEditUrlFormat" id="$fileEditUrlFormat">
+			<td class="attributes"><code>
+				protected static 
+				string
+			</code></td>
+
+			<td class="name">
+					<a href="source-class-ILess.Exception.Exception.html#58-66" title="Go to source code"><var>$fileEditUrlFormat</var></a>
+
+				<div class="description short">
+					<p>File editor link. Allows variable holders:</p>
+				</div>
+
+				<div class="description detailed hidden">
+					<p>File editor link. Allows variable holders:</p>
+
+<ul>
+<li><code>%file</code> or <code>%f</code> - current file * <code>%line</code> or <code>%l</code> - current line</li>
+</ul>
+
+				</div>
+			</td>
+			<td class="value">
+				<div>
+					<a href="#$fileEditUrlFormat" class="anchor">#</a>
+					<code><span class="php-quote">'editor://open?file=%f&amp;line=%l'</span></code>
+				</div>
+			</td>
+		</tr>
+		<tr data-order="fileExcerptLineNumber" id="$fileExcerptLineNumber">
+			<td class="attributes"><code>
+				protected static 
+				integer|false
+			</code></td>
+
+			<td class="name">
+					<a href="source-class-ILess.Exception.Exception.html#68-73" title="Go to source code"><var>$fileExcerptLineNumber</var></a>
+
+				<div class="description short">
+					<p>File excerpt line number</p>
+				</div>
+
+				<div class="description detailed hidden">
+					<p>File excerpt line number</p>
+
+				</div>
+			</td>
+			<td class="value">
+				<div>
+					<a href="#$fileExcerptLineNumber" class="anchor">#</a>
+					<code><span class="php-num">3</span></code>
+				</div>
+			</td>
+		</tr>
+			</table>
+		</div>
+
+		<div class="panel panel-default">
+            <div class="panel-heading"><h3>Properties inherited from <a href="class-Exception.html#properties">Exception</a></h3></div>
+			<p class="elementList">
+				<code><a href="class-Exception.html#$code"><var>$code</var></a></code>, 
+				<code><a href="class-Exception.html#$file"><var>$file</var></a></code>, 
+				<code><a href="class-Exception.html#$line"><var>$line</var></a></code>, 
+				<code><a href="class-Exception.html#$message"><var>$message</var></a></code>
+			</p>
+		</div>
+
+
+
+
+
+</div>
+	</div>
+
+	<div id="footer">
+		ILess API docs API documentation generated by <a href="http://apigen.org">ApiGen</a>
+	</div>
+</div>
+<script src="resources/combined.js"></script>
+<script src="elementlist.js"></script>
+</body>
+</html>
