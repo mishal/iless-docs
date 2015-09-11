@@ -242,6 +242,7 @@
 				<li><a href="class-ILess.Plugin.PostProcessorInterface.html">ILess\Plugin\PostProcessorInterface</a></li>
 				<li><a href="class-ILess.Plugin.PreProcessorInterface.html">ILess\Plugin\PreProcessorInterface</a></li>
 				<li><a href="class-ILess.Visitor.VisitorInterface.html">ILess\Visitor\VisitorInterface</a></li>
+				<li><a href="class-Serializable.html">Serializable</a></li>
 			</ul>
 
 
@@ -290,7 +291,7 @@
 </span></span><span id="19" class="l"><a href="#19"> 19 </a><span class="php-comment"> * @package ILess
 </span></span><span id="20" class="l"><a href="#20"> 20 </a><span class="php-comment"> * @subpackage Import
 </span></span><span id="21" class="l"><a href="#21"> 21 </a><span class="php-comment"> */</span>
-</span><span id="22" class="l"><a href="#22"> 22 </a><span class="php-keyword1">final</span> <span class="php-keyword1">class</span> ImportedFile
+</span><span id="22" class="l"><a href="#22"> 22 </a><span class="php-keyword1">final</span> <span class="php-keyword1">class</span> ImportedFile <span class="php-keyword1">implements</span> \Serializable
 </span><span id="23" class="l"><a href="#23"> 23 </a>{
 </span><span id="24" class="l"><a href="#24"> 24 </a>    <span class="php-comment">/**
 </span></span><span id="25" class="l"><a href="#25"> 25 </a><span class="php-comment">     * The absolute path or URL
@@ -417,8 +418,24 @@
 </span><span id="146" class="l"><a href="#146">146 </a>        <span class="php-keyword1">return</span> <span class="php-var">$this</span>-&gt;lastModified;
 </span><span id="147" class="l"><a href="#147">147 </a>    }
 </span><span id="148" class="l"><a href="#148">148 </a>
-</span><span id="149" class="l"><a href="#149">149 </a>}
-</span><span id="150" class="l"><a href="#150">150 </a></span></code></pre>
+</span><span id="149" class="l"><a href="#149">149 </a>    <span class="php-keyword1">public</span> <span class="php-keyword1">function</span> <span class="php-keyword2">serialize</span>()
+</span><span id="150" class="l"><a href="#150">150 </a>    {
+</span><span id="151" class="l"><a href="#151">151 </a>        <span class="php-keyword1">return</span> <span class="php-keyword2">serialize</span>([
+</span><span id="152" class="l"><a href="#152">152 </a>            <span class="php-var">$this</span>-&gt;path,
+</span><span id="153" class="l"><a href="#153">153 </a>            <span class="php-var">$this</span>-&gt;lastModified,
+</span><span id="154" class="l"><a href="#154">154 </a>            <span class="php-keyword2">base64_encode</span>(<span class="php-var">$this</span>-&gt;content),
+</span><span id="155" class="l"><a href="#155">155 </a>            <span class="php-var">$this</span>-&gt;ruleset,
+</span><span id="156" class="l"><a href="#156">156 </a>        ]);
+</span><span id="157" class="l"><a href="#157">157 </a>    }
+</span><span id="158" class="l"><a href="#158">158 </a>
+</span><span id="159" class="l"><a href="#159">159 </a>    <span class="php-keyword1">public</span> <span class="php-keyword1">function</span> <span class="php-keyword2">unserialize</span>(<span class="php-var">$serialized</span>)
+</span><span id="160" class="l"><a href="#160">160 </a>    {
+</span><span id="161" class="l"><a href="#161">161 </a>        <span class="php-keyword1">list</span>(<span class="php-var">$this</span>-&gt;path, <span class="php-var">$this</span>-&gt;lastModified, <span class="php-var">$this</span>-&gt;content, <span class="php-var">$this</span>-&gt;ruleset) = <span class="php-keyword2">unserialize</span>(<span class="php-var">$serialized</span>);
+</span><span id="162" class="l"><a href="#162">162 </a>        <span class="php-var">$this</span>-&gt;content = <span class="php-keyword2">base64_decode</span>(<span class="php-var">$this</span>-&gt;content);
+</span><span id="163" class="l"><a href="#163">163 </a>    }
+</span><span id="164" class="l"><a href="#164">164 </a>
+</span><span id="165" class="l"><a href="#165">165 </a>}
+</span><span id="166" class="l"><a href="#166">166 </a></span></code></pre>
 	</div>
 
 	<div id="footer">
@@ -426,6 +443,6 @@
 	</div>
 </div>
 <script src="resources/combined.js?1fb3c33e67125e93eb1ef1d5202bd77c3a86e80f"></script>
-<script src="elementlist.js?d7d01c629c33b366d3385ccef8457d7786f6d231"></script>
+<script src="elementlist.js?923a719ef72ab90003bbd7ae1b91022ba1612096"></script>
 </body>
 </html>
