@@ -318,7 +318,7 @@
 </span></span><span id="46" class="l"><a href="#46"> 46 </a><span class="php-comment">     * @var
 </span></span><span id="47" class="l"><a href="#47"> 47 </a><span class="php-comment">     */</span>
 </span><span id="48" class="l"><a href="#48"> 48 </a>    <span class="php-keyword1">private</span> <span class="php-var">$j</span> = <span class="php-num">0</span>;
-</span><span id="49" class="l"><a href="#49"> 49 </a>    <span class="php-keyword1">private</span> <span class="php-var">$saveStack</span> = <span class="php-keyword1">array</span>();
+</span><span id="49" class="l"><a href="#49"> 49 </a>    <span class="php-keyword1">private</span> <span class="php-var">$saveStack</span> = [];
 </span><span id="50" class="l"><a href="#50"> 50 </a>    <span class="php-keyword1">private</span> <span class="php-var">$furthest</span>;
 </span><span id="51" class="l"><a href="#51"> 51 </a>    <span class="php-keyword1">private</span> <span class="php-var">$furthestPossibleErrorMessage</span>;
 </span><span id="52" class="l"><a href="#52"> 52 </a>    <span class="php-keyword1">private</span> <span class="php-var">$chunks</span>;
@@ -333,7 +333,7 @@
 </span><span id="61" class="l"><a href="#61"> 61 </a>    <span class="php-comment">/**
 </span></span><span id="62" class="l"><a href="#62"> 62 </a><span class="php-comment">     * @var array
 </span></span><span id="63" class="l"><a href="#63"> 63 </a><span class="php-comment">     */</span>
-</span><span id="64" class="l"><a href="#64"> 64 </a>    <span class="php-keyword1">public</span> <span class="php-var">$commentStore</span> = <span class="php-keyword1">array</span>();
+</span><span id="64" class="l"><a href="#64"> 64 </a>    <span class="php-keyword1">public</span> <span class="php-var">$commentStore</span> = [];
 </span><span id="65" class="l"><a href="#65"> 65 </a>
 </span><span id="66" class="l"><a href="#66"> 66 </a>    <span class="php-comment">/**
 </span></span><span id="67" class="l"><a href="#67"> 67 </a><span class="php-comment">     * @var bool
@@ -351,11 +351,11 @@
 </span><span id="79" class="l"><a href="#79"> 79 </a>    <span class="php-keyword1">public</span> <span class="php-keyword1">function</span> save()
 </span><span id="80" class="l"><a href="#80"> 80 </a>    {
 </span><span id="81" class="l"><a href="#81"> 81 </a>        <span class="php-var">$this</span>-&gt;currentPos = <span class="php-var">$this</span>-&gt;i;
-</span><span id="82" class="l"><a href="#82"> 82 </a>        <span class="php-keyword2">array_push</span>(<span class="php-var">$this</span>-&gt;saveStack, (object)<span class="php-keyword1">array</span>(
+</span><span id="82" class="l"><a href="#82"> 82 </a>        <span class="php-keyword2">array_push</span>(<span class="php-var">$this</span>-&gt;saveStack, (object)[
 </span><span id="83" class="l"><a href="#83"> 83 </a>            <span class="php-quote">'current'</span> =&gt; <span class="php-var">$this</span>-&gt;<span class="php-keyword2">current</span>,
 </span><span id="84" class="l"><a href="#84"> 84 </a>            <span class="php-quote">'i'</span> =&gt; <span class="php-var">$this</span>-&gt;i,
 </span><span id="85" class="l"><a href="#85"> 85 </a>            <span class="php-quote">'j'</span> =&gt; <span class="php-var">$this</span>-&gt;j,
-</span><span id="86" class="l"><a href="#86"> 86 </a>        ));
+</span><span id="86" class="l"><a href="#86"> 86 </a>        ]);
 </span><span id="87" class="l"><a href="#87"> 87 </a>    }
 </span><span id="88" class="l"><a href="#88"> 88 </a>
 </span><span id="89" class="l"><a href="#89"> 89 </a>    <span class="php-comment">/**
@@ -481,10 +481,10 @@
 </span><span id="209" class="l"><a href="#209">209 </a>            <span class="php-keyword1">if</span> (<span class="php-var">$this</span>-&gt;autoCommentAbsorb &amp;&amp; <span class="php-var">$c</span> === self::CHARCODE_FORWARD_SLASH) {
 </span><span id="210" class="l"><a href="#210">210 </a>                <span class="php-var">$nextChar</span> = <span class="php-var">$inp</span>[<span class="php-var">$this</span>-&gt;i + <span class="php-num">1</span>];
 </span><span id="211" class="l"><a href="#211">211 </a>                <span class="php-keyword1">if</span> (<span class="php-var">$nextChar</span> === <span class="php-quote">'/'</span>) {
-</span><span id="212" class="l"><a href="#212">212 </a>                    <span class="php-var">$comment</span> = <span class="php-keyword1">array</span>(
+</span><span id="212" class="l"><a href="#212">212 </a>                    <span class="php-var">$comment</span> = [
 </span><span id="213" class="l"><a href="#213">213 </a>                        <span class="php-quote">'index'</span> =&gt; <span class="php-var">$this</span>-&gt;i,
 </span><span id="214" class="l"><a href="#214">214 </a>                        <span class="php-quote">'isLineComment'</span> =&gt; <span class="php-keyword1">true</span>,
-</span><span id="215" class="l"><a href="#215">215 </a>                    );
+</span><span id="215" class="l"><a href="#215">215 </a>                    ];
 </span><span id="216" class="l"><a href="#216">216 </a>                    <span class="php-var">$nextNewLine</span> = <span class="php-keyword2">strpos</span>(<span class="php-var">$inp</span>, <span class="php-quote">&quot;\n&quot;</span>, <span class="php-var">$this</span>-&gt;i + <span class="php-num">2</span>);
 </span><span id="217" class="l"><a href="#217">217 </a>                    <span class="php-keyword1">if</span> (<span class="php-var">$nextNewLine</span> &lt; <span class="php-num">0</span>) {
 </span><span id="218" class="l"><a href="#218">218 </a>                        <span class="php-var">$nextNewLine</span> = <span class="php-var">$endIndex</span>;
@@ -497,10 +497,10 @@
 </span><span id="225" class="l"><a href="#225">225 </a>                } <span class="php-keyword1">elseif</span> (<span class="php-var">$nextChar</span> === <span class="php-quote">'*'</span>) {
 </span><span id="226" class="l"><a href="#226">226 </a>                    <span class="php-var">$nextStarSlash</span> = <span class="php-keyword2">strpos</span>(<span class="php-var">$inp</span>, <span class="php-quote">'*/'</span>, <span class="php-var">$this</span>-&gt;i + <span class="php-num">2</span>);
 </span><span id="227" class="l"><a href="#227">227 </a>                    <span class="php-keyword1">if</span> (<span class="php-var">$nextStarSlash</span> &gt;= <span class="php-num">0</span>) {
-</span><span id="228" class="l"><a href="#228">228 </a>                        <span class="php-var">$comment</span> = <span class="php-keyword1">array</span>(
+</span><span id="228" class="l"><a href="#228">228 </a>                        <span class="php-var">$comment</span> = [
 </span><span id="229" class="l"><a href="#229">229 </a>                            <span class="php-quote">'index'</span> =&gt; <span class="php-var">$this</span>-&gt;i,
 </span><span id="230" class="l"><a href="#230">230 </a>                            <span class="php-quote">'text'</span> =&gt; <span class="php-keyword2">substr</span>(<span class="php-var">$inp</span>, <span class="php-var">$this</span>-&gt;i, <span class="php-var">$nextStarSlash</span> + <span class="php-num">2</span> - <span class="php-var">$this</span>-&gt;i),
-</span><span id="231" class="l"><a href="#231">231 </a>                        );
+</span><span id="231" class="l"><a href="#231">231 </a>                        ];
 </span><span id="232" class="l"><a href="#232">232 </a>                        <span class="php-var">$this</span>-&gt;i += <span class="php-keyword2">strlen</span>(<span class="php-var">$comment</span>[<span class="php-quote">'text'</span>]) - <span class="php-num">1</span>;
 </span><span id="233" class="l"><a href="#233">233 </a>                        <span class="php-var">$this</span>-&gt;commentStore[] = <span class="php-var">$comment</span>;
 </span><span id="234" class="l"><a href="#234">234 </a>                        <span class="php-keyword1">continue</span>;
@@ -586,7 +586,7 @@
 </span><span id="314" class="l"><a href="#314">314 </a>    {
 </span><span id="315" class="l"><a href="#315">315 </a>        <span class="php-var">$this</span>-&gt;input = <span class="php-var">$string</span>;
 </span><span id="316" class="l"><a href="#316">316 </a>        <span class="php-var">$this</span>-&gt;i = <span class="php-var">$this</span>-&gt;j = <span class="php-var">$this</span>-&gt;currentPos = <span class="php-var">$this</span>-&gt;furthest = <span class="php-num">0</span>;
-</span><span id="317" class="l"><a href="#317">317 </a>        <span class="php-var">$this</span>-&gt;chunks = <span class="php-keyword1">array</span>(<span class="php-var">$string</span>);
+</span><span id="317" class="l"><a href="#317">317 </a>        <span class="php-var">$this</span>-&gt;chunks = [<span class="php-var">$string</span>];
 </span><span id="318" class="l"><a href="#318">318 </a>        <span class="php-var">$this</span>-&gt;<span class="php-keyword2">current</span> = <span class="php-var">$this</span>-&gt;chunks[<span class="php-num">0</span>];
 </span><span id="319" class="l"><a href="#319">319 </a>        <span class="php-var">$this</span>-&gt;skipWhitespace(<span class="php-num">0</span>);
 </span><span id="320" class="l"><a href="#320">320 </a>    }
@@ -603,13 +603,13 @@
 </span><span id="331" class="l"><a href="#331">331 </a>            <span class="php-var">$this</span>-&gt;i = <span class="php-var">$this</span>-&gt;furthest;
 </span><span id="332" class="l"><a href="#332">332 </a>        }
 </span><span id="333" class="l"><a href="#333">333 </a>
-</span><span id="334" class="l"><a href="#334">334 </a>        <span class="php-keyword1">return</span> (object)<span class="php-keyword1">array</span>(
+</span><span id="334" class="l"><a href="#334">334 </a>        <span class="php-keyword1">return</span> (object)[
 </span><span id="335" class="l"><a href="#335">335 </a>            <span class="php-quote">'isFinished'</span> =&gt; <span class="php-var">$isFinished</span>,
 </span><span id="336" class="l"><a href="#336">336 </a>            <span class="php-quote">'furthest'</span> =&gt; <span class="php-var">$this</span>-&gt;i,
 </span><span id="337" class="l"><a href="#337">337 </a>            <span class="php-quote">'furthestPossibleErrorMessage'</span> =&gt; <span class="php-var">$message</span>,
 </span><span id="338" class="l"><a href="#338">338 </a>            <span class="php-quote">'furthestReachedEnd'</span> =&gt; <span class="php-var">$this</span>-&gt;i &gt;= <span class="php-keyword2">strlen</span>(<span class="php-var">$this</span>-&gt;input) - <span class="php-num">1</span>,
 </span><span id="339" class="l"><a href="#339">339 </a>            <span class="php-quote">'furthestChar'</span> =&gt; @<span class="php-var">$this</span>-&gt;input[<span class="php-var">$this</span>-&gt;i],
-</span><span id="340" class="l"><a href="#340">340 </a>        );
+</span><span id="340" class="l"><a href="#340">340 </a>        ];
 </span><span id="341" class="l"><a href="#341">341 </a>    }
 </span><span id="342" class="l"><a href="#342">342 </a>}
 </span><span id="343" class="l"><a href="#343">343 </a></span></code></pre>

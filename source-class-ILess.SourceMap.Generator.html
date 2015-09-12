@@ -306,7 +306,7 @@
 </span></span><span id="34" class="l"><a href="#34"> 34 </a><span class="php-comment">     *
 </span></span><span id="35" class="l"><a href="#35"> 35 </a><span class="php-comment">     * @var array
 </span></span><span id="36" class="l"><a href="#36"> 36 </a><span class="php-comment">     */</span>
-</span><span id="37" class="l"><a href="#37"> 37 </a>    <span class="php-keyword1">protected</span> <span class="php-var">$defaultOptions</span> = <span class="php-keyword1">array</span>(
+</span><span id="37" class="l"><a href="#37"> 37 </a>    <span class="php-keyword1">protected</span> <span class="php-var">$defaultOptions</span> = [
 </span><span id="38" class="l"><a href="#38"> 38 </a>        <span class="php-comment">// an optional source root, useful for relocating source files</span>
 </span><span id="39" class="l"><a href="#39"> 39 </a>        <span class="php-comment">// on a server or removing repeated values in the 'sources' entry.</span>
 </span><span id="40" class="l"><a href="#40"> 40 </a>        <span class="php-comment">// This value is prepended to the individual entries in the 'source' field.</span>
@@ -323,7 +323,7 @@
 </span><span id="51" class="l"><a href="#51"> 51 </a>        <span class="php-quote">'base_path'</span> =&gt; <span class="php-quote">''</span>,
 </span><span id="52" class="l"><a href="#52"> 52 </a>        <span class="php-comment">// encode inline map using base64?</span>
 </span><span id="53" class="l"><a href="#53"> 53 </a>        <span class="php-quote">'inline_encode_base64'</span> =&gt; <span class="php-keyword1">true</span>,
-</span><span id="54" class="l"><a href="#54"> 54 </a>    );
+</span><span id="54" class="l"><a href="#54"> 54 </a>    ];
 </span><span id="55" class="l"><a href="#55"> 55 </a>
 </span><span id="56" class="l"><a href="#56"> 56 </a>    <span class="php-comment">/**
 </span></span><span id="57" class="l"><a href="#57"> 57 </a><span class="php-comment">     * The base64 VLQ encoder
@@ -337,7 +337,7 @@
 </span></span><span id="65" class="l"><a href="#65"> 65 </a><span class="php-comment">     *
 </span></span><span id="66" class="l"><a href="#66"> 66 </a><span class="php-comment">     * @var array
 </span></span><span id="67" class="l"><a href="#67"> 67 </a><span class="php-comment">     */</span>
-</span><span id="68" class="l"><a href="#68"> 68 </a>    <span class="php-keyword1">protected</span> <span class="php-var">$mappings</span> = <span class="php-keyword1">array</span>();
+</span><span id="68" class="l"><a href="#68"> 68 </a>    <span class="php-keyword1">protected</span> <span class="php-var">$mappings</span> = [];
 </span><span id="69" class="l"><a href="#69"> 69 </a>
 </span><span id="70" class="l"><a href="#70"> 70 </a>    <span class="php-comment">/**
 </span></span><span id="71" class="l"><a href="#71"> 71 </a><span class="php-comment">     * The root node
@@ -351,14 +351,14 @@
 </span></span><span id="79" class="l"><a href="#79"> 79 </a><span class="php-comment">     *
 </span></span><span id="80" class="l"><a href="#80"> 80 </a><span class="php-comment">     * @var array
 </span></span><span id="81" class="l"><a href="#81"> 81 </a><span class="php-comment">     */</span>
-</span><span id="82" class="l"><a href="#82"> 82 </a>    <span class="php-keyword1">protected</span> <span class="php-var">$contentsMap</span> = <span class="php-keyword1">array</span>();
+</span><span id="82" class="l"><a href="#82"> 82 </a>    <span class="php-keyword1">protected</span> <span class="php-var">$contentsMap</span> = [];
 </span><span id="83" class="l"><a href="#83"> 83 </a>
 </span><span id="84" class="l"><a href="#84"> 84 </a>    <span class="php-comment">/**
 </span></span><span id="85" class="l"><a href="#85"> 85 </a><span class="php-comment">     * File to content map
 </span></span><span id="86" class="l"><a href="#86"> 86 </a><span class="php-comment">     *
 </span></span><span id="87" class="l"><a href="#87"> 87 </a><span class="php-comment">     * @var array
 </span></span><span id="88" class="l"><a href="#88"> 88 </a><span class="php-comment">     */</span>
-</span><span id="89" class="l"><a href="#89"> 89 </a>    <span class="php-keyword1">protected</span> <span class="php-var">$sources</span> = <span class="php-keyword1">array</span>();
+</span><span id="89" class="l"><a href="#89"> 89 </a>    <span class="php-keyword1">protected</span> <span class="php-var">$sources</span> = [];
 </span><span id="90" class="l"><a href="#90"> 90 </a>
 </span><span id="91" class="l"><a href="#91"> 91 </a>    <span class="php-comment">/**
 </span></span><span id="92" class="l"><a href="#92"> 92 </a><span class="php-comment">     * Constructor
@@ -371,7 +371,7 @@
 </span><span id="99" class="l"><a href="#99"> 99 </a>    <span class="php-keyword1">public</span> <span class="php-keyword1">function</span> __construct(
 </span><span id="100" class="l"><a href="#100">100 </a>        RulesetNode <span class="php-var">$root</span>,
 </span><span id="101" class="l"><a href="#101">101 </a>        <span class="php-keyword1">array</span> <span class="php-var">$contentsMap</span>,
-</span><span id="102" class="l"><a href="#102">102 </a>        <span class="php-var">$options</span> = <span class="php-keyword1">array</span>(),
+</span><span id="102" class="l"><a href="#102">102 </a>        <span class="php-var">$options</span> = [],
 </span><span id="103" class="l"><a href="#103">103 </a>        Base64VLQ <span class="php-var">$encoder</span> = <span class="php-keyword1">null</span>
 </span><span id="104" class="l"><a href="#104">104 </a>    ) {
 </span><span id="105" class="l"><a href="#105">105 </a>        <span class="php-var">$this</span>-&gt;root = <span class="php-var">$root</span>;
@@ -514,13 +514,13 @@
 </span><span id="242" class="l"><a href="#242">242 </a>        <span class="php-var">$originalColumn</span>,
 </span><span id="243" class="l"><a href="#243">243 </a>        <span class="php-var">$sourceFile</span>
 </span><span id="244" class="l"><a href="#244">244 </a>    ) {
-</span><span id="245" class="l"><a href="#245">245 </a>        <span class="php-var">$this</span>-&gt;mappings[] = <span class="php-keyword1">array</span>(
+</span><span id="245" class="l"><a href="#245">245 </a>        <span class="php-var">$this</span>-&gt;mappings[] = [
 </span><span id="246" class="l"><a href="#246">246 </a>            <span class="php-quote">'generated_line'</span> =&gt; <span class="php-var">$generatedLine</span>,
 </span><span id="247" class="l"><a href="#247">247 </a>            <span class="php-quote">'generated_column'</span> =&gt; <span class="php-var">$generatedColumn</span>,
 </span><span id="248" class="l"><a href="#248">248 </a>            <span class="php-quote">'original_line'</span> =&gt; <span class="php-var">$originalLine</span>,
 </span><span id="249" class="l"><a href="#249">249 </a>            <span class="php-quote">'original_column'</span> =&gt; <span class="php-var">$originalColumn</span>,
 </span><span id="250" class="l"><a href="#250">250 </a>            <span class="php-quote">'source_file'</span> =&gt; <span class="php-var">$sourceFile</span>,
-</span><span id="251" class="l"><a href="#251">251 </a>        );
+</span><span id="251" class="l"><a href="#251">251 </a>        ];
 </span><span id="252" class="l"><a href="#252">252 </a>
 </span><span id="253" class="l"><a href="#253">253 </a>        <span class="php-keyword1">return</span> <span class="php-var">$this</span>;
 </span><span id="254" class="l"><a href="#254">254 </a>    }
@@ -532,7 +532,7 @@
 </span></span><span id="260" class="l"><a href="#260">260 </a><span class="php-comment">     */</span>
 </span><span id="261" class="l"><a href="#261">261 </a>    <span class="php-keyword1">public</span> <span class="php-keyword1">function</span> clear()
 </span><span id="262" class="l"><a href="#262">262 </a>    {
-</span><span id="263" class="l"><a href="#263">263 </a>        <span class="php-var">$this</span>-&gt;mappings = <span class="php-keyword1">array</span>();
+</span><span id="263" class="l"><a href="#263">263 </a>        <span class="php-var">$this</span>-&gt;mappings = [];
 </span><span id="264" class="l"><a href="#264">264 </a>
 </span><span id="265" class="l"><a href="#265">265 </a>        <span class="php-keyword1">return</span> <span class="php-var">$this</span>;
 </span><span id="266" class="l"><a href="#266">266 </a>    }
@@ -568,7 +568,7 @@
 </span></span><span id="296" class="l"><a href="#296">296 </a><span class="php-comment">     */</span>
 </span><span id="297" class="l"><a href="#297">297 </a>    <span class="php-keyword1">protected</span> <span class="php-keyword1">function</span> generateJson()
 </span><span id="298" class="l"><a href="#298">298 </a>    {
-</span><span id="299" class="l"><a href="#299">299 </a>        <span class="php-var">$sourceMap</span> = <span class="php-keyword1">array</span>(
+</span><span id="299" class="l"><a href="#299">299 </a>        <span class="php-var">$sourceMap</span> = [
 </span><span id="300" class="l"><a href="#300">300 </a>            <span class="php-comment">// File version (always the first entry in the object) and must be a positive integer.</span>
 </span><span id="301" class="l"><a href="#301">301 </a>            <span class="php-quote">'version'</span> =&gt; self::VERSION,
 </span><span id="302" class="l"><a href="#302">302 </a>            <span class="php-comment">// An optional name of the generated code that this source map is associated with.</span>
@@ -577,10 +577,10 @@
 </span><span id="305" class="l"><a href="#305">305 </a>            <span class="php-quote">'sourceRoot'</span> =&gt; <span class="php-var">$this</span>-&gt;getOption(<span class="php-quote">'sourceRoot'</span>),
 </span><span id="306" class="l"><a href="#306">306 </a>            <span class="php-comment">// A list of original sources used by the 'mappings' entry.</span>
 </span><span id="307" class="l"><a href="#307">307 </a>            <span class="php-quote">'sources'</span> =&gt; <span class="php-keyword2">array_keys</span>(<span class="php-var">$this</span>-&gt;sources),
-</span><span id="308" class="l"><a href="#308">308 </a>        );
+</span><span id="308" class="l"><a href="#308">308 </a>        ];
 </span><span id="309" class="l"><a href="#309">309 </a>
 </span><span id="310" class="l"><a href="#310">310 </a>        <span class="php-comment">// A list of symbol names used by the 'mappings' entry.</span>
-</span><span id="311" class="l"><a href="#311">311 </a>        <span class="php-var">$sourceMap</span>[<span class="php-quote">'names'</span>] = <span class="php-keyword1">array</span>();
+</span><span id="311" class="l"><a href="#311">311 </a>        <span class="php-var">$sourceMap</span>[<span class="php-quote">'names'</span>] = [];
 </span><span id="312" class="l"><a href="#312">312 </a>        <span class="php-comment">// A string with the encoded mapping data.</span>
 </span><span id="313" class="l"><a href="#313">313 </a>        <span class="php-var">$sourceMap</span>[<span class="php-quote">'mappings'</span>] = <span class="php-var">$this</span>-&gt;generateMappings();
 </span><span id="314" class="l"><a href="#314">314 </a>
@@ -626,7 +626,7 @@
 </span><span id="354" class="l"><a href="#354">354 </a>        }
 </span><span id="355" class="l"><a href="#355">355 </a>
 </span><span id="356" class="l"><a href="#356">356 </a>        <span class="php-comment">// group mappings by generated line number.</span>
-</span><span id="357" class="l"><a href="#357">357 </a>        <span class="php-var">$groupedMap</span> = <span class="php-var">$groupedMapEncoded</span> = <span class="php-keyword1">array</span>();
+</span><span id="357" class="l"><a href="#357">357 </a>        <span class="php-var">$groupedMap</span> = <span class="php-var">$groupedMapEncoded</span> = [];
 </span><span id="358" class="l"><a href="#358">358 </a>        <span class="php-keyword1">foreach</span> (<span class="php-var">$this</span>-&gt;mappings <span class="php-keyword1">as</span> <span class="php-var">$m</span>) {
 </span><span id="359" class="l"><a href="#359">359 </a>            <span class="php-var">$groupedMap</span>[<span class="php-var">$m</span>[<span class="php-quote">'generated_line'</span>]][] = <span class="php-var">$m</span>;
 </span><span id="360" class="l"><a href="#360">360 </a>        }
@@ -639,7 +639,7 @@
 </span><span id="367" class="l"><a href="#367">367 </a>                <span class="php-var">$groupedMapEncoded</span>[] = <span class="php-quote">';'</span>;
 </span><span id="368" class="l"><a href="#368">368 </a>            }
 </span><span id="369" class="l"><a href="#369">369 </a>
-</span><span id="370" class="l"><a href="#370">370 </a>            <span class="php-var">$lineMapEncoded</span> = <span class="php-keyword1">array</span>();
+</span><span id="370" class="l"><a href="#370">370 </a>            <span class="php-var">$lineMapEncoded</span> = [];
 </span><span id="371" class="l"><a href="#371">371 </a>            <span class="php-var">$lastGeneratedColumn</span> = <span class="php-num">0</span>;
 </span><span id="372" class="l"><a href="#372">372 </a>
 </span><span id="373" class="l"><a href="#373">373 </a>            <span class="php-keyword1">foreach</span> (<span class="php-var">$line_map</span> <span class="php-keyword1">as</span> <span class="php-var">$m</span>) {

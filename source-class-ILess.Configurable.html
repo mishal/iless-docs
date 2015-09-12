@@ -295,21 +295,21 @@
 </span></span><span id="23" class="l"><a href="#23"> 23 </a><span class="php-comment">     *
 </span></span><span id="24" class="l"><a href="#24"> 24 </a><span class="php-comment">     * @var array
 </span></span><span id="25" class="l"><a href="#25"> 25 </a><span class="php-comment">     */</span>
-</span><span id="26" class="l"><a href="#26"> 26 </a>    <span class="php-keyword1">protected</span> <span class="php-var">$options</span> = <span class="php-keyword1">array</span>();
+</span><span id="26" class="l"><a href="#26"> 26 </a>    <span class="php-keyword1">protected</span> <span class="php-var">$options</span> = [];
 </span><span id="27" class="l"><a href="#27"> 27 </a>
 </span><span id="28" class="l"><a href="#28"> 28 </a>    <span class="php-comment">/**
 </span></span><span id="29" class="l"><a href="#29"> 29 </a><span class="php-comment">     * Array of default options
 </span></span><span id="30" class="l"><a href="#30"> 30 </a><span class="php-comment">     *
 </span></span><span id="31" class="l"><a href="#31"> 31 </a><span class="php-comment">     * @var array
 </span></span><span id="32" class="l"><a href="#32"> 32 </a><span class="php-comment">     */</span>
-</span><span id="33" class="l"><a href="#33"> 33 </a>    <span class="php-keyword1">protected</span> <span class="php-var">$defaultOptions</span> = <span class="php-keyword1">array</span>();
+</span><span id="33" class="l"><a href="#33"> 33 </a>    <span class="php-keyword1">protected</span> <span class="php-var">$defaultOptions</span> = [];
 </span><span id="34" class="l"><a href="#34"> 34 </a>
 </span><span id="35" class="l"><a href="#35"> 35 </a>    <span class="php-comment">/**
 </span></span><span id="36" class="l"><a href="#36"> 36 </a><span class="php-comment">     * Constructor
 </span></span><span id="37" class="l"><a href="#37"> 37 </a><span class="php-comment">     *
 </span></span><span id="38" class="l"><a href="#38"> 38 </a><span class="php-comment">     * @param array $options
 </span></span><span id="39" class="l"><a href="#39"> 39 </a><span class="php-comment">     */</span>
-</span><span id="40" class="l"><a href="#40"> 40 </a>    <span class="php-keyword1">public</span> <span class="php-keyword1">function</span> __construct(<span class="php-var">$options</span> = <span class="php-keyword1">array</span>())
+</span><span id="40" class="l"><a href="#40"> 40 </a>    <span class="php-keyword1">public</span> <span class="php-keyword1">function</span> __construct(<span class="php-var">$options</span> = [])
 </span><span id="41" class="l"><a href="#41"> 41 </a>    {
 </span><span id="42" class="l"><a href="#42"> 42 </a>        <span class="php-var">$this</span>-&gt;setOptions(<span class="php-var">$options</span>);
 </span><span id="43" class="l"><a href="#43"> 43 </a>        <span class="php-var">$this</span>-&gt;setup();
@@ -330,7 +330,7 @@
 </span><span id="58" class="l"><a href="#58"> 58 </a>    {
 </span><span id="59" class="l"><a href="#59"> 59 </a>        <span class="php-comment">// first convert to array if needed</span>
 </span><span id="60" class="l"><a href="#60"> 60 </a>        <span class="php-keyword1">if</span> (!<span class="php-keyword2">is_array</span>(<span class="php-var">$options</span>)) {
-</span><span id="61" class="l"><a href="#61"> 61 </a>            <span class="php-keyword1">if</span> (<span class="php-keyword2">is_object</span>(<span class="php-var">$options</span>) &amp;&amp; <span class="php-keyword2">is_callable</span>(<span class="php-keyword1">array</span>(<span class="php-var">$options</span>, <span class="php-quote">'toArray'</span>))) {
+</span><span id="61" class="l"><a href="#61"> 61 </a>            <span class="php-keyword1">if</span> (<span class="php-keyword2">is_object</span>(<span class="php-var">$options</span>) &amp;&amp; <span class="php-keyword2">is_callable</span>([<span class="php-var">$options</span>, <span class="php-quote">'toArray'</span>])) {
 </span><span id="62" class="l"><a href="#62"> 62 </a>                <span class="php-var">$options</span> = <span class="php-var">$options</span>-&gt;toArray();
 </span><span id="63" class="l"><a href="#63"> 63 </a>            } <span class="php-keyword1">else</span> {
 </span><span id="64" class="l"><a href="#64"> 64 </a>                <span class="php-keyword1">throw</span> <span class="php-keyword1">new</span> InvalidArgumentException(<span class="php-keyword2">sprintf</span>(<span class="php-quote">'Options for &quot;%s&quot; must be an array or a object with -&gt;toArray() method'</span>,

@@ -943,7 +943,7 @@ less.js command options to ILess valid options.</p>
 			<td class="value">
 				<div>
 					<a href="#$cliArguments" class="anchor">#</a>
-					<code><span class="php-keyword1">array</span>()</code>
+					<code>[]</code>
 				</div>
 			</td>
 		</tr>
@@ -968,11 +968,11 @@ less.js command options to ILess valid options.</p>
 			<td class="value">
 				<div>
 					<a href="#$defaultOptions" class="anchor">#</a>
-					<code><span class="php-keyword1">array</span>(
+					<code>[
     <span class="php-quote">'silent'</span> =&gt; <span class="php-keyword1">false</span>,
     <span class="php-quote">'append'</span> =&gt; <span class="php-keyword1">false</span>,
     <span class="php-quote">'no_color'</span> =&gt; <span class="php-keyword1">false</span>,
-)</code>
+]</code>
 				</div>
 			</td>
 		</tr>
@@ -997,34 +997,34 @@ less.js command options to ILess valid options.</p>
 			<td class="value">
 				<div>
 					<a href="#$validOptions" class="anchor">#</a>
-					<code><span class="php-keyword1">array</span>(
+					<code>[
     <span class="php-comment">// option name =&gt; array(description, array of flags)</span>
-    <span class="php-quote">'help'</span> =&gt; <span class="php-keyword1">array</span>(<span class="php-quote">'Print help (this message) and exit.'</span>, <span class="php-keyword1">array</span>(<span class="php-quote">'h'</span>)),
-    <span class="php-quote">'version'</span> =&gt; <span class="php-keyword1">array</span>(<span class="php-quote">'Print version number and exit.'</span>, <span class="php-keyword1">array</span>(<span class="php-quote">'v'</span>)),
-    <span class="php-quote">'silent'</span> =&gt; <span class="php-keyword1">array</span>(<span class="php-quote">'Suppress output of error messages.'</span>, <span class="php-keyword1">array</span>(<span class="php-quote">'s'</span>)),
-    <span class="php-quote">'no_color'</span> =&gt; <span class="php-keyword1">array</span>(<span class="php-quote">'Disable colorized output.'</span>, <span class="php-keyword1">array</span>()),
-    <span class="php-quote">'compress'</span> =&gt; <span class="php-keyword1">array</span>(<span class="php-quote">'Compress output by removing the whitespace.'</span>, <span class="php-keyword1">array</span>(<span class="php-quote">'x'</span>)),
-    <span class="php-quote">'append'</span> =&gt; <span class="php-keyword1">array</span>(<span class="php-quote">'Append the generated CSS to the target file?'</span>, <span class="php-keyword1">array</span>(<span class="php-quote">'a'</span>)),
-    <span class="php-quote">'no_ie_compat'</span> =&gt; <span class="php-keyword1">array</span>(<span class="php-quote">'Disable IE compatibility checks.'</span>, <span class="php-keyword1">array</span>()),
-    <span class="php-quote">'source_map'</span> =&gt; <span class="php-keyword1">array</span>(<span class="php-quote">'Outputs an inline sourcemap to the generated CSS (or output to filename.map).'</span>, <span class="php-keyword1">array</span>()),
-    <span class="php-quote">'source_map_url'</span> =&gt; <span class="php-keyword1">array</span>(<span class="php-quote">'The complete url and filename put in the less file.'</span>, <span class="php-keyword1">array</span>()),
-    <span class="php-quote">'source_map_base_path'</span> =&gt; <span class="php-keyword1">array</span>(<span class="php-quote">'Sets sourcemap base path, defaults to current working directory.'</span>, <span class="php-keyword1">array</span>()),
-    <span class="php-quote">'strict-math'</span> =&gt; <span class="php-keyword1">array</span>(<span class="php-quote">'Strict math. Requires brackets.'</span>, <span class="php-keyword1">array</span>(<span class="php-quote">'sm'</span>)),
-    <span class="php-quote">'strict-units'</span> =&gt; <span class="php-keyword1">array</span>(
+    <span class="php-quote">'help'</span> =&gt; [<span class="php-quote">'Print help (this message) and exit.'</span>, [<span class="php-quote">'h'</span>]],
+    <span class="php-quote">'version'</span> =&gt; [<span class="php-quote">'Print version number and exit.'</span>, [<span class="php-quote">'v'</span>]],
+    <span class="php-quote">'silent'</span> =&gt; [<span class="php-quote">'Suppress output of error messages.'</span>, [<span class="php-quote">'s'</span>]],
+    <span class="php-quote">'no_color'</span> =&gt; [<span class="php-quote">'Disable colorized output.'</span>, []],
+    <span class="php-quote">'compress'</span> =&gt; [<span class="php-quote">'Compress output by removing the whitespace.'</span>, [<span class="php-quote">'x'</span>]],
+    <span class="php-quote">'append'</span> =&gt; [<span class="php-quote">'Append the generated CSS to the target file?'</span>, [<span class="php-quote">'a'</span>]],
+    <span class="php-quote">'no_ie_compat'</span> =&gt; [<span class="php-quote">'Disable IE compatibility checks.'</span>, []],
+    <span class="php-quote">'source_map'</span> =&gt; [<span class="php-quote">'Outputs an inline sourcemap to the generated CSS (or output to filename.map).'</span>, []],
+    <span class="php-quote">'source_map_url'</span> =&gt; [<span class="php-quote">'The complete url and filename put in the less file.'</span>, []],
+    <span class="php-quote">'source_map_base_path'</span> =&gt; [<span class="php-quote">'Sets sourcemap base path, defaults to current working directory.'</span>, []],
+    <span class="php-quote">'strict-math'</span> =&gt; [<span class="php-quote">'Strict math. Requires brackets.'</span>, [<span class="php-quote">'sm'</span>]],
+    <span class="php-quote">'strict-units'</span> =&gt; [
         <span class="php-quote">'Allows mixed units, e.g. 1px+1em or 1px*1px which have units that cannot be represented.'</span>,
-        <span class="php-keyword1">array</span>(<span class="php-quote">'su'</span>),
-    ),
-    <span class="php-quote">'root-path'</span> =&gt; <span class="php-keyword1">array</span>(
+        [<span class="php-quote">'su'</span>],
+    ],
+    <span class="php-quote">'root-path'</span> =&gt; [
         <span class="php-quote">'Sets rootpath for url rewriting in relative imports and urls. Works with or without the relative-urls option.'</span>,
-        <span class="php-keyword1">array</span>(<span class="php-quote">'rp'</span>),
-    ),
-    <span class="php-quote">'relative-urls'</span> =&gt; <span class="php-keyword1">array</span>(<span class="php-quote">'Re-writes relative urls to the base less file.'</span>, <span class="php-keyword1">array</span>(<span class="php-quote">'ru'</span>)),
-    <span class="php-quote">'url-args'</span> =&gt; <span class="php-keyword1">array</span>(<span class="php-quote">'Adds params into url tokens (e.g. 42, cb=42 or a=1&amp;b=2)'</span>, <span class="php-keyword1">array</span>()),
-    <span class="php-quote">'dump_line_numbers'</span> =&gt; <span class="php-keyword1">array</span>(
+        [<span class="php-quote">'rp'</span>],
+    ],
+    <span class="php-quote">'relative-urls'</span> =&gt; [<span class="php-quote">'Re-writes relative urls to the base less file.'</span>, [<span class="php-quote">'ru'</span>]],
+    <span class="php-quote">'url-args'</span> =&gt; [<span class="php-quote">'Adds params into url tokens (e.g. 42, cb=42 or a=1&amp;b=2)'</span>, []],
+    <span class="php-quote">'dump_line_numbers'</span> =&gt; [
         <span class="php-quote">'Outputs filename and line numbers. TYPE can be either \'comments\', which will output the debug info within comments, \'mediaquery\' that will output the information within a fake media query which is compatible with the SASS format, and \'all\' which will do both.'</span>,
-        <span class="php-keyword1">array</span>(),
-    ),
-)</code>
+        [],
+    ],
+]</code>
 				</div>
 			</td>
 		</tr>
@@ -1049,7 +1049,7 @@ less.js command options to ILess valid options.</p>
 			<td class="value">
 				<div>
 					<a href="#$validFlags" class="anchor">#</a>
-					<code><span class="php-keyword1">array</span>()</code>
+					<code>[]</code>
 				</div>
 			</td>
 		</tr>

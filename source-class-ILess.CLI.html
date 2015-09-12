@@ -306,59 +306,59 @@
 </span></span><span id="34" class="l"><a href="#34"> 34 </a><span class="php-comment">     *
 </span></span><span id="35" class="l"><a href="#35"> 35 </a><span class="php-comment">     * @var array
 </span></span><span id="36" class="l"><a href="#36"> 36 </a><span class="php-comment">     */</span>
-</span><span id="37" class="l"><a href="#37"> 37 </a>    <span class="php-keyword1">protected</span> <span class="php-var">$cliArguments</span> = <span class="php-keyword1">array</span>();
+</span><span id="37" class="l"><a href="#37"> 37 </a>    <span class="php-keyword1">protected</span> <span class="php-var">$cliArguments</span> = [];
 </span><span id="38" class="l"><a href="#38"> 38 </a>
 </span><span id="39" class="l"><a href="#39"> 39 </a>    <span class="php-comment">/**
 </span></span><span id="40" class="l"><a href="#40"> 40 </a><span class="php-comment">     * Array of default options
 </span></span><span id="41" class="l"><a href="#41"> 41 </a><span class="php-comment">     *
 </span></span><span id="42" class="l"><a href="#42"> 42 </a><span class="php-comment">     * @var array
 </span></span><span id="43" class="l"><a href="#43"> 43 </a><span class="php-comment">     */</span>
-</span><span id="44" class="l"><a href="#44"> 44 </a>    <span class="php-keyword1">protected</span> <span class="php-var">$defaultOptions</span> = <span class="php-keyword1">array</span>(
+</span><span id="44" class="l"><a href="#44"> 44 </a>    <span class="php-keyword1">protected</span> <span class="php-var">$defaultOptions</span> = [
 </span><span id="45" class="l"><a href="#45"> 45 </a>        <span class="php-quote">'silent'</span> =&gt; <span class="php-keyword1">false</span>,
 </span><span id="46" class="l"><a href="#46"> 46 </a>        <span class="php-quote">'append'</span> =&gt; <span class="php-keyword1">false</span>,
 </span><span id="47" class="l"><a href="#47"> 47 </a>        <span class="php-quote">'no_color'</span> =&gt; <span class="php-keyword1">false</span>,
-</span><span id="48" class="l"><a href="#48"> 48 </a>    );
+</span><span id="48" class="l"><a href="#48"> 48 </a>    ];
 </span><span id="49" class="l"><a href="#49"> 49 </a>
 </span><span id="50" class="l"><a href="#50"> 50 </a>    <span class="php-comment">/**
 </span></span><span id="51" class="l"><a href="#51"> 51 </a><span class="php-comment">     * Array of valid options
 </span></span><span id="52" class="l"><a href="#52"> 52 </a><span class="php-comment">     *
 </span></span><span id="53" class="l"><a href="#53"> 53 </a><span class="php-comment">     * @var array
 </span></span><span id="54" class="l"><a href="#54"> 54 </a><span class="php-comment">     */</span>
-</span><span id="55" class="l"><a href="#55"> 55 </a>    <span class="php-keyword1">protected</span> <span class="php-var">$validOptions</span> = <span class="php-keyword1">array</span>(
+</span><span id="55" class="l"><a href="#55"> 55 </a>    <span class="php-keyword1">protected</span> <span class="php-var">$validOptions</span> = [
 </span><span id="56" class="l"><a href="#56"> 56 </a>        <span class="php-comment">// option name =&gt; array(description, array of flags)</span>
-</span><span id="57" class="l"><a href="#57"> 57 </a>        <span class="php-quote">'help'</span> =&gt; <span class="php-keyword1">array</span>(<span class="php-quote">'Print help (this message) and exit.'</span>, <span class="php-keyword1">array</span>(<span class="php-quote">'h'</span>)),
-</span><span id="58" class="l"><a href="#58"> 58 </a>        <span class="php-quote">'version'</span> =&gt; <span class="php-keyword1">array</span>(<span class="php-quote">'Print version number and exit.'</span>, <span class="php-keyword1">array</span>(<span class="php-quote">'v'</span>)),
-</span><span id="59" class="l"><a href="#59"> 59 </a>        <span class="php-quote">'silent'</span> =&gt; <span class="php-keyword1">array</span>(<span class="php-quote">'Suppress output of error messages.'</span>, <span class="php-keyword1">array</span>(<span class="php-quote">'s'</span>)),
-</span><span id="60" class="l"><a href="#60"> 60 </a>        <span class="php-quote">'no_color'</span> =&gt; <span class="php-keyword1">array</span>(<span class="php-quote">'Disable colorized output.'</span>, <span class="php-keyword1">array</span>()),
-</span><span id="61" class="l"><a href="#61"> 61 </a>        <span class="php-quote">'compress'</span> =&gt; <span class="php-keyword1">array</span>(<span class="php-quote">'Compress output by removing the whitespace.'</span>, <span class="php-keyword1">array</span>(<span class="php-quote">'x'</span>)),
-</span><span id="62" class="l"><a href="#62"> 62 </a>        <span class="php-quote">'append'</span> =&gt; <span class="php-keyword1">array</span>(<span class="php-quote">'Append the generated CSS to the target file?'</span>, <span class="php-keyword1">array</span>(<span class="php-quote">'a'</span>)),
-</span><span id="63" class="l"><a href="#63"> 63 </a>        <span class="php-quote">'no_ie_compat'</span> =&gt; <span class="php-keyword1">array</span>(<span class="php-quote">'Disable IE compatibility checks.'</span>, <span class="php-keyword1">array</span>()),
-</span><span id="64" class="l"><a href="#64"> 64 </a>        <span class="php-quote">'source_map'</span> =&gt; <span class="php-keyword1">array</span>(<span class="php-quote">'Outputs an inline sourcemap to the generated CSS (or output to filename.map).'</span>, <span class="php-keyword1">array</span>()),
-</span><span id="65" class="l"><a href="#65"> 65 </a>        <span class="php-quote">'source_map_url'</span> =&gt; <span class="php-keyword1">array</span>(<span class="php-quote">'The complete url and filename put in the less file.'</span>, <span class="php-keyword1">array</span>()),
-</span><span id="66" class="l"><a href="#66"> 66 </a>        <span class="php-quote">'source_map_base_path'</span> =&gt; <span class="php-keyword1">array</span>(<span class="php-quote">'Sets sourcemap base path, defaults to current working directory.'</span>, <span class="php-keyword1">array</span>()),
-</span><span id="67" class="l"><a href="#67"> 67 </a>        <span class="php-quote">'strict-math'</span> =&gt; <span class="php-keyword1">array</span>(<span class="php-quote">'Strict math. Requires brackets.'</span>, <span class="php-keyword1">array</span>(<span class="php-quote">'sm'</span>)),
-</span><span id="68" class="l"><a href="#68"> 68 </a>        <span class="php-quote">'strict-units'</span> =&gt; <span class="php-keyword1">array</span>(
+</span><span id="57" class="l"><a href="#57"> 57 </a>        <span class="php-quote">'help'</span> =&gt; [<span class="php-quote">'Print help (this message) and exit.'</span>, [<span class="php-quote">'h'</span>]],
+</span><span id="58" class="l"><a href="#58"> 58 </a>        <span class="php-quote">'version'</span> =&gt; [<span class="php-quote">'Print version number and exit.'</span>, [<span class="php-quote">'v'</span>]],
+</span><span id="59" class="l"><a href="#59"> 59 </a>        <span class="php-quote">'silent'</span> =&gt; [<span class="php-quote">'Suppress output of error messages.'</span>, [<span class="php-quote">'s'</span>]],
+</span><span id="60" class="l"><a href="#60"> 60 </a>        <span class="php-quote">'no_color'</span> =&gt; [<span class="php-quote">'Disable colorized output.'</span>, []],
+</span><span id="61" class="l"><a href="#61"> 61 </a>        <span class="php-quote">'compress'</span> =&gt; [<span class="php-quote">'Compress output by removing the whitespace.'</span>, [<span class="php-quote">'x'</span>]],
+</span><span id="62" class="l"><a href="#62"> 62 </a>        <span class="php-quote">'append'</span> =&gt; [<span class="php-quote">'Append the generated CSS to the target file?'</span>, [<span class="php-quote">'a'</span>]],
+</span><span id="63" class="l"><a href="#63"> 63 </a>        <span class="php-quote">'no_ie_compat'</span> =&gt; [<span class="php-quote">'Disable IE compatibility checks.'</span>, []],
+</span><span id="64" class="l"><a href="#64"> 64 </a>        <span class="php-quote">'source_map'</span> =&gt; [<span class="php-quote">'Outputs an inline sourcemap to the generated CSS (or output to filename.map).'</span>, []],
+</span><span id="65" class="l"><a href="#65"> 65 </a>        <span class="php-quote">'source_map_url'</span> =&gt; [<span class="php-quote">'The complete url and filename put in the less file.'</span>, []],
+</span><span id="66" class="l"><a href="#66"> 66 </a>        <span class="php-quote">'source_map_base_path'</span> =&gt; [<span class="php-quote">'Sets sourcemap base path, defaults to current working directory.'</span>, []],
+</span><span id="67" class="l"><a href="#67"> 67 </a>        <span class="php-quote">'strict-math'</span> =&gt; [<span class="php-quote">'Strict math. Requires brackets.'</span>, [<span class="php-quote">'sm'</span>]],
+</span><span id="68" class="l"><a href="#68"> 68 </a>        <span class="php-quote">'strict-units'</span> =&gt; [
 </span><span id="69" class="l"><a href="#69"> 69 </a>            <span class="php-quote">'Allows mixed units, e.g. 1px+1em or 1px*1px which have units that cannot be represented.'</span>,
-</span><span id="70" class="l"><a href="#70"> 70 </a>            <span class="php-keyword1">array</span>(<span class="php-quote">'su'</span>),
-</span><span id="71" class="l"><a href="#71"> 71 </a>        ),
-</span><span id="72" class="l"><a href="#72"> 72 </a>        <span class="php-quote">'root-path'</span> =&gt; <span class="php-keyword1">array</span>(
+</span><span id="70" class="l"><a href="#70"> 70 </a>            [<span class="php-quote">'su'</span>],
+</span><span id="71" class="l"><a href="#71"> 71 </a>        ],
+</span><span id="72" class="l"><a href="#72"> 72 </a>        <span class="php-quote">'root-path'</span> =&gt; [
 </span><span id="73" class="l"><a href="#73"> 73 </a>            <span class="php-quote">'Sets rootpath for url rewriting in relative imports and urls. Works with or without the relative-urls option.'</span>,
-</span><span id="74" class="l"><a href="#74"> 74 </a>            <span class="php-keyword1">array</span>(<span class="php-quote">'rp'</span>),
-</span><span id="75" class="l"><a href="#75"> 75 </a>        ),
-</span><span id="76" class="l"><a href="#76"> 76 </a>        <span class="php-quote">'relative-urls'</span> =&gt; <span class="php-keyword1">array</span>(<span class="php-quote">'Re-writes relative urls to the base less file.'</span>, <span class="php-keyword1">array</span>(<span class="php-quote">'ru'</span>)),
-</span><span id="77" class="l"><a href="#77"> 77 </a>        <span class="php-quote">'url-args'</span> =&gt; <span class="php-keyword1">array</span>(<span class="php-quote">'Adds params into url tokens (e.g. 42, cb=42 or a=1&amp;b=2)'</span>, <span class="php-keyword1">array</span>()),
-</span><span id="78" class="l"><a href="#78"> 78 </a>        <span class="php-quote">'dump_line_numbers'</span> =&gt; <span class="php-keyword1">array</span>(
+</span><span id="74" class="l"><a href="#74"> 74 </a>            [<span class="php-quote">'rp'</span>],
+</span><span id="75" class="l"><a href="#75"> 75 </a>        ],
+</span><span id="76" class="l"><a href="#76"> 76 </a>        <span class="php-quote">'relative-urls'</span> =&gt; [<span class="php-quote">'Re-writes relative urls to the base less file.'</span>, [<span class="php-quote">'ru'</span>]],
+</span><span id="77" class="l"><a href="#77"> 77 </a>        <span class="php-quote">'url-args'</span> =&gt; [<span class="php-quote">'Adds params into url tokens (e.g. 42, cb=42 or a=1&amp;b=2)'</span>, []],
+</span><span id="78" class="l"><a href="#78"> 78 </a>        <span class="php-quote">'dump_line_numbers'</span> =&gt; [
 </span><span id="79" class="l"><a href="#79"> 79 </a>            <span class="php-quote">'Outputs filename and line numbers. TYPE can be either \'comments\', which will output the debug info within comments, \'mediaquery\' that will output the information within a fake media query which is compatible with the SASS format, and \'all\' which will do both.'</span>,
-</span><span id="80" class="l"><a href="#80"> 80 </a>            <span class="php-keyword1">array</span>(),
-</span><span id="81" class="l"><a href="#81"> 81 </a>        ),
-</span><span id="82" class="l"><a href="#82"> 82 </a>    );
+</span><span id="80" class="l"><a href="#80"> 80 </a>            [],
+</span><span id="81" class="l"><a href="#81"> 81 </a>        ],
+</span><span id="82" class="l"><a href="#82"> 82 </a>    ];
 </span><span id="83" class="l"><a href="#83"> 83 </a>
 </span><span id="84" class="l"><a href="#84"> 84 </a>    <span class="php-comment">/**
 </span></span><span id="85" class="l"><a href="#85"> 85 </a><span class="php-comment">     * Array of valid flags
 </span></span><span id="86" class="l"><a href="#86"> 86 </a><span class="php-comment">     *
 </span></span><span id="87" class="l"><a href="#87"> 87 </a><span class="php-comment">     * @var array
 </span></span><span id="88" class="l"><a href="#88"> 88 </a><span class="php-comment">     */</span>
-</span><span id="89" class="l"><a href="#89"> 89 </a>    <span class="php-keyword1">protected</span> <span class="php-var">$validFlags</span> = <span class="php-keyword1">array</span>();
+</span><span id="89" class="l"><a href="#89"> 89 </a>    <span class="php-keyword1">protected</span> <span class="php-var">$validFlags</span> = [];
 </span><span id="90" class="l"><a href="#90"> 90 </a>
 </span><span id="91" class="l"><a href="#91"> 91 </a>    <span class="php-comment">/**
 </span></span><span id="92" class="l"><a href="#92"> 92 </a><span class="php-comment">     * Valid flag
@@ -386,11 +386,11 @@
 </span></span><span id="114" class="l"><a href="#114">114 </a><span class="php-comment">     *
 </span></span><span id="115" class="l"><a href="#115">115 </a><span class="php-comment">     * @var array
 </span></span><span id="116" class="l"><a href="#116">116 </a><span class="php-comment">     */</span>
-</span><span id="117" class="l"><a href="#117">117 </a>    <span class="php-keyword1">private</span> <span class="php-var">$stdAliases</span> = <span class="php-keyword1">array</span>(
+</span><span id="117" class="l"><a href="#117">117 </a>    <span class="php-keyword1">private</span> <span class="php-var">$stdAliases</span> = [
 </span><span id="118" class="l"><a href="#118">118 </a>        <span class="php-quote">'−'</span>,
 </span><span id="119" class="l"><a href="#119">119 </a>        <span class="php-quote">'–'</span>,
 </span><span id="120" class="l"><a href="#120">120 </a>        <span class="php-quote">'-'</span>,
-</span><span id="121" class="l"><a href="#121">121 </a>    );
+</span><span id="121" class="l"><a href="#121">121 </a>    ];
 </span><span id="122" class="l"><a href="#122">122 </a>
 </span><span id="123" class="l"><a href="#123">123 </a>    <span class="php-comment">/**
 </span></span><span id="124" class="l"><a href="#124">124 </a><span class="php-comment">     * Constructor
@@ -451,7 +451,7 @@
 </span></span><span id="179" class="l"><a href="#179">179 </a><span class="php-comment">     */</span>
 </span><span id="180" class="l"><a href="#180">180 </a>    <span class="php-keyword1">protected</span> <span class="php-keyword1">function</span> convertOptions(<span class="php-keyword1">array</span> <span class="php-var">$options</span>)
 </span><span id="181" class="l"><a href="#181">181 </a>    {
-</span><span id="182" class="l"><a href="#182">182 </a>        <span class="php-var">$converted</span> = <span class="php-keyword1">array</span>();
+</span><span id="182" class="l"><a href="#182">182 </a>        <span class="php-var">$converted</span> = [];
 </span><span id="183" class="l"><a href="#183">183 </a>        <span class="php-keyword1">foreach</span> (<span class="php-var">$options</span> <span class="php-keyword1">as</span> <span class="php-var">$option</span> =&gt; <span class="php-var">$value</span>) {
 </span><span id="184" class="l"><a href="#184">184 </a>            <span class="php-keyword1">if</span> (<span class="php-keyword2">strpos</span>(<span class="php-var">$option</span>, <span class="php-quote">'-'</span>) !== <span class="php-keyword1">false</span>) {
 </span><span id="185" class="l"><a href="#185">185 </a>                <span class="php-var">$option</span> = <span class="php-keyword2">str_replace</span>(<span class="php-quote">'-'</span>, <span class="php-quote">'_'</span>, <span class="php-var">$option</span>);
@@ -583,14 +583,14 @@
 </span></span><span id="311" class="l"><a href="#311">311 </a><span class="php-comment">     */</span>
 </span><span id="312" class="l"><a href="#312">312 </a>    <span class="php-keyword1">protected</span> <span class="php-keyword1">function</span> prepareOptionsForTheParser()
 </span><span id="313" class="l"><a href="#313">313 </a>    {
-</span><span id="314" class="l"><a href="#314">314 </a>        <span class="php-var">$options</span> = <span class="php-keyword1">array</span>();
+</span><span id="314" class="l"><a href="#314">314 </a>        <span class="php-var">$options</span> = [];
 </span><span id="315" class="l"><a href="#315">315 </a>
 </span><span id="316" class="l"><a href="#316">316 </a>        <span class="php-keyword1">foreach</span> (<span class="php-var">$this</span>-&gt;getOptions() <span class="php-keyword1">as</span> <span class="php-var">$option</span> =&gt; <span class="php-var">$value</span>) {
 </span><span id="317" class="l"><a href="#317">317 </a>            <span class="php-keyword1">switch</span> (<span class="php-var">$option</span>) {
 </span><span id="318" class="l"><a href="#318">318 </a>                <span class="php-keyword1">case</span> <span class="php-quote">'source_map'</span>:
 </span><span id="319" class="l"><a href="#319">319 </a>
 </span><span id="320" class="l"><a href="#320">320 </a>                    <span class="php-var">$options</span>[<span class="php-quote">'source_map'</span>] = <span class="php-keyword1">true</span>;
-</span><span id="321" class="l"><a href="#321">321 </a>                    <span class="php-var">$options</span>[<span class="php-quote">'source_map_options'</span>] = <span class="php-keyword1">array</span>();
+</span><span id="321" class="l"><a href="#321">321 </a>                    <span class="php-var">$options</span>[<span class="php-quote">'source_map_options'</span>] = [];
 </span><span id="322" class="l"><a href="#322">322 </a>
 </span><span id="323" class="l"><a href="#323">323 </a>                    <span class="php-keyword1">if</span> (<span class="php-keyword2">is_string</span>(<span class="php-var">$value</span>)) {
 </span><span id="324" class="l"><a href="#324">324 </a>                        <span class="php-var">$options</span>[<span class="php-quote">'source_map_options'</span>][<span class="php-quote">'write_to'</span>] = <span class="php-var">$value</span>;
@@ -661,7 +661,7 @@
 </span></span><span id="389" class="l"><a href="#389">389 </a><span class="php-comment">     */</span>
 </span><span id="390" class="l"><a href="#390">390 </a>    <span class="php-keyword1">public</span> <span class="php-keyword1">function</span> getUsage()
 </span><span id="391" class="l"><a href="#391">391 </a>    {
-</span><span id="392" class="l"><a href="#392">392 </a>        <span class="php-var">$options</span> = <span class="php-keyword1">array</span>();
+</span><span id="392" class="l"><a href="#392">392 </a>        <span class="php-var">$options</span> = [];
 </span><span id="393" class="l"><a href="#393">393 </a>        <span class="php-var">$max</span> = <span class="php-num">0</span>;
 </span><span id="394" class="l"><a href="#394">394 </a>        <span class="php-keyword1">foreach</span> (<span class="php-var">$this</span>-&gt;validOptions <span class="php-keyword1">as</span> <span class="php-var">$optionName</span> =&gt; <span class="php-var">$properties</span>) {
 </span><span id="395" class="l"><a href="#395">395 </a>            <span class="php-var">$optionName</span> = <span class="php-keyword2">str_replace</span>(<span class="php-quote">'_'</span>, <span class="php-quote">'-'</span>, <span class="php-var">$optionName</span>);
@@ -677,13 +677,13 @@
 </span><span id="405" class="l"><a href="#405">405 </a>                <span class="php-var">$max</span> = <span class="php-keyword2">strlen</span>(<span class="php-var">$option</span>) + <span class="php-num">2</span>;
 </span><span id="406" class="l"><a href="#406">406 </a>            }
 </span><span id="407" class="l"><a href="#407">407 </a>
-</span><span id="408" class="l"><a href="#408">408 </a>            <span class="php-var">$options</span>[] = <span class="php-keyword1">array</span>(
+</span><span id="408" class="l"><a href="#408">408 </a>            <span class="php-var">$options</span>[] = [
 </span><span id="409" class="l"><a href="#409">409 </a>                <span class="php-var">$option</span>,
 </span><span id="410" class="l"><a href="#410">410 </a>                <span class="php-var">$help</span>,
-</span><span id="411" class="l"><a href="#411">411 </a>            );
+</span><span id="411" class="l"><a href="#411">411 </a>            ];
 </span><span id="412" class="l"><a href="#412">412 </a>        }
 </span><span id="413" class="l"><a href="#413">413 </a>
-</span><span id="414" class="l"><a href="#414">414 </a>        <span class="php-var">$optionsFormatted</span> = <span class="php-keyword1">array</span>();
+</span><span id="414" class="l"><a href="#414">414 </a>        <span class="php-var">$optionsFormatted</span> = [];
 </span><span id="415" class="l"><a href="#415">415 </a>        <span class="php-keyword1">foreach</span> (<span class="php-var">$options</span> <span class="php-keyword1">as</span> <span class="php-var">$option</span>) {
 </span><span id="416" class="l"><a href="#416">416 </a>            <span class="php-keyword1">list</span>(<span class="php-var">$name</span>, <span class="php-var">$help</span>) = <span class="php-var">$option</span>;
 </span><span id="417" class="l"><a href="#417">417 </a>            <span class="php-comment">// line will be too long</span>
@@ -701,11 +701,11 @@
 </span></span><span id="429" class="l"><a href="#429">429 </a><span class="php-quote">If source is set to `-` (dash or hyphen-minus), input is read from stdin.
 </span></span><span id="430" class="l"><a href="#430">430 </a><span class="php-quote">
 </span></span><span id="431" class="l"><a href="#431">431 </a><span class="php-quote">options:
-</span></span><span id="432" class="l"><a href="#432">432 </a><span class="php-quote">{%options}'</span>.PHP_EOL, <span class="php-keyword1">array</span>(
+</span></span><span id="432" class="l"><a href="#432">432 </a><span class="php-quote">{%options}'</span>.PHP_EOL, [
 </span><span id="433" class="l"><a href="#433">433 </a>            <span class="php-quote">'{%signature}'</span> =&gt; <span class="php-var">$this</span>-&gt;getSignature(),
 </span><span id="434" class="l"><a href="#434">434 </a>            <span class="php-quote">'{%script_name}'</span> =&gt; <span class="php-var">$this</span>-&gt;scriptName,
 </span><span id="435" class="l"><a href="#435">435 </a>            <span class="php-quote">'{%options}'</span> =&gt; <span class="php-keyword2">join</span>(PHP_EOL, <span class="php-var">$optionsFormatted</span>),
-</span><span id="436" class="l"><a href="#436">436 </a>        ));
+</span><span id="436" class="l"><a href="#436">436 </a>        ]);
 </span><span id="437" class="l"><a href="#437">437 </a>    }
 </span><span id="438" class="l"><a href="#438">438 </a>
 </span><span id="439" class="l"><a href="#439">439 </a>    <span class="php-comment">/**
@@ -792,11 +792,11 @@
 </span></span><span id="520" class="l"><a href="#520">520 </a><span class="php-comment">     */</span>
 </span><span id="521" class="l"><a href="#521">521 </a>    <span class="php-keyword1">protected</span> <span class="php-keyword1">function</span> parseArguments(<span class="php-var">$args</span>)
 </span><span id="522" class="l"><a href="#522">522 </a>    {
-</span><span id="523" class="l"><a href="#523">523 </a>        <span class="php-var">$return</span> = <span class="php-keyword1">array</span>(
-</span><span id="524" class="l"><a href="#524">524 </a>            <span class="php-quote">'arguments'</span> =&gt; <span class="php-keyword1">array</span>(),
-</span><span id="525" class="l"><a href="#525">525 </a>            <span class="php-quote">'flags'</span> =&gt; <span class="php-keyword1">array</span>(),
-</span><span id="526" class="l"><a href="#526">526 </a>            <span class="php-quote">'options'</span> =&gt; <span class="php-keyword1">array</span>(),
-</span><span id="527" class="l"><a href="#527">527 </a>        );
+</span><span id="523" class="l"><a href="#523">523 </a>        <span class="php-var">$return</span> = [
+</span><span id="524" class="l"><a href="#524">524 </a>            <span class="php-quote">'arguments'</span> =&gt; [],
+</span><span id="525" class="l"><a href="#525">525 </a>            <span class="php-quote">'flags'</span> =&gt; [],
+</span><span id="526" class="l"><a href="#526">526 </a>            <span class="php-quote">'options'</span> =&gt; [],
+</span><span id="527" class="l"><a href="#527">527 </a>        ];
 </span><span id="528" class="l"><a href="#528">528 </a>
 </span><span id="529" class="l"><a href="#529">529 </a>        <span class="php-keyword1">while</span> (<span class="php-var">$arg</span> = <span class="php-keyword2">array_shift</span>(<span class="php-var">$args</span>)) {
 </span><span id="530" class="l"><a href="#530">530 </a>            <span class="php-keyword1">if</span> (<span class="php-keyword2">in_array</span>(<span class="php-var">$arg</span>, <span class="php-var">$this</span>-&gt;stdAliases)) {

@@ -364,10 +364,10 @@
 </span></span><span id="92" class="l"><a href="#92"> 92 </a><span class="php-comment">     */</span>
 </span><span id="93" class="l"><a href="#93"> 93 </a>    <span class="php-keyword1">public</span> <span class="php-keyword1">function</span> getAsMediaQuery()
 </span><span id="94" class="l"><a href="#94"> 94 </a>    {
-</span><span id="95" class="l"><a href="#95"> 95 </a>        <span class="php-keyword1">return</span> <span class="php-keyword2">strtr</span>(self::<span class="php-var">$mediaQueryFormat</span>, <span class="php-keyword1">array</span>(
+</span><span id="95" class="l"><a href="#95"> 95 </a>        <span class="php-keyword1">return</span> <span class="php-keyword2">strtr</span>(self::<span class="php-var">$mediaQueryFormat</span>, [
 </span><span id="96" class="l"><a href="#96"> 96 </a>            <span class="php-quote">'%file%'</span> =&gt; self::escapeFilenameForMediaQuery(<span class="php-keyword2">sprintf</span>(<span class="php-quote">'file://%s'</span>, <span class="php-var">$this</span>-&gt;filename)),
 </span><span id="97" class="l"><a href="#97"> 97 </a>            <span class="php-quote">'%line%'</span> =&gt; <span class="php-var">$this</span>-&gt;lineNumber,
-</span><span id="98" class="l"><a href="#98"> 98 </a>        ));
+</span><span id="98" class="l"><a href="#98"> 98 </a>        ]);
 </span><span id="99" class="l"><a href="#99"> 99 </a>    }
 </span><span id="100" class="l"><a href="#100">100 </a>
 </span><span id="101" class="l"><a href="#101">101 </a>    <span class="php-comment">/**
@@ -395,7 +395,7 @@
 </span><span id="123" class="l"><a href="#123">123 </a>    <span class="php-keyword1">public</span> <span class="php-keyword1">static</span> <span class="php-keyword1">function</span> escapeFilenameForMediaQuery(<span class="php-var">$filename</span>)
 </span><span id="124" class="l"><a href="#124">124 </a>    {
 </span><span id="125" class="l"><a href="#125">125 </a>        <span class="php-keyword1">return</span> <span class="php-keyword2">preg_replace_callback</span>(<span class="php-quote">'/([\.|:|\/|(\\\\)])/'</span>,
-</span><span id="126" class="l"><a href="#126">126 </a>            <span class="php-keyword1">array</span>(<span class="php-quote">'ILess\DebugInfo'</span>, <span class="php-quote">'replaceCallback'</span>), <span class="php-var">$filename</span>);
+</span><span id="126" class="l"><a href="#126">126 </a>            [<span class="php-quote">'ILess\DebugInfo'</span>, <span class="php-quote">'replaceCallback'</span>], <span class="php-var">$filename</span>);
 </span><span id="127" class="l"><a href="#127">127 </a>    }
 </span><span id="128" class="l"><a href="#128">128 </a>
 </span><span id="129" class="l"><a href="#129">129 </a>}

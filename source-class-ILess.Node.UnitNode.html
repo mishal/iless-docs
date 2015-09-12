@@ -304,14 +304,14 @@
 </span></span><span id="32" class="l"><a href="#32"> 32 </a><span class="php-comment">     *
 </span></span><span id="33" class="l"><a href="#33"> 33 </a><span class="php-comment">     * @var array
 </span></span><span id="34" class="l"><a href="#34"> 34 </a><span class="php-comment">     */</span>
-</span><span id="35" class="l"><a href="#35"> 35 </a>    <span class="php-keyword1">public</span> <span class="php-var">$numerator</span> = <span class="php-keyword1">array</span>();
+</span><span id="35" class="l"><a href="#35"> 35 </a>    <span class="php-keyword1">public</span> <span class="php-var">$numerator</span> = [];
 </span><span id="36" class="l"><a href="#36"> 36 </a>
 </span><span id="37" class="l"><a href="#37"> 37 </a>    <span class="php-comment">/**
 </span></span><span id="38" class="l"><a href="#38"> 38 </a><span class="php-comment">     * Denominator
 </span></span><span id="39" class="l"><a href="#39"> 39 </a><span class="php-comment">     *
 </span></span><span id="40" class="l"><a href="#40"> 40 </a><span class="php-comment">     * @var array
 </span></span><span id="41" class="l"><a href="#41"> 41 </a><span class="php-comment">     */</span>
-</span><span id="42" class="l"><a href="#42"> 42 </a>    <span class="php-keyword1">public</span> <span class="php-var">$denominator</span> = <span class="php-keyword1">array</span>();
+</span><span id="42" class="l"><a href="#42"> 42 </a>    <span class="php-keyword1">public</span> <span class="php-var">$denominator</span> = [];
 </span><span id="43" class="l"><a href="#43"> 43 </a>
 </span><span id="44" class="l"><a href="#44"> 44 </a>    <span class="php-comment">/**
 </span></span><span id="45" class="l"><a href="#45"> 45 </a><span class="php-comment">     * The backup unit to use when unit is empty
@@ -327,7 +327,7 @@
 </span></span><span id="55" class="l"><a href="#55"> 55 </a><span class="php-comment">     * @param array $denominator
 </span></span><span id="56" class="l"><a href="#56"> 56 </a><span class="php-comment">     * @param string $backupUnit
 </span></span><span id="57" class="l"><a href="#57"> 57 </a><span class="php-comment">     */</span>
-</span><span id="58" class="l"><a href="#58"> 58 </a>    <span class="php-keyword1">public</span> <span class="php-keyword1">function</span> __construct(<span class="php-keyword1">array</span> <span class="php-var">$numerator</span> = <span class="php-keyword1">array</span>(), <span class="php-keyword1">array</span> <span class="php-var">$denominator</span> = <span class="php-keyword1">array</span>(), <span class="php-var">$backupUnit</span> = <span class="php-keyword1">null</span>)
+</span><span id="58" class="l"><a href="#58"> 58 </a>    <span class="php-keyword1">public</span> <span class="php-keyword1">function</span> __construct(<span class="php-keyword1">array</span> <span class="php-var">$numerator</span> = [], <span class="php-keyword1">array</span> <span class="php-var">$denominator</span> = [], <span class="php-var">$backupUnit</span> = <span class="php-keyword1">null</span>)
 </span><span id="59" class="l"><a href="#59"> 59 </a>    {
 </span><span id="60" class="l"><a href="#60"> 60 </a>        <span class="php-var">$this</span>-&gt;numerator = <span class="php-var">$numerator</span>;
 </span><span id="61" class="l"><a href="#61"> 61 </a>        <span class="php-var">$this</span>-&gt;denominator = <span class="php-var">$denominator</span>;
@@ -436,7 +436,7 @@
 </span><span id="164" class="l"><a href="#164">164 </a>
 </span><span id="165" class="l"><a href="#165">165 </a>    <span class="php-keyword1">public</span> <span class="php-keyword1">function</span> usedUnits()
 </span><span id="166" class="l"><a href="#166">166 </a>    {
-</span><span id="167" class="l"><a href="#167">167 </a>        <span class="php-var">$result</span> = <span class="php-keyword1">array</span>();
+</span><span id="167" class="l"><a href="#167">167 </a>        <span class="php-var">$result</span> = [];
 </span><span id="168" class="l"><a href="#168">168 </a>        <span class="php-keyword1">foreach</span> (UnitConversion::getGroups() <span class="php-keyword1">as</span> <span class="php-var">$groupName</span>) {
 </span><span id="169" class="l"><a href="#169">169 </a>            <span class="php-var">$group</span> = UnitConversion::getGroup(<span class="php-var">$groupName</span>);
 </span><span id="170" class="l"><a href="#170">170 </a>            <span class="php-keyword1">for</span> (<span class="php-var">$i</span> = <span class="php-num">0</span>; <span class="php-var">$i</span> &lt; <span class="php-keyword2">count</span>(<span class="php-var">$this</span>-&gt;numerator); <span class="php-var">$i</span>++) {
@@ -458,7 +458,7 @@
 </span><span id="186" class="l"><a href="#186">186 </a>
 </span><span id="187" class="l"><a href="#187">187 </a>    <span class="php-keyword1">public</span> <span class="php-keyword1">function</span> cancel()
 </span><span id="188" class="l"><a href="#188">188 </a>    {
-</span><span id="189" class="l"><a href="#189">189 </a>        <span class="php-var">$counter</span> = <span class="php-keyword1">array</span>();
+</span><span id="189" class="l"><a href="#189">189 </a>        <span class="php-var">$counter</span> = [];
 </span><span id="190" class="l"><a href="#190">190 </a>
 </span><span id="191" class="l"><a href="#191">191 </a>        <span class="php-keyword1">for</span> (<span class="php-var">$i</span> = <span class="php-num">0</span>; <span class="php-var">$i</span> &lt; <span class="php-keyword2">count</span>(<span class="php-var">$this</span>-&gt;numerator); <span class="php-var">$i</span>++) {
 </span><span id="192" class="l"><a href="#192">192 </a>            <span class="php-var">$atomicUnit</span> = <span class="php-var">$this</span>-&gt;numerator[<span class="php-var">$i</span>];
@@ -470,8 +470,8 @@
 </span><span id="198" class="l"><a href="#198">198 </a>            <span class="php-var">$counter</span>[<span class="php-var">$atomicUnit</span>] = (<span class="php-keyword1">isset</span>(<span class="php-var">$counter</span>[<span class="php-var">$atomicUnit</span>]) ? <span class="php-var">$counter</span>[<span class="php-var">$atomicUnit</span>] : <span class="php-num">0</span>) - <span class="php-num">1</span>;
 </span><span id="199" class="l"><a href="#199">199 </a>        }
 </span><span id="200" class="l"><a href="#200">200 </a>
-</span><span id="201" class="l"><a href="#201">201 </a>        <span class="php-var">$this</span>-&gt;numerator = <span class="php-keyword1">array</span>();
-</span><span id="202" class="l"><a href="#202">202 </a>        <span class="php-var">$this</span>-&gt;denominator = <span class="php-keyword1">array</span>();
+</span><span id="201" class="l"><a href="#201">201 </a>        <span class="php-var">$this</span>-&gt;numerator = [];
+</span><span id="202" class="l"><a href="#202">202 </a>        <span class="php-var">$this</span>-&gt;denominator = [];
 </span><span id="203" class="l"><a href="#203">203 </a>
 </span><span id="204" class="l"><a href="#204">204 </a>        <span class="php-keyword1">foreach</span> (<span class="php-var">$counter</span> <span class="php-keyword1">as</span> <span class="php-var">$atomicUnit</span> =&gt; <span class="php-var">$count</span>) {
 </span><span id="205" class="l"><a href="#205">205 </a>            <span class="php-keyword1">if</span> (<span class="php-var">$count</span> &gt; <span class="php-num">0</span>) {

@@ -351,7 +351,7 @@
 </span><span id="79" class="l"><a href="#79"> 79 </a>        }
 </span><span id="80" class="l"><a href="#80"> 80 </a>        <span class="php-var">$count</span> = <span class="php-keyword2">count</span>(<span class="php-var">$this</span>-&gt;value);
 </span><span id="81" class="l"><a href="#81"> 81 </a>        <span class="php-keyword1">if</span> (<span class="php-var">$count</span> &gt; <span class="php-num">1</span>) {
-</span><span id="82" class="l"><a href="#82"> 82 </a>            <span class="php-var">$compiled</span> = <span class="php-keyword1">array</span>();
+</span><span id="82" class="l"><a href="#82"> 82 </a>            <span class="php-var">$compiled</span> = [];
 </span><span id="83" class="l"><a href="#83"> 83 </a>            <span class="php-keyword1">foreach</span> (<span class="php-var">$this</span>-&gt;value <span class="php-keyword1">as</span> <span class="php-var">$v</span>) {
 </span><span id="84" class="l"><a href="#84"> 84 </a>                <span class="php-comment">/* @var $v Node */</span>
 </span><span id="85" class="l"><a href="#85"> 85 </a>                <span class="php-var">$compiled</span>[] = <span class="php-var">$v</span>-&gt;compile(<span class="php-var">$context</span>);
@@ -395,7 +395,7 @@
 </span><span id="123" class="l"><a href="#123">123 </a>    <span class="php-keyword1">public</span> <span class="php-keyword1">function</span> throwAwayComments()
 </span><span id="124" class="l"><a href="#124">124 </a>    {
 </span><span id="125" class="l"><a href="#125">125 </a>        <span class="php-keyword1">if</span> (<span class="php-keyword2">is_array</span>(<span class="php-var">$this</span>-&gt;value)) {
-</span><span id="126" class="l"><a href="#126">126 </a>            <span class="php-var">$new</span> = <span class="php-keyword1">array</span>();
+</span><span id="126" class="l"><a href="#126">126 </a>            <span class="php-var">$new</span> = [];
 </span><span id="127" class="l"><a href="#127">127 </a>            <span class="php-keyword1">foreach</span> (<span class="php-var">$this</span>-&gt;value <span class="php-keyword1">as</span> <span class="php-var">$v</span>) {
 </span><span id="128" class="l"><a href="#128">128 </a>                <span class="php-keyword1">if</span> (<span class="php-var">$v</span> <span class="php-keyword1">instanceof</span> CommentNode) {
 </span><span id="129" class="l"><a href="#129">129 </a>                    <span class="php-keyword1">continue</span>;

@@ -295,7 +295,7 @@
 </span></span><span id="23" class="l"><a href="#23">23 </a><span class="php-comment">     *
 </span></span><span id="24" class="l"><a href="#24">24 </a><span class="php-comment">     * @var array
 </span></span><span id="25" class="l"><a href="#25">25 </a><span class="php-comment">     */</span>
-</span><span id="26" class="l"><a href="#26">26 </a>    <span class="php-keyword1">protected</span> <span class="php-var">$output</span> = <span class="php-keyword1">array</span>();
+</span><span id="26" class="l"><a href="#26">26 </a>    <span class="php-keyword1">protected</span> <span class="php-var">$output</span> = [];
 </span><span id="27" class="l"><a href="#27">27 </a>
 </span><span id="28" class="l"><a href="#28">28 </a>    <span class="php-comment">/**
 </span></span><span id="29" class="l"><a href="#29">29 </a><span class="php-comment">     * Adds a chunk to the stack
@@ -308,9 +308,9 @@
 </span></span><span id="36" class="l"><a href="#36">36 </a><span class="php-comment">     */</span>
 </span><span id="37" class="l"><a href="#37">37 </a>    <span class="php-keyword1">public</span> <span class="php-keyword1">function</span> add(<span class="php-var">$chunk</span>, FileInfo <span class="php-var">$fileInfo</span> = <span class="php-keyword1">null</span>, <span class="php-var">$index</span> = <span class="php-num">0</span>, <span class="php-var">$mapLines</span> = <span class="php-keyword1">null</span>)
 </span><span id="38" class="l"><a href="#38">38 </a>    {
-</span><span id="39" class="l"><a href="#39">39 </a>        <span class="php-var">$this</span>-&gt;output[] = <span class="php-keyword1">array</span>(
+</span><span id="39" class="l"><a href="#39">39 </a>        <span class="php-var">$this</span>-&gt;output[] = [
 </span><span id="40" class="l"><a href="#40">40 </a>            <span class="php-var">$chunk</span>,
-</span><span id="41" class="l"><a href="#41">41 </a>        );
+</span><span id="41" class="l"><a href="#41">41 </a>        ];
 </span><span id="42" class="l"><a href="#42">42 </a>
 </span><span id="43" class="l"><a href="#43">43 </a>        <span class="php-keyword1">return</span> <span class="php-var">$this</span>;
 </span><span id="44" class="l"><a href="#44">44 </a>    }
@@ -332,7 +332,7 @@
 </span></span><span id="60" class="l"><a href="#60">60 </a><span class="php-comment">     */</span>
 </span><span id="61" class="l"><a href="#61">61 </a>    <span class="php-keyword1">public</span> <span class="php-keyword1">function</span> toString()
 </span><span id="62" class="l"><a href="#62">62 </a>    {
-</span><span id="63" class="l"><a href="#63">63 </a>        <span class="php-var">$result</span> = <span class="php-keyword1">array</span>();
+</span><span id="63" class="l"><a href="#63">63 </a>        <span class="php-var">$result</span> = [];
 </span><span id="64" class="l"><a href="#64">64 </a>        <span class="php-keyword1">foreach</span> (<span class="php-var">$this</span>-&gt;getOutput() <span class="php-keyword1">as</span> <span class="php-var">$o</span>) {
 </span><span id="65" class="l"><a href="#65">65 </a>            <span class="php-var">$result</span>[] = <span class="php-var">$o</span>[<span class="php-num">0</span>];
 </span><span id="66" class="l"><a href="#66">66 </a>        }

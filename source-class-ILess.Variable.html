@@ -368,11 +368,11 @@
 </span><span id="96" class="l"><a href="#96"> 96 </a>        <span class="php-keyword1">if</span> (Color::isNamedColor(<span class="php-var">$value</span>) || <span class="php-keyword2">strtolower</span>(<span class="php-var">$value</span>) === <span class="php-quote">'transparent'</span> || <span class="php-keyword2">strpos</span>(<span class="php-var">$value</span>, <span class="php-quote">'#'</span>) === <span class="php-num">0</span>) {
 </span><span id="97" class="l"><a href="#97"> 97 </a>            <span class="php-var">$value</span> = <span class="php-keyword1">new</span> ColorNode(<span class="php-keyword1">new</span> Color(<span class="php-var">$value</span>));
 </span><span id="98" class="l"><a href="#98"> 98 </a>        } <span class="php-keyword1">elseif</span> (<span class="php-keyword2">preg_match</span>(self::RGBA_COLOR_REGEXP, <span class="php-var">$value</span>, <span class="php-var">$matches</span>)) { <span class="php-comment">// RGB(A) colors</span>
-</span><span id="99" class="l"><a href="#99"> 99 </a>            <span class="php-var">$value</span> = <span class="php-keyword1">new</span> ColorNode(<span class="php-keyword1">new</span> Color(<span class="php-keyword1">array</span>(
+</span><span id="99" class="l"><a href="#99"> 99 </a>            <span class="php-var">$value</span> = <span class="php-keyword1">new</span> ColorNode(<span class="php-keyword1">new</span> Color([
 </span><span id="100" class="l"><a href="#100">100 </a>                <span class="php-var">$matches</span>[<span class="php-num">1</span>],
 </span><span id="101" class="l"><a href="#101">101 </a>                <span class="php-var">$matches</span>[<span class="php-num">2</span>],
 </span><span id="102" class="l"><a href="#102">102 </a>                <span class="php-var">$matches</span>[<span class="php-num">3</span>],
-</span><span id="103" class="l"><a href="#103">103 </a>            ), <span class="php-keyword1">isset</span>(<span class="php-var">$matches</span>[<span class="php-num">4</span>]) ? <span class="php-var">$matches</span>[<span class="php-num">4</span>] : <span class="php-num">1</span>));
+</span><span id="103" class="l"><a href="#103">103 </a>            ], <span class="php-keyword1">isset</span>(<span class="php-var">$matches</span>[<span class="php-num">4</span>]) ? <span class="php-var">$matches</span>[<span class="php-num">4</span>] : <span class="php-num">1</span>));
 </span><span id="104" class="l"><a href="#104">104 </a>        } <span class="php-comment">// Quoted string</span>
 </span><span id="105" class="l"><a href="#105">105 </a>        <span class="php-keyword1">elseif</span> (<span class="php-keyword2">preg_match</span>(self::QUOTED_REGEXP, <span class="php-var">$value</span>, <span class="php-var">$matches</span>)) {
 </span><span id="106" class="l"><a href="#106">106 </a>            <span class="php-var">$value</span> = <span class="php-keyword1">new</span> QuotedNode(<span class="php-var">$matches</span>[<span class="php-num">0</span>], <span class="php-var">$matches</span>[<span class="php-num">0</span>][<span class="php-num">0</span>] == <span class="php-quote">'&quot;'</span> ? <span class="php-var">$matches</span>[<span class="php-num">1</span>] : <span class="php-var">$matches</span>[<span class="php-num">2</span>]);
@@ -397,9 +397,9 @@
 </span></span><span id="125" class="l"><a href="#125">125 </a><span class="php-comment">     */</span>
 </span><span id="126" class="l"><a href="#126">126 </a>    <span class="php-keyword1">public</span> <span class="php-keyword1">function</span> toNode()
 </span><span id="127" class="l"><a href="#127">127 </a>    {
-</span><span id="128" class="l"><a href="#128">128 </a>        <span class="php-keyword1">return</span> <span class="php-keyword1">new</span> RuleNode(<span class="php-quote">'@'</span>.<span class="php-var">$this</span>-&gt;name, <span class="php-keyword1">new</span> ValueNode(<span class="php-keyword1">array</span>(
+</span><span id="128" class="l"><a href="#128">128 </a>        <span class="php-keyword1">return</span> <span class="php-keyword1">new</span> RuleNode(<span class="php-quote">'@'</span>.<span class="php-var">$this</span>-&gt;name, <span class="php-keyword1">new</span> ValueNode([
 </span><span id="129" class="l"><a href="#129">129 </a>            <span class="php-var">$this</span>-&gt;value,
-</span><span id="130" class="l"><a href="#130">130 </a>        )), <span class="php-var">$this</span>-&gt;important ? <span class="php-quote">'!important'</span> : <span class="php-quote">''</span>);
+</span><span id="130" class="l"><a href="#130">130 </a>        ]), <span class="php-var">$this</span>-&gt;important ? <span class="php-quote">'!important'</span> : <span class="php-quote">''</span>);
 </span><span id="131" class="l"><a href="#131">131 </a>    }
 </span><span id="132" class="l"><a href="#132">132 </a>
 </span><span id="133" class="l"><a href="#133">133 </a>    <span class="php-comment">/**

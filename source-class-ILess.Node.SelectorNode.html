@@ -306,14 +306,14 @@
 </span></span><span id="34" class="l"><a href="#34"> 34 </a><span class="php-comment">     *
 </span></span><span id="35" class="l"><a href="#35"> 35 </a><span class="php-comment">     * @var array
 </span></span><span id="36" class="l"><a href="#36"> 36 </a><span class="php-comment">     */</span>
-</span><span id="37" class="l"><a href="#37"> 37 </a>    <span class="php-keyword1">public</span> <span class="php-var">$elements</span> = <span class="php-keyword1">array</span>();
+</span><span id="37" class="l"><a href="#37"> 37 </a>    <span class="php-keyword1">public</span> <span class="php-var">$elements</span> = [];
 </span><span id="38" class="l"><a href="#38"> 38 </a>
 </span><span id="39" class="l"><a href="#39"> 39 </a>    <span class="php-comment">/**
 </span></span><span id="40" class="l"><a href="#40"> 40 </a><span class="php-comment">     * Array of extend definitions
 </span></span><span id="41" class="l"><a href="#41"> 41 </a><span class="php-comment">     *
 </span></span><span id="42" class="l"><a href="#42"> 42 </a><span class="php-comment">     * @var array
 </span></span><span id="43" class="l"><a href="#43"> 43 </a><span class="php-comment">     */</span>
-</span><span id="44" class="l"><a href="#44"> 44 </a>    <span class="php-keyword1">public</span> <span class="php-var">$extendList</span> = <span class="php-keyword1">array</span>();
+</span><span id="44" class="l"><a href="#44"> 44 </a>    <span class="php-keyword1">public</span> <span class="php-var">$extendList</span> = [];
 </span><span id="45" class="l"><a href="#45"> 45 </a>
 </span><span id="46" class="l"><a href="#46"> 46 </a>    <span class="php-comment">/**
 </span></span><span id="47" class="l"><a href="#47"> 47 </a><span class="php-comment">     * The condition
@@ -365,7 +365,7 @@
 </span></span><span id="93" class="l"><a href="#93"> 93 </a><span class="php-comment">     */</span>
 </span><span id="94" class="l"><a href="#94"> 94 </a>    <span class="php-keyword1">public</span> <span class="php-keyword1">function</span> __construct(
 </span><span id="95" class="l"><a href="#95"> 95 </a>        <span class="php-keyword1">array</span> <span class="php-var">$elements</span>,
-</span><span id="96" class="l"><a href="#96"> 96 </a>        <span class="php-keyword1">array</span> <span class="php-var">$extendList</span> = <span class="php-keyword1">array</span>(),
+</span><span id="96" class="l"><a href="#96"> 96 </a>        <span class="php-keyword1">array</span> <span class="php-var">$extendList</span> = [],
 </span><span id="97" class="l"><a href="#97"> 97 </a>        ConditionNode <span class="php-var">$condition</span> = <span class="php-keyword1">null</span>,
 </span><span id="98" class="l"><a href="#98"> 98 </a>        <span class="php-var">$index</span> = <span class="php-num">0</span>,
 </span><span id="99" class="l"><a href="#99"> 99 </a>        FileInfo <span class="php-var">$currentFileInfo</span> = <span class="php-keyword1">null</span>,
@@ -405,7 +405,7 @@
 </span></span><span id="133" class="l"><a href="#133">133 </a><span class="php-comment">     */</span>
 </span><span id="134" class="l"><a href="#134">134 </a>    <span class="php-keyword1">public</span> <span class="php-keyword1">function</span> compile(Context <span class="php-var">$context</span>, <span class="php-var">$arguments</span> = <span class="php-keyword1">null</span>, <span class="php-var">$important</span> = <span class="php-keyword1">null</span>)
 </span><span id="135" class="l"><a href="#135">135 </a>    {
-</span><span id="136" class="l"><a href="#136">136 </a>        <span class="php-var">$elements</span> = <span class="php-var">$extendList</span> = <span class="php-keyword1">array</span>();
+</span><span id="136" class="l"><a href="#136">136 </a>        <span class="php-var">$elements</span> = <span class="php-var">$extendList</span> = [];
 </span><span id="137" class="l"><a href="#137">137 </a>        <span class="php-comment">// compile elements</span>
 </span><span id="138" class="l"><a href="#138">138 </a>        <span class="php-keyword1">foreach</span> (<span class="php-var">$this</span>-&gt;elements <span class="php-keyword1">as</span> <span class="php-var">$e</span>) {
 </span><span id="139" class="l"><a href="#139">139 </a>            <span class="php-var">$elements</span>[] = <span class="php-var">$e</span>-&gt;compile(<span class="php-var">$context</span>);
@@ -431,7 +431,7 @@
 </span></span><span id="159" class="l"><a href="#159">159 </a><span class="php-comment">     * @param boolean|ConditionNode $compiledCondition Compiled condition
 </span></span><span id="160" class="l"><a href="#160">160 </a><span class="php-comment">     * @return SelectorNode
 </span></span><span id="161" class="l"><a href="#161">161 </a><span class="php-comment">     */</span>
-</span><span id="162" class="l"><a href="#162">162 </a>    <span class="php-keyword1">public</span> <span class="php-keyword1">function</span> createDerived(<span class="php-keyword1">array</span> <span class="php-var">$elements</span>, <span class="php-keyword1">array</span> <span class="php-var">$extendList</span> = <span class="php-keyword1">array</span>(), <span class="php-var">$compiledCondition</span> = <span class="php-keyword1">null</span>)
+</span><span id="162" class="l"><a href="#162">162 </a>    <span class="php-keyword1">public</span> <span class="php-keyword1">function</span> createDerived(<span class="php-keyword1">array</span> <span class="php-var">$elements</span>, <span class="php-keyword1">array</span> <span class="php-var">$extendList</span> = [], <span class="php-var">$compiledCondition</span> = <span class="php-keyword1">null</span>)
 </span><span id="163" class="l"><a href="#163">163 </a>    {
 </span><span id="164" class="l"><a href="#164">164 </a>        <span class="php-var">$compiledCondition</span> = !<span class="php-keyword2">is_null</span>(<span class="php-var">$compiledCondition</span>) ? <span class="php-var">$compiledCondition</span> : <span class="php-var">$this</span>-&gt;compiledCondition;
 </span><span id="165" class="l"><a href="#165">165 </a>        <span class="php-var">$selector</span> = <span class="php-keyword1">new</span> SelectorNode(<span class="php-var">$elements</span>, <span class="php-keyword2">count</span>(<span class="php-var">$extendList</span>) ? <span class="php-var">$extendList</span> : <span class="php-var">$this</span>-&gt;extendList, <span class="php-keyword1">null</span>,
@@ -451,10 +451,10 @@
 </span><span id="179" class="l"><a href="#179">179 </a>    {
 </span><span id="180" class="l"><a href="#180">180 </a>        <span class="php-var">$element</span> = <span class="php-keyword1">new</span> ElementNode(<span class="php-quote">''</span>, <span class="php-quote">'&amp;'</span>, <span class="php-var">$this</span>-&gt;index, <span class="php-var">$this</span>-&gt;currentFileInfo);
 </span><span id="181" class="l"><a href="#181">181 </a>
-</span><span id="182" class="l"><a href="#182">182 </a>        <span class="php-var">$selector</span> = <span class="php-keyword1">new</span> SelectorNode(<span class="php-keyword1">array</span>(<span class="php-var">$element</span>), <span class="php-keyword1">array</span>(), <span class="php-keyword1">null</span>, <span class="php-var">$this</span>-&gt;index, <span class="php-var">$this</span>-&gt;currentFileInfo);
+</span><span id="182" class="l"><a href="#182">182 </a>        <span class="php-var">$selector</span> = <span class="php-keyword1">new</span> SelectorNode([<span class="php-var">$element</span>], [], <span class="php-keyword1">null</span>, <span class="php-var">$this</span>-&gt;index, <span class="php-var">$this</span>-&gt;currentFileInfo);
 </span><span id="183" class="l"><a href="#183">183 </a>        <span class="php-var">$selector</span>-&gt;mediaEmpty = <span class="php-keyword1">true</span>;
 </span><span id="184" class="l"><a href="#184">184 </a>
-</span><span id="185" class="l"><a href="#185">185 </a>        <span class="php-keyword1">return</span> <span class="php-keyword1">array</span>(<span class="php-var">$selector</span>);
+</span><span id="185" class="l"><a href="#185">185 </a>        <span class="php-keyword1">return</span> [<span class="php-var">$selector</span>];
 </span><span id="186" class="l"><a href="#186">186 </a>    }
 </span><span id="187" class="l"><a href="#187">187 </a>
 </span><span id="188" class="l"><a href="#188">188 </a>    <span class="php-comment">/**
@@ -546,7 +546,7 @@
 </span><span id="274" class="l"><a href="#274">274 </a>                <span class="php-keyword2">array_shift</span>(<span class="php-var">$elements</span>);
 </span><span id="275" class="l"><a href="#275">275 </a>            }
 </span><span id="276" class="l"><a href="#276">276 </a>        } <span class="php-keyword1">else</span> {
-</span><span id="277" class="l"><a href="#277">277 </a>            <span class="php-var">$elements</span> = <span class="php-keyword1">array</span>();
+</span><span id="277" class="l"><a href="#277">277 </a>            <span class="php-var">$elements</span> = [];
 </span><span id="278" class="l"><a href="#278">278 </a>        }
 </span><span id="279" class="l"><a href="#279">279 </a>
 </span><span id="280" class="l"><a href="#280">280 </a>        <span class="php-var">$this</span>-&gt;cachedElements = <span class="php-var">$elements</span>;

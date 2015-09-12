@@ -306,12 +306,12 @@
 </span></span><span id="34" class="l"><a href="#34"> 34 </a><span class="php-comment">     *
 </span></span><span id="35" class="l"><a href="#35"> 35 </a><span class="php-comment">     * @var array
 </span></span><span id="36" class="l"><a href="#36"> 36 </a><span class="php-comment">     */</span>
-</span><span id="37" class="l"><a href="#37"> 37 </a>    <span class="php-keyword1">public</span> <span class="php-var">$allExtendsStack</span> = <span class="php-keyword1">array</span>();
+</span><span id="37" class="l"><a href="#37"> 37 </a>    <span class="php-keyword1">public</span> <span class="php-var">$allExtendsStack</span> = [];
 </span><span id="38" class="l"><a href="#38"> 38 </a>
 </span><span id="39" class="l"><a href="#39"> 39 </a>    <span class="php-comment">/**
 </span></span><span id="40" class="l"><a href="#40"> 40 </a><span class="php-comment">     * @var array
 </span></span><span id="41" class="l"><a href="#41"> 41 </a><span class="php-comment">     */</span>
-</span><span id="42" class="l"><a href="#42"> 42 </a>    <span class="php-keyword1">public</span> <span class="php-var">$extendIndicies</span> = <span class="php-keyword1">array</span>();
+</span><span id="42" class="l"><a href="#42"> 42 </a>    <span class="php-keyword1">public</span> <span class="php-var">$extendIndicies</span> = [];
 </span><span id="43" class="l"><a href="#43"> 43 </a>
 </span><span id="44" class="l"><a href="#44"> 44 </a>    <span class="php-comment">/**
 </span></span><span id="45" class="l"><a href="#45"> 45 </a><span class="php-comment">     * @var int
@@ -323,7 +323,7 @@
 </span></span><span id="51" class="l"><a href="#51"> 51 </a><span class="php-comment">     */</span>
 </span><span id="52" class="l"><a href="#52"> 52 </a>    <span class="php-keyword1">public</span> <span class="php-keyword1">function</span> run(<span class="php-var">$root</span>)
 </span><span id="53" class="l"><a href="#53"> 53 </a>    {
-</span><span id="54" class="l"><a href="#54"> 54 </a>        <span class="php-var">$this</span>-&gt;extendIndicies = <span class="php-keyword1">array</span>();
+</span><span id="54" class="l"><a href="#54"> 54 </a>        <span class="php-var">$this</span>-&gt;extendIndicies = [];
 </span><span id="55" class="l"><a href="#55"> 55 </a>
 </span><span id="56" class="l"><a href="#56"> 56 </a>        <span class="php-var">$finder</span> = <span class="php-keyword1">new</span> ExtendFinderVisitor();
 </span><span id="57" class="l"><a href="#57"> 57 </a>        <span class="php-var">$finder</span>-&gt;run(<span class="php-var">$root</span>);
@@ -333,7 +333,7 @@
 </span><span id="61" class="l"><a href="#61"> 61 </a>        }
 </span><span id="62" class="l"><a href="#62"> 62 </a>
 </span><span id="63" class="l"><a href="#63"> 63 </a>        <span class="php-var">$root</span>-&gt;allExtends = <span class="php-var">$this</span>-&gt;doExtendChaining(<span class="php-var">$root</span>-&gt;allExtends, <span class="php-var">$root</span>-&gt;allExtends);
-</span><span id="64" class="l"><a href="#64"> 64 </a>        <span class="php-var">$this</span>-&gt;allExtendsStack = <span class="php-keyword1">array</span>(&amp;<span class="php-var">$root</span>-&gt;allExtends);
+</span><span id="64" class="l"><a href="#64"> 64 </a>        <span class="php-var">$this</span>-&gt;allExtendsStack = [&amp;<span class="php-var">$root</span>-&gt;allExtends];
 </span><span id="65" class="l"><a href="#65"> 65 </a>
 </span><span id="66" class="l"><a href="#66"> 66 </a>        <span class="php-var">$newRoot</span> = <span class="php-var">$this</span>-&gt;visit(<span class="php-var">$root</span>);
 </span><span id="67" class="l"><a href="#67"> 67 </a>        <span class="php-var">$this</span>-&gt;checkExtendsForNonMatched(<span class="php-var">$root</span>-&gt;allExtends);
@@ -343,7 +343,7 @@
 </span><span id="71" class="l"><a href="#71"> 71 </a>
 </span><span id="72" class="l"><a href="#72"> 72 </a>    <span class="php-keyword1">private</span> <span class="php-keyword1">function</span> checkExtendsForNonMatched(<span class="php-var">$extendList</span>)
 </span><span id="73" class="l"><a href="#73"> 73 </a>    {
-</span><span id="74" class="l"><a href="#74"> 74 </a>        <span class="php-var">$process</span> = <span class="php-keyword1">array</span>();
+</span><span id="74" class="l"><a href="#74"> 74 </a>        <span class="php-var">$process</span> = [];
 </span><span id="75" class="l"><a href="#75"> 75 </a>        <span class="php-keyword1">foreach</span> (<span class="php-var">$extendList</span> <span class="php-keyword1">as</span> <span class="php-var">$extend</span>) {
 </span><span id="76" class="l"><a href="#76"> 76 </a>            <span class="php-keyword1">if</span> (!<span class="php-var">$extend</span>-&gt;hasFoundMatches &amp;&amp; <span class="php-keyword2">count</span>(<span class="php-var">$extend</span>-&gt;parentIds) === <span class="php-num">1</span>) {
 </span><span id="77" class="l"><a href="#77"> 77 </a>                <span class="php-var">$process</span>[] = <span class="php-var">$extend</span>;
@@ -384,7 +384,7 @@
 </span><span id="112" class="l"><a href="#112">112 </a>        <span class="php-comment">// this method deals with all the chaining work - without it, extend is flat and doesn't work on other extend selectors</span>
 </span><span id="113" class="l"><a href="#113">113 </a>        <span class="php-comment">// this is also the most expensive.. and a match on one selector can cause an extension of a selector we had already processed if</span>
 </span><span id="114" class="l"><a href="#114">114 </a>        <span class="php-comment">// we look at each selector at a time, as is done in visitRuleset</span>
-</span><span id="115" class="l"><a href="#115">115 </a>        <span class="php-var">$extendsToAdd</span> = <span class="php-keyword1">array</span>();
+</span><span id="115" class="l"><a href="#115">115 </a>        <span class="php-var">$extendsToAdd</span> = [];
 </span><span id="116" class="l"><a href="#116">116 </a>        <span class="php-comment">// loop through comparing every extend with every target extend.</span>
 </span><span id="117" class="l"><a href="#117">117 </a>        <span class="php-comment">// a target extend is the one on the ruleset we are looking at copy/edit/pasting in place</span>
 </span><span id="118" class="l"><a href="#118">118 </a>        <span class="php-comment">// e.g. .a:extend(.b) {} and .b:extend(.c) {} then the first extend extends the second one</span>
@@ -404,7 +404,7 @@
 </span><span id="132" class="l"><a href="#132">132 </a>                }
 </span><span id="133" class="l"><a href="#133">133 </a>
 </span><span id="134" class="l"><a href="#134">134 </a>                <span class="php-comment">// find a match in the target extends self selector (the bit before :extend)</span>
-</span><span id="135" class="l"><a href="#135">135 </a>                <span class="php-var">$selectorPath</span> = <span class="php-keyword1">array</span>(<span class="php-var">$targetExtend</span>-&gt;selfSelectors[<span class="php-num">0</span>]);
+</span><span id="135" class="l"><a href="#135">135 </a>                <span class="php-var">$selectorPath</span> = [<span class="php-var">$targetExtend</span>-&gt;selfSelectors[<span class="php-num">0</span>]];
 </span><span id="136" class="l"><a href="#136">136 </a>
 </span><span id="137" class="l"><a href="#137">137 </a>                <span class="php-var">$matches</span> = <span class="php-var">$this</span>-&gt;findMatch(<span class="php-var">$extend</span>, <span class="php-var">$selectorPath</span>);
 </span><span id="138" class="l"><a href="#138">138 </a>                <span class="php-keyword1">if</span> (<span class="php-keyword2">count</span>(<span class="php-var">$matches</span>)) {
@@ -417,7 +417,7 @@
 </span><span id="145" class="l"><a href="#145">145 </a>                        <span class="php-var">$newExtend</span> = <span class="php-keyword1">new</span> ExtendNode(<span class="php-var">$targetExtend</span>-&gt;selector, <span class="php-var">$targetExtend</span>-&gt;option);
 </span><span id="146" class="l"><a href="#146">146 </a>                        <span class="php-var">$newExtend</span>-&gt;selfSelectors = <span class="php-var">$newSelector</span>;
 </span><span id="147" class="l"><a href="#147">147 </a>                        <span class="php-comment">// add the extend onto the list of extends for that selector</span>
-</span><span id="148" class="l"><a href="#148">148 </a>                        <span class="php-keyword2">end</span>(<span class="php-var">$newSelector</span>)-&gt;extendList = <span class="php-keyword1">array</span>(<span class="php-var">$newExtend</span>);
+</span><span id="148" class="l"><a href="#148">148 </a>                        <span class="php-keyword2">end</span>(<span class="php-var">$newSelector</span>)-&gt;extendList = [<span class="php-var">$newExtend</span>];
 </span><span id="149" class="l"><a href="#149">149 </a>                        <span class="php-comment">// record that we need to add it.</span>
 </span><span id="150" class="l"><a href="#150">150 </a>                        <span class="php-var">$extendsToAdd</span>[] = <span class="php-var">$newExtend</span>;
 </span><span id="151" class="l"><a href="#151">151 </a>                        <span class="php-var">$newExtend</span>-&gt;ruleset = <span class="php-var">$targetExtend</span>-&gt;ruleset;
@@ -511,7 +511,7 @@
 </span><span id="239" class="l"><a href="#239">239 </a>
 </span><span id="240" class="l"><a href="#240">240 </a>        <span class="php-var">$allExtends</span> = <span class="php-var">$this</span>-&gt;allExtendsStack[<span class="php-keyword2">count</span>(<span class="php-var">$this</span>-&gt;allExtendsStack) - <span class="php-num">1</span>];
 </span><span id="241" class="l"><a href="#241">241 </a>        <span class="php-var">$pathsCount</span> = <span class="php-keyword2">count</span>(<span class="php-var">$node</span>-&gt;paths);
-</span><span id="242" class="l"><a href="#242">242 </a>        <span class="php-var">$selectorsToAdd</span> = <span class="php-keyword1">array</span>();
+</span><span id="242" class="l"><a href="#242">242 </a>        <span class="php-var">$selectorsToAdd</span> = [];
 </span><span id="243" class="l"><a href="#243">243 </a>
 </span><span id="244" class="l"><a href="#244">244 </a>        <span class="php-comment">// look at each selector path in the ruleset, find any extend matches and then copy, find and replace</span>
 </span><span id="245" class="l"><a href="#245">245 </a>        <span class="php-keyword1">for</span> (<span class="php-var">$extendIndex</span> = <span class="php-num">0</span>, <span class="php-var">$allExtendCount</span> = <span class="php-keyword2">count</span>(<span class="php-var">$allExtends</span>); <span class="php-var">$extendIndex</span> &lt; <span class="php-var">$allExtendCount</span>; <span class="php-var">$extendIndex</span>++) {
@@ -604,10 +604,10 @@
 </span><span id="332" class="l"><a href="#332">332 </a>        <span class="php-comment">// returns an array of selector matches that can then be replaced</span>
 </span><span id="333" class="l"><a href="#333">333 </a>        <span class="php-var">$needleElements</span> = <span class="php-var">$extend</span>-&gt;selector-&gt;elements;
 </span><span id="334" class="l"><a href="#334">334 </a>        <span class="php-var">$needleElementsCount</span> = <span class="php-keyword1">false</span>;
-</span><span id="335" class="l"><a href="#335">335 </a>        <span class="php-var">$potentialMatches</span> = <span class="php-keyword1">array</span>();
+</span><span id="335" class="l"><a href="#335">335 </a>        <span class="php-var">$potentialMatches</span> = [];
 </span><span id="336" class="l"><a href="#336">336 </a>        <span class="php-var">$potentialMatchesCount</span> = <span class="php-num">0</span>;
 </span><span id="337" class="l"><a href="#337">337 </a>        <span class="php-var">$potentialMatch</span> = <span class="php-keyword1">null</span>;
-</span><span id="338" class="l"><a href="#338">338 </a>        <span class="php-var">$matches</span> = <span class="php-keyword1">array</span>();
+</span><span id="338" class="l"><a href="#338">338 </a>        <span class="php-var">$matches</span> = [];
 </span><span id="339" class="l"><a href="#339">339 </a>
 </span><span id="340" class="l"><a href="#340">340 </a>        <span class="php-comment">// loop through the haystack elements</span>
 </span><span id="341" class="l"><a href="#341">341 </a>        <span class="php-keyword1">for</span> (<span class="php-var">$haystackSelectorIndex</span> = <span class="php-num">0</span>, <span class="php-var">$haystackPathCount</span> = <span class="php-keyword2">count</span>(<span class="php-var">$haystackSelectorPath</span>); <span class="php-var">$haystackSelectorIndex</span> &lt; <span class="php-var">$haystackPathCount</span>; <span class="php-var">$haystackSelectorIndex</span>++) {
@@ -616,12 +616,12 @@
 </span><span id="344" class="l"><a href="#344">344 </a>                <span class="php-var">$haystackElement</span> = <span class="php-var">$hackstackSelector</span>-&gt;elements[<span class="php-var">$hackstackElementIndex</span>];
 </span><span id="345" class="l"><a href="#345">345 </a>                <span class="php-comment">// if we allow elements before our match we can add a potential match every time. otherwise only at the first element.</span>
 </span><span id="346" class="l"><a href="#346">346 </a>                <span class="php-keyword1">if</span> (<span class="php-var">$extend</span>-&gt;allowBefore || (<span class="php-var">$haystackSelectorIndex</span> === <span class="php-num">0</span> &amp;&amp; <span class="php-var">$hackstackElementIndex</span> === <span class="php-num">0</span>)) {
-</span><span id="347" class="l"><a href="#347">347 </a>                    <span class="php-var">$potentialMatches</span>[] = <span class="php-keyword1">array</span>(
+</span><span id="347" class="l"><a href="#347">347 </a>                    <span class="php-var">$potentialMatches</span>[] = [
 </span><span id="348" class="l"><a href="#348">348 </a>                        <span class="php-quote">'pathIndex'</span> =&gt; <span class="php-var">$haystackSelectorIndex</span>,
 </span><span id="349" class="l"><a href="#349">349 </a>                        <span class="php-quote">'index'</span> =&gt; <span class="php-var">$hackstackElementIndex</span>,
 </span><span id="350" class="l"><a href="#350">350 </a>                        <span class="php-quote">'matched'</span> =&gt; <span class="php-num">0</span>,
 </span><span id="351" class="l"><a href="#351">351 </a>                        <span class="php-quote">'initialCombinator'</span> =&gt; <span class="php-var">$haystackElement</span>-&gt;combinator,
-</span><span id="352" class="l"><a href="#352">352 </a>                    );
+</span><span id="352" class="l"><a href="#352">352 </a>                    ];
 </span><span id="353" class="l"><a href="#353">353 </a>                    <span class="php-var">$potentialMatchesCount</span>++;
 </span><span id="354" class="l"><a href="#354">354 </a>                }
 </span><span id="355" class="l"><a href="#355">355 </a>
@@ -666,7 +666,7 @@
 </span><span id="394" class="l"><a href="#394">394 </a>                            <span class="php-var">$potentialMatch</span>[<span class="php-quote">'length'</span>] = <span class="php-var">$needleElementsCount</span>;
 </span><span id="395" class="l"><a href="#395">395 </a>                            <span class="php-var">$potentialMatch</span>[<span class="php-quote">'endPathIndex'</span>] = <span class="php-var">$haystackSelectorIndex</span>;
 </span><span id="396" class="l"><a href="#396">396 </a>                            <span class="php-var">$potentialMatch</span>[<span class="php-quote">'endPathElementIndex'</span>] = <span class="php-var">$hackstackElementIndex</span> + <span class="php-num">1</span>; <span class="php-comment">// index after end of match</span>
-</span><span id="397" class="l"><a href="#397">397 </a>                            <span class="php-var">$potentialMatches</span> = <span class="php-keyword1">array</span>(); <span class="php-comment">// we don't allow matches to overlap, so start matching again</span>
+</span><span id="397" class="l"><a href="#397">397 </a>                            <span class="php-var">$potentialMatches</span> = []; <span class="php-comment">// we don't allow matches to overlap, so start matching again</span>
 </span><span id="398" class="l"><a href="#398">398 </a>                            <span class="php-var">$potentialMatchesCount</span> = <span class="php-num">0</span>;
 </span><span id="399" class="l"><a href="#399">399 </a>                            <span class="php-var">$matches</span>[] = <span class="php-var">$potentialMatch</span>;
 </span><span id="400" class="l"><a href="#400">400 </a>                        }
@@ -739,7 +739,7 @@
 </span><span id="467" class="l"><a href="#467">467 </a>        <span class="php-comment">// for a set of matches, replace each match with the replacement selector</span>
 </span><span id="468" class="l"><a href="#468">468 </a>        <span class="php-var">$currentSelectorPathIndex</span> = <span class="php-num">0</span>;
 </span><span id="469" class="l"><a href="#469">469 </a>        <span class="php-var">$currentSelectorPathElementIndex</span> = <span class="php-num">0</span>;
-</span><span id="470" class="l"><a href="#470">470 </a>        <span class="php-var">$path</span> = <span class="php-keyword1">array</span>();
+</span><span id="470" class="l"><a href="#470">470 </a>        <span class="php-var">$path</span> = [];
 </span><span id="471" class="l"><a href="#471">471 </a>        <span class="php-var">$selectorPathCount</span> = <span class="php-keyword2">count</span>(<span class="php-var">$selectorPath</span>);
 </span><span id="472" class="l"><a href="#472">472 </a>
 </span><span id="473" class="l"><a href="#473">473 </a>        <span class="php-keyword1">for</span> (<span class="php-var">$matchIndex</span> = <span class="php-num">0</span>, <span class="php-var">$matchesCount</span> = <span class="php-keyword2">count</span>(<span class="php-var">$matches</span>); <span class="php-var">$matchIndex</span> &lt; <span class="php-var">$matchesCount</span>; <span class="php-var">$matchIndex</span>++) {
@@ -764,7 +764,7 @@
 </span><span id="492" class="l"><a href="#492">492 </a>            <span class="php-comment">// last parameter of array_slice is different than the last parameter of javascript's slice</span>
 </span><span id="493" class="l"><a href="#493">493 </a>                <span class="php-keyword2">array_slice</span>(<span class="php-var">$selector</span>-&gt;elements, <span class="php-var">$currentSelectorPathElementIndex</span>,
 </span><span id="494" class="l"><a href="#494">494 </a>                    (<span class="php-var">$match</span>[<span class="php-quote">'index'</span>] - <span class="php-var">$currentSelectorPathElementIndex</span>)),
-</span><span id="495" class="l"><a href="#495">495 </a>                <span class="php-keyword1">array</span>(<span class="php-var">$firstElement</span>),
+</span><span id="495" class="l"><a href="#495">495 </a>                [<span class="php-var">$firstElement</span>],
 </span><span id="496" class="l"><a href="#496">496 </a>                <span class="php-keyword2">array_slice</span>(<span class="php-var">$replacementSelector</span>-&gt;elements, <span class="php-num">1</span>)
 </span><span id="497" class="l"><a href="#497">497 </a>            );
 </span><span id="498" class="l"><a href="#498">498 </a>
