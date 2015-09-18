@@ -486,7 +486,7 @@
 </span><span id="214" class="l"><a href="#214">214 </a>                        <span class="php-quote">'isLineComment'</span> =&gt; <span class="php-keyword1">true</span>,
 </span><span id="215" class="l"><a href="#215">215 </a>                    ];
 </span><span id="216" class="l"><a href="#216">216 </a>                    <span class="php-var">$nextNewLine</span> = <span class="php-keyword2">strpos</span>(<span class="php-var">$inp</span>, <span class="php-quote">&quot;\n&quot;</span>, <span class="php-var">$this</span>-&gt;i + <span class="php-num">2</span>);
-</span><span id="217" class="l"><a href="#217">217 </a>                    <span class="php-keyword1">if</span> (<span class="php-var">$nextNewLine</span> &lt; <span class="php-num">0</span>) {
+</span><span id="217" class="l"><a href="#217">217 </a>                    <span class="php-keyword1">if</span> (<span class="php-var">$nextNewLine</span> === <span class="php-keyword1">false</span>) {
 </span><span id="218" class="l"><a href="#218">218 </a>                        <span class="php-var">$nextNewLine</span> = <span class="php-var">$endIndex</span>;
 </span><span id="219" class="l"><a href="#219">219 </a>                    }
 </span><span id="220" class="l"><a href="#220">220 </a>                    <span class="php-var">$this</span>-&gt;i = <span class="php-var">$nextNewLine</span>;

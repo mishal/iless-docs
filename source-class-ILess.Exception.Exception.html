@@ -595,7 +595,7 @@
 </span></span><span id="323" class="l"><a href="#323">323 </a><span class="php-comment">     */</span>
 </span><span id="324" class="l"><a href="#324">324 </a>    <span class="php-keyword1">public</span> <span class="php-keyword1">function</span> __toString()
 </span><span id="325" class="l"><a href="#325">325 </a>    {
-</span><span id="326" class="l"><a href="#326">326 </a>        <span class="php-keyword1">return</span> <span class="php-var">$this</span>-&gt;toString();
+</span><span id="326" class="l"><a href="#326">326 </a>        <span class="php-keyword1">return</span> <span class="php-var">$this</span>-&gt;toString(<span class="php-keyword1">true</span>, <span class="php-keyword2">php_sapi_name</span>() !== <span class="php-quote">'cli'</span>);
 </span><span id="327" class="l"><a href="#327">327 </a>    }
 </span><span id="328" class="l"><a href="#328">328 </a>
 </span><span id="329" class="l"><a href="#329">329 </a>    <span class="php-comment">/**
