@@ -209,6 +209,7 @@
 				<li><a href="class-ILess.SourceMap.Generator.html">ILess\SourceMap\Generator</a></li>
 				<li><a href="class-ILess.Util.html">ILess\Util</a></li>
 				<li><a href="class-ILess.Util.Mime.html">ILess\Util\Mime</a></li>
+				<li><a href="class-ILess.Util.Serializer.html">ILess\Util\Serializer</a></li>
 				<li><a href="class-ILess.Util.StringExcerpt.html">ILess\Util\StringExcerpt</a></li>
 				<li><a href="class-ILess.Util.UnitConversion.html">ILess\Util\UnitConversion</a></li>
 				<li><a href="class-ILess.Variable.html">ILess\Variable</a></li>
@@ -282,23 +283,21 @@
 </span><span id="10" class="l"><a href="#10">10 </a><span class="php-keyword1">namespace</span> ILess\Plugin;
 </span><span id="11" class="l"><a href="#11">11 </a>
 </span><span id="12" class="l"><a href="#12">12 </a><span class="php-comment">/**
-</span></span><span id="13" class="l"><a href="#13">13 </a><span class="php-comment"> * Pre processor interface
-</span></span><span id="14" class="l"><a href="#14">14 </a><span class="php-comment"> *
-</span></span><span id="15" class="l"><a href="#15">15 </a><span class="php-comment"> * @package ILess\Plugin
-</span></span><span id="16" class="l"><a href="#16">16 </a><span class="php-comment"> */</span>
-</span><span id="17" class="l"><a href="#17">17 </a><span class="php-keyword1">interface</span> PreProcessorInterface
-</span><span id="18" class="l"><a href="#18">18 </a>{
-</span><span id="19" class="l"><a href="#19">19 </a>    <span class="php-comment">/**
-</span></span><span id="20" class="l"><a href="#20">20 </a><span class="php-comment">     * Pre process the CSS before passing to the parser
-</span></span><span id="21" class="l"><a href="#21">21 </a><span class="php-comment">     *
-</span></span><span id="22" class="l"><a href="#22">22 </a><span class="php-comment">     * @param string $inputString
-</span></span><span id="23" class="l"><a href="#23">23 </a><span class="php-comment">     * @param array $extra Extra information
-</span></span><span id="24" class="l"><a href="#24">24 </a><span class="php-comment">     * @return string
-</span></span><span id="25" class="l"><a href="#25">25 </a><span class="php-comment">     */</span>
-</span><span id="26" class="l"><a href="#26">26 </a>    <span class="php-keyword1">public</span> <span class="php-keyword1">function</span> process(<span class="php-var">$inputString</span>, <span class="php-keyword1">array</span> <span class="php-var">$extra</span>);
-</span><span id="27" class="l"><a href="#27">27 </a>
-</span><span id="28" class="l"><a href="#28">28 </a>}
-</span><span id="29" class="l"><a href="#29">29 </a></span></code></pre>
+</span></span><span id="13" class="l"><a href="#13">13 </a><span class="php-comment"> * Pre processor interface.
+</span></span><span id="14" class="l"><a href="#14">14 </a><span class="php-comment"> */</span>
+</span><span id="15" class="l"><a href="#15">15 </a><span class="php-keyword1">interface</span> PreProcessorInterface
+</span><span id="16" class="l"><a href="#16">16 </a>{
+</span><span id="17" class="l"><a href="#17">17 </a>    <span class="php-comment">/**
+</span></span><span id="18" class="l"><a href="#18">18 </a><span class="php-comment">     * Pre process the CSS before passing to the parser.
+</span></span><span id="19" class="l"><a href="#19">19 </a><span class="php-comment">     *
+</span></span><span id="20" class="l"><a href="#20">20 </a><span class="php-comment">     * @param string $inputString
+</span></span><span id="21" class="l"><a href="#21">21 </a><span class="php-comment">     * @param array $extra Extra information
+</span></span><span id="22" class="l"><a href="#22">22 </a><span class="php-comment">     *
+</span></span><span id="23" class="l"><a href="#23">23 </a><span class="php-comment">     * @return string
+</span></span><span id="24" class="l"><a href="#24">24 </a><span class="php-comment">     */</span>
+</span><span id="25" class="l"><a href="#25">25 </a>    <span class="php-keyword1">public</span> <span class="php-keyword1">function</span> process(<span class="php-var">$inputString</span>, <span class="php-keyword1">array</span> <span class="php-var">$extra</span>);
+</span><span id="26" class="l"><a href="#26">26 </a>}
+</span><span id="27" class="l"><a href="#27">27 </a></span></code></pre>
 	</div>
 
 	<div id="footer">
@@ -306,6 +305,6 @@
 	</div>
 </div>
 <script src="resources/combined.js?1fb3c33e67125e93eb1ef1d5202bd77c3a86e80f"></script>
-<script src="elementlist.js?923a719ef72ab90003bbd7ae1b91022ba1612096"></script>
+<script src="elementlist.js?8f7977c8b924bcf7c0b33e11d347b63a66e1b732"></script>
 </body>
 </html>
